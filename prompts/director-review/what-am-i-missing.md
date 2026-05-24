@@ -1,32 +1,29 @@
 # What Am I Missing Prompt
 
-## Purpose
+## Use this when
 
-Challenge a plan by surfacing hidden stakeholders, dependencies, risks, weak metrics, and operational gaps.
+A plan looks reasonable, but the TPM wants a second pass for hidden risks, missing owners, weak assumptions, and gaps in the operating model.
 
-## Best used for
+## Why it matters
 
-- Pre leadership reviews
-- Pre launch reviews
-- Complex cross functional planning
-- Program recovery planning
-- Risk reviews
+This is the prompt for the moment when something feels fine, which is exactly when it is worth checking. A fresh review can find the loose end before it becomes the escalation.
 
-## Inputs
+## Inputs to gather
 
 - Program plan
-- Stakeholder list
-- Milestones
-- Risks
+- Current risks
 - Dependencies
-- Current status
+- Stakeholders
+- Timeline
+- Metrics
+- Known open questions
 
 ## Prompt
 
 ```text
-You are a director level TPM reviewing my program plan.
+Review the sanitized program context below and tell me what I may be missing.
 
-Challenge the plan and identify:
+Look for:
 1. Missing stakeholders
 2. Hidden dependencies
 3. Unclear ownership
@@ -35,31 +32,38 @@ Challenge the plan and identify:
 6. Compliance or security gaps
 7. Customer impact gaps
 8. Operational readiness gaps
-9. Communication gaps
+9. Decisions that are implied but not named
 10. Questions I should answer before the next review
 
-Be direct but constructive. Do not assume missing information is resolved.
+Be direct. I would rather find the gap now than in the executive review.
 
-Program plan:
-[paste sanitized plan]
+Context:
+[paste sanitized context]
 ```
 
 ## Expected output
 
-- Missing stakeholders
-- Hidden dependencies
-- Weak metrics
-- Timeline risks
-- Operational gaps
+- Potential gaps
 - Questions to answer
+- Hidden dependencies
+- Ownership issues
+- Risks to add to RAID
+- Recommended next action
 
 ## Human review checklist
 
-- Review with program owner
-- Confirm whether identified gaps are real
-- Add valid gaps to RAID log
-- Update the plan before leadership review
+- The output separates real gaps from guesses
+- Questions are specific
+- Risks are not exaggerated
+- Next action is clear
+- Sensitive details are removed
+
 
 ## Data handling notes
 
-Sanitize customer, security, and roadmap details before using this prompt.
+Sanitize internal, customer, security, legal, and commercial details before prompting.
+
+
+## Done when
+
+The review is ready when it gives the TPM at least one concrete thing to confirm, close, or escalate.

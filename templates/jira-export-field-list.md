@@ -1,6 +1,6 @@
 # Jira Export Field List
 
-Use these fields when exporting Jira data for TPM prompt workflows.
+Use these fields when exporting Jira data for TPM prompt workflows. Export the smallest useful set. More fields usually means more cleanup, not better output.
 
 ## Recommended fields
 
@@ -28,25 +28,18 @@ Use these fields when exporting Jira data for TPM prompt workflows.
 
 ## Fields to review before prompting
 
-Remove or sanitize:
+Review and remove or sanitize:
 
-- Customer identifiers
-- Internal URLs
-- Restricted security details
-- Logs
-- Secrets
-- Architecture details
+- Customer names
+- Internal links
+- Sensitive technical details
+- Security findings
+- Incident details
 - Personal data
-- Commercial details
+- Commercial context
+- Proprietary implementation details
+- Comments that include confidential discussion
 
-## Useful derived fields
+## TPM note
 
-Add these in a spreadsheet before prompting:
-
-- Days since last update
-- Missing owner flag
-- Missing due date flag
-- Blocked without dependency flag
-- Past due flag
-- No acceptance criteria flag
-- No linked dependency flag
+Jira is the system of record for work, but it is not always written for leadership. Use the export to ground the facts, then translate the work into outcomes, risks, and decisions.

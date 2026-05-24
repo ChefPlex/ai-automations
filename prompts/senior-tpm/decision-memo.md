@@ -1,36 +1,30 @@
 # Decision Memo Prompt
 
-## Purpose
+## Use this when
 
-Create a structured memo that clarifies a decision, options, tradeoffs, recommendation, and consequences of delay.
+A program is stuck between options and needs a clear recommendation, not another open-ended discussion.
 
-## Best used for
+## Why it matters
 
-- Architecture tradeoffs
-- Scope decisions
-- Launch decisions
-- Resource allocation
-- Risk acceptance
-- Compliance sequencing
-- Platform migration choices
+Decision memos are where a TPM earns trust. The memo should make the options, tradeoffs, risks, and recommendation clear enough that the decision owner can act.
 
-## Inputs
+## Inputs to gather
 
 - Decision needed
 - Background
-- Options
-- Constraints
+- Options considered
+- Customer or business impact
+- Engineering impact
+- Cost or capacity impact
 - Risks
-- Timeline
-- Stakeholders
-- Recommendation, if known
+- Deadline
 
 ## Prompt
 
 ```text
-You are helping me write a decision memo as a senior TPM.
+Help me write a decision memo using the sanitized context below.
 
-Create a structured memo with:
+Create a memo with:
 1. Decision needed
 2. Background
 3. Problem statement
@@ -42,9 +36,9 @@ Create a structured memo with:
 9. Engineering impact
 10. Cost or capacity impact
 11. Consequences of no decision
-12. Proposed decision owner and deadline
+12. Decision owner and needed-by date
 
-Make assumptions explicit. Do not invent facts. Identify missing information that would improve the decision.
+Do not pretend the options are equal if the evidence supports a recommendation. Also do not hide the tradeoffs just because the recommendation is clear.
 
 Context:
 [paste sanitized context]
@@ -52,21 +46,30 @@ Context:
 
 ## Expected output
 
-- Decision memo
+- Decision summary
+- Background
 - Options table
 - Recommendation
-- Decision owner
-- Deadline
-- Missing information
+- Tradeoffs
+- Risks
+- Impact summary
+- Decision owner and date
 
 ## Human review checklist
 
-- Does the decision owner have authority?
-- Are tradeoffs balanced?
-- Are risks accurate?
-- Are customer and business impacts validated?
-- Is legal, security, privacy, or compliance review needed?
+- Recommendation is supported by evidence
+- Tradeoffs are honest
+- No option is oversold
+- Decision owner is named
+- Consequences of waiting are clear
+- Sensitive data is removed
+
 
 ## Data handling notes
 
-Remove customer names, financial details, and restricted technical specifics unless approved.
+Remove customer, financial, legal, and security details unless approved for use.
+
+
+## Done when
+
+The memo is ready when the decision owner can say yes, no, or needs more data without first asking what the decision is.

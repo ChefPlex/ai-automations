@@ -1,44 +1,39 @@
 # Influence Without Authority Plan Prompt
 
-## Purpose
+## Use this when
 
-Create a stakeholder influence plan for TPMs who need alignment without direct management authority.
+A TPM needs commitment from teams or leaders who do not report to them.
 
-## Best used for
+## Why it matters
 
-- Cross functional programs
-- Platform migrations
-- Security adoption programs
-- Compliance deadlines
-- Customer trust initiatives
-- Executive alignment
+Influence works better when the TPM understands what each person cares about, what decision they affect, and what information would help them say yes.
 
-## Inputs
+## Inputs to gather
 
 - Program goal
-- Stakeholders
-- Known objections
-- Decision rights
+- Stakeholder list
+- Current friction
+- Decision needed
 - Timeline
-- Current blockers
+- Risks
+- Known objections
 
 ## Prompt
 
 ```text
-You are helping a senior TPM influence without authority.
-
-Create a stakeholder influence plan.
+Use the sanitized context below to create an influence plan.
 
 Include:
 1. Stakeholder map
-2. What each stakeholder cares about
-3. Their likely objections
-4. What data they need
+2. What each person or team cares about
+3. Likely objections
+4. Data they need
 5. How to engage them
 6. What decision they influence
 7. Escalation path
-8. Communication strategy
-9. Recommended next conversation
+8. Communication plan
+
+Keep this practical. Do not turn it into politics. The goal is clarity, trust, and movement.
 
 Context:
 [paste sanitized context]
@@ -47,18 +42,26 @@ Context:
 ## Expected output
 
 - Stakeholder map
-- Objection handling plan
+- Likely objections
 - Engagement plan
+- Decision influence map
 - Escalation path
-- Next conversations
+- Communication plan
 
 ## Human review checklist
 
-- Avoid assuming negative intent
-- Confirm stakeholder motivations
-- Use the plan to prepare conversations, not manipulate people
-- Keep communication respectful and transparent
+- No one is caricatured
+- Objections are treated fairly
+- Engagement plan is respectful
+- Decision influence is clear
+- Escalation path is appropriate
+
 
 ## Data handling notes
 
-Avoid pasting sensitive personnel or performance details.
+Remove names if roles are enough. Do not paste HR-sensitive, personal, or confidential performance information.
+
+
+## Done when
+
+The plan is ready when the TPM knows who to talk to, what to ask, and what concern to address first.

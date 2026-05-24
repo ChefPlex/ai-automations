@@ -2,7 +2,7 @@
 
 ## Launch summary
 
-The launch introduces a new platform control for a defined set of internal services. The target launch date is next Wednesday, pending completion of monitoring validation and support readiness sign off.
+The launch introduces a new platform control for a defined set of internal services. The target launch date is next Wednesday, pending completion of monitoring validation and support runbook sign off.
 
 ## Readiness status
 
@@ -27,9 +27,13 @@ The launch introduces a new platform control for a defined set of internal servi
 
 | Risk | Impact | Mitigation |
 |---|---|---|
-| Monitoring gap at launch | Slower detection of post launch issues | Complete dashboard validation before go decision |
-| Support readiness incomplete | Higher operational burden on engineering | Complete runbook review and support briefing |
+| Monitoring gap at launch | Slower detection of post-launch issues | Complete dashboard validation before go decision |
+| Support runbook not approved | Support team may not have clean handoff | Final support review scheduled for Tuesday |
 
 ## Recommendation
 
-Conditional Go. Proceed only if monitoring validation is complete by Monday and support runbook sign off is complete by Tuesday. If either condition is missed, recommend No Go until readiness evidence is available.
+Conditional go. Proceed only if monitoring validation completes by Monday and support runbook sign off completes by Tuesday. If either item slips, move the launch rather than launch with known operational gaps.
+
+## TPM note
+
+This is not a no. It is a conditional yes with two gates that actually matter.

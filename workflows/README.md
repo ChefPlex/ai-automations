@@ -1,6 +1,8 @@
 # Workflows
 
-This directory contains end to end TPM workflows that combine prompts, source systems, review steps, and publishing guidance.
+This directory contains end-to-end TPM workflows that combine prompts, source systems, review steps, and publishing guidance.
+
+A prompt is useful. A workflow is better because it tells the TPM where the input comes from, how to clean it up, what to ask for, and where the final answer needs to land.
 
 ## Workflows included
 
@@ -12,7 +14,7 @@ This directory contains end to end TPM workflows that combine prompts, source sy
 
 ## Workflow pattern
 
-Each workflow follows this structure:
+Each workflow follows the same basic structure:
 
 1. Goal
 2. Source systems
@@ -25,4 +27,4 @@ Each workflow follows this structure:
 
 ## Reminder
 
-A workflow is not complete until the right system of record is updated.
+A workflow is not complete until the right system of record is updated. If the update says the risk is mitigated but the RAID log still says open, the work is not actually closed.

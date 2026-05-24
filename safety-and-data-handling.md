@@ -2,13 +2,13 @@
 
 This guide explains how to use AI prompts safely in a TPM environment involving Google Workspace, Slack, Salesforce, and Jira.
 
-Always follow your company's approved AI usage, data classification, security, privacy, legal, and customer communication policies.
+Always follow your company's approved AI usage, data classification, security, privacy, legal, and customer communication policies. This file is practical guidance, not a substitute for those policies.
 
 ## Golden rule
 
 Only paste data into an AI tool when you are allowed to use that tool for that data.
 
-When uncertain, remove the data or ask the appropriate internal owner before using it.
+When uncertain, remove the data or ask the appropriate internal owner before using it. Not every useful prompt needs raw data. A clean summary is usually enough.
 
 ## Do not paste into unapproved AI tools
 
@@ -26,64 +26,79 @@ Do not paste:
 - Screenshots containing sensitive metadata
 - Slack threads that include confidential or personal information
 
+If that list feels long, good. It should. Most data handling problems start with someone pasting more context than the task required.
+
 ## Safer substitution patterns
 
-Use substitutions before prompting.
+Use placeholders that preserve meaning without carrying sensitive details.
 
-| Sensitive item | Safer replacement |
+| Sensitive source | Safer substitution |
 |---|---|
-| Customer name | Customer A, Customer B, Strategic Customer 1 |
-| Employee name | Engineer A, Product Lead B, Support Owner C |
-| Account value | High ARR account, renewal risk, enterprise segment |
-| Jira link | Jira Epic 1, Jira Story 2 |
-| Service name | Service A, Payment Service, Identity Service |
-| Vulnerability ID | Critical vulnerability, auth bypass risk, encryption gap |
-| Specific deadline | Date A, Q3 milestone, regulatory deadline |
-| Slack channel | Program channel, engineering channel |
+| Customer name | Customer A, large financial services customer, public sector account |
+| Account owner | Sales owner, Customer Success owner, Support lead |
+| Revenue amount | High, medium, low business impact, or approved range |
+| Internal service name | Service A, identity service, billing service, shared platform service |
+| Vulnerability detail | Security finding, control gap, remediation item |
+| Contract language | Customer commitment, renewal dependency, contractual concern |
+| Person name | Engineering owner, product owner, compliance owner |
+
+The goal is to keep enough signal to do the TPM work while removing details the model does not need.
 
 ## Prompting with Salesforce data
 
-Salesforce often contains customer, commercial, renewal, support, and escalation details. Treat it carefully.
+Salesforce can carry customer, commercial, renewal, support, legal, and relationship context. Treat it carefully.
 
 Before using Salesforce content:
 
-- Remove customer names unless the tool is approved for that data
-- Remove contact names and email addresses
-- Remove contract terms and commercial amounts unless approved
-- Replace opportunity names with generic labels
-- Summarize sensitive details instead of pasting raw notes
-- Remove support case IDs if they identify customers
-- Keep only the minimum context needed for the TPM task
+- Confirm the AI tool is approved for that data class
+- Remove or anonymize customer names unless explicitly approved
+- Remove contract terms, renewal dates, and revenue values unless approved
+- Remove customer contacts and personal information
+- Remove raw case comments if they contain sensitive details
+- Preserve the business signal in a safe form
+
+Safer pattern:
+
+```text
+A large enterprise customer in the healthcare segment has raised a support escalation tied to delayed delivery of Capability X. The account name, revenue value, and contract terms have been removed. The issue may affect renewal confidence if the milestone slips beyond Q3.
+```
+
+That gives enough context for a program update without carrying unnecessary detail.
 
 ## Prompting with Slack data
 
-Slack threads can include sensitive, informal, or incomplete information.
+Slack is messy by design. It often contains side comments, incomplete facts, customer references, personal data, screenshots, internal links, and opinions stated as facts.
 
 Before using Slack content:
 
-- Remove names if not needed
-- Remove confidential channel names
+- Summarize the thread instead of pasting the whole thing when possible
+- Remove people names unless needed
+- Remove customer names and internal links
 - Remove screenshots
 - Remove incident details if restricted
 - Remove secrets, logs, links, and pasted code
 - Do not treat Slack opinions as facts
-- Ask AI to separate facts from assumptions
+- Ask the model to separate facts from assumptions
+
+Slack is good for finding signals. It is not always good evidence by itself.
 
 ## Prompting with Jira data
 
-Jira is often safer than raw Slack, but it can still contain sensitive details.
+Jira is often cleaner than raw Slack, but it can still contain sensitive details.
 
 Before using Jira content:
 
 - Remove customer identifiers
-- Remove security details that are not approved for AI tools
-- Remove links to internal systems if unnecessary
+- Remove sensitive security details that are not approved for AI tools
+- Remove internal links if they are not needed
 - Preserve owners, status, due dates, and dependencies only when allowed
-- Validate AI outputs against Jira before publishing
+- Validate output against Jira before publishing
+
+Jira should be used to ground status. If the model says something is complete but Jira does not, trust Jira until a human confirms otherwise.
 
 ## Prompting with Google Workspace data
 
-Google Docs, Sheets, and Slides may contain executive, customer, legal, roadmap, or security sensitive content.
+Google Docs, Sheets, and Slides may contain executive, customer, legal, roadmap, or security-sensitive content.
 
 Before using Google Workspace content:
 
@@ -94,9 +109,11 @@ Before using Google Workspace content:
 - Remove legal and compliance review content unless approved
 - Paste only the section needed for the task
 
+The full document is rarely needed. A focused excerpt usually produces a better answer anyway.
+
 ## Human review checklist
 
-Before sending AI assisted output, confirm:
+Before sending AI-assisted output, confirm:
 
 - Dates are accurate
 - Owners are accurate
@@ -109,6 +126,8 @@ Before sending AI assisted output, confirm:
 - The decision ask is clear
 - The tone is appropriate for the audience
 - No sensitive data remains in the output
+
+This is the part where the TPM earns the update.
 
 ## Safe prompt pattern
 
@@ -125,7 +144,7 @@ Context:
 Here is the entire Slack thread, Salesforce account, Jira epic, customer contract, and incident report. Write an executive update.
 ```
 
-This pattern creates unnecessary data exposure and is likely to produce inaccurate or overconfident output.
+This pattern creates unnecessary data exposure and is likely to produce inaccurate or overconfident output. It also creates cleanup work nobody needed.
 
 ## When not to use AI
 
@@ -140,4 +159,6 @@ Do not use AI as the primary tool for:
 - Final go or no go launch approval
 - Final executive sign off
 
-AI can help structure materials for review, but accountable humans must make and approve decisions.
+AI can help structure material for review. Accountable humans still make and approve the decisions.
+
+PS: When the data is sensitive and the task is mostly judgment, talk to the right person instead of trying to prompt around the discomfort. Faster is not always safer.

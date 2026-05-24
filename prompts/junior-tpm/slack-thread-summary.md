@@ -1,61 +1,63 @@
 # Slack Thread Summary Prompt
 
-## Purpose
+## Use this when
 
-Summarize long Slack threads into issue summaries, options, decisions, owners, and next actions.
+A Slack thread has useful signal buried in discussion, side comments, and partial answers.
 
-## Best used for
+## Why it matters
 
-- Blocker threads
-- Cross functional alignment
-- Decision threads
-- Incident adjacent program conversations
-- Engineering support threads
+Slack is where blockers surface early, but it is not always where decisions are cleanly recorded. This prompt helps pull out the facts without treating every comment as truth.
 
-## Inputs
+## Inputs to gather
 
-- Sanitized Slack thread
+- Sanitized Slack thread or summary
 - Program context
-- Current milestone
-- Decision needed
+- Known decision needed
+- Relevant Jira or doc reference, if safe
 
 ## Prompt
 
 ```text
-You are a TPM summarizing a long Slack thread.
+Summarize the sanitized Slack thread below for TPM follow-up.
 
 Create:
-1. A short summary of the discussion
-2. The current issue
-3. The proposed options
-4. The apparent recommendation, if one exists
+1. Short summary of the discussion
+2. Current issue
+3. Proposed options
+4. Apparent recommendation, if one is supported by the thread
 5. Open questions
 6. People or roles who need to respond
 7. Suggested next Slack message
 
-Keep the tone collaborative and concise. Separate facts from assumptions. Do not treat opinions as confirmed decisions.
+Separate confirmed facts from assumptions. Do not treat opinions as decisions.
 
 Slack thread:
-[paste sanitized thread]
+[paste sanitized thread or summary]
 ```
 
 ## Expected output
 
-- Summary
-- Issue
+- Discussion summary
+- Current issue
 - Options
-- Recommendation
+- Recommendation if supported
 - Open questions
-- Responders needed
-- Suggested Slack reply
+- Suggested reply
 
 ## Human review checklist
 
-- Confirm whether a decision was actually made
-- Remove any sensitive content
-- Confirm names or replace with roles
-- Validate the suggested Slack reply before posting
+- Names and sensitive details are removed unless approved
+- No opinion is presented as fact
+- Decision status is clear
+- Suggested reply is respectful and direct
+- Next step is obvious
+
 
 ## Data handling notes
 
-Slack often contains informal comments, screenshots, and sensitive links. Sanitize before prompting.
+Slack may contain customer names, screenshots, personal data, internal links, incident details, or pasted code. Summarize first when possible.
+
+
+## Done when
+
+The summary is ready when it can be pasted into the program channel and reduce confusion instead of restarting the whole thread.

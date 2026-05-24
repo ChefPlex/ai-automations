@@ -1,29 +1,26 @@
 # Meeting Notes to Action Items Prompt
 
-## Purpose
+## Use this when
 
-Turn raw meeting notes into structured decisions, action items, owners, and follow ups.
+A meeting produced useful discussion, but the notes are messy and the team needs decisions, owners, and next steps pulled out cleanly.
 
-## Best used for
+## Why it matters
 
-- Program syncs
-- Design reviews
-- Launch readiness meetings
-- Escalation meetings
-- Stakeholder alignment sessions
+Meetings usually fail in the handoff. The value is not the notes. The value is knowing what was decided, what is still open, and who is doing what by when.
 
-## Inputs
+## Inputs to gather
 
-- Raw meeting notes
-- Attendee list, if approved
+- Meeting notes
+- Meeting purpose
+- Attendees or roles
 - Program context
-- Due dates mentioned
-- Decisions discussed
+- Known deadlines
+- Any decisions already confirmed
 
 ## Prompt
 
 ```text
-You are helping a junior TPM turn raw meeting notes into an action plan.
+Use the sanitized meeting notes below and turn them into a clean follow-up.
 
 Extract:
 1. Decisions made
@@ -32,12 +29,10 @@ Extract:
 4. Owners
 5. Due dates
 6. Risks raised
-7. Follow up meetings needed
+7. Follow-up meetings or reviews needed
 8. Items that need confirmation because the notes are unclear
 
-Write the action items in a format I can paste into Slack and Jira.
-
-Do not invent owners or due dates. If an owner or due date is unclear, mark it as "Needs confirmation."
+Write the action items in a format I can paste into Slack or Jira. Do not invent owners or dates. If they are missing, mark them as missing.
 
 Meeting notes:
 [paste sanitized notes]
@@ -45,21 +40,27 @@ Meeting notes:
 
 ## Expected output
 
-- Decisions
-- Action items
+- Decision list
 - Open questions
-- Risks
-- Follow up meetings
-- Confirmation needed
+- Action item table
+- Risks raised
+- Follow-up needed
+- Missing information
 
 ## Human review checklist
 
-- Confirm each owner
-- Confirm each date
-- Confirm that decisions were actually made
-- Remove informal or sensitive comments
-- Update Jira and Slack after review
+- Every action has an owner or is marked owner needed
+- Every date is confirmed or marked date needed
+- Decisions are not confused with discussion points
+- Risks are not softened
+- No sensitive information remains
+
 
 ## Data handling notes
 
-Remove names, confidential statements, customer details, and sensitive security information unless approved for the AI tool.
+Remove names, customer references, internal links, and restricted technical details unless they are approved for the AI tool.
+
+
+## Done when
+
+The follow-up is ready when someone who missed the meeting can understand what happened and what they owe.

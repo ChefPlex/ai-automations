@@ -1,46 +1,40 @@
 # Escalation Draft Prompt
 
-## Purpose
+## Use this when
 
-Draft a calm, factual, constructive escalation that names the blocker, impact, decision needed, and deadline.
+A blocker has not been resolved through normal channels and leadership help is needed.
 
-## Best used for
+## Why it matters
 
-- Cross team blockers
-- Missed dependency commitments
-- Resource gaps
-- Timeline risks
-- Unresolved decisions
-- Customer impacting issues
+Good escalations are factual and constructive. They do not blame people. They make the impact, prior attempts, needed support, and timing clear.
 
-## Inputs
+## Inputs to gather
 
-- What is blocked
-- Why it matters
-- Teams involved
-- Prior attempts to resolve
+- Blocked item
+- Program impact
 - Customer or business impact
-- Decision needed
+- Teams involved
+- Prior resolution attempts
+- Decision or support needed
 - Deadline
+- Recommended path
 
 ## Prompt
 
 ```text
-You are helping me write an escalation as a senior TPM.
+Help me write a factual escalation using the sanitized context below.
 
-Draft an escalation that is firm, factual, and constructive.
-
-Include:
+Draft an escalation that includes:
 1. What is blocked
 2. Why it matters
-3. Business, customer, security, compliance, or platform impact
+3. Business, customer, security, or compliance impact
 4. Teams involved
 5. Prior attempts to resolve
 6. Decision or support needed
 7. Deadline
 8. Recommended path forward
 
-Tone should be calm, direct, and leadership ready. Avoid blame. Do not exaggerate impact.
+Use a calm, direct tone. Do not blame the team. Do not soften the impact.
 
 Context:
 [paste sanitized context]
@@ -48,22 +42,27 @@ Context:
 
 ## Expected output
 
-- Escalation summary
-- Impact
-- Prior resolution attempts
-- Decision or help needed
+- Escalation message
+- Decision needed
 - Deadline
-- Recommended path forward
+- Recommended path
+- Risks if not resolved
 
 ## Human review checklist
 
-- Have affected teams been consulted?
-- Is the escalation audience correct?
-- Is impact accurate?
-- Is the ask specific?
-- Is the tone constructive?
-- Are customer or security details approved for this audience?
+- The blocker is specific
+- Impact is clear and approved for the audience
+- Prior attempts are factual
+- The ask is explicit
+- The deadline is justified
+- Tone is firm without being personal
+
 
 ## Data handling notes
 
-Escalations can expose sensitive business, customer, or performance information. Sanitize carefully.
+Remove sensitive customer, commercial, legal, security, and internal details unless approved.
+
+
+## Done when
+
+The escalation is ready when leadership knows exactly what help is needed and by when.

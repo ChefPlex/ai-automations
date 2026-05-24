@@ -1,46 +1,43 @@
 # Program Strategy Review Prompt
 
-## Purpose
+## Use this when
 
-Evaluate whether a program plan is strategically clear, executable, measurable, and leadership ready.
+A program plan needs a director-level challenge before it becomes the plan everyone starts executing.
 
-## Best used for
+## Why it matters
 
-- Program planning
-- Executive review prep
-- Portfolio planning
-- Annual planning
-- Compliance strategy
-- Platform migration strategy
+Plans usually look best before they meet dependencies. This review looks for weak goals, soft metrics, unclear owners, hidden risks, and timelines that rely on luck.
 
-## Inputs
+## Inputs to gather
 
 - Program plan
 - Goals
-- Metrics
-- Stakeholders
+- Success metrics
+- Scope
 - Timeline
+- Stakeholders
 - Dependencies
 - Risks
+- Executive ask
 
 ## Prompt
 
 ```text
-You are acting as a director level TPM reviewing a program strategy.
+Review the sanitized program plan below as a director-level TPM.
 
-Evaluate the program plan below and identify:
+Evaluate:
 1. Whether the goal is clear
 2. Whether success metrics are measurable
-3. Whether scope is realistic
+3. Whether the scope is realistic
 4. Whether ownership is clear
 5. Whether dependencies are understood
 6. Whether risks are surfaced
 7. Whether the timeline is credible
 8. Whether the executive ask is clear
 9. What is missing
-10. What I should challenge as the director
+10. What I should challenge before approving the plan
 
-Return a concise review with strengths, concerns, questions, and recommended changes.
+Return a concise review with strengths, concerns, questions, and recommended next steps.
 
 Program plan:
 [paste sanitized plan]
@@ -48,20 +45,26 @@ Program plan:
 
 ## Expected output
 
-- Strategy assessment
 - Strengths
 - Concerns
-- Director challenge questions
-- Recommended changes
+- Questions to ask
+- Risks to challenge
+- Recommended next steps
 
 ## Human review checklist
 
-- Validate with program owner
-- Confirm metrics are measurable
-- Confirm executive ask is actionable
-- Confirm scope aligns to resources
-- Confirm risks are owned
+- Goals and metrics are tested
+- Ownership gaps are visible
+- Timeline risk is called out plainly
+- Executive ask is clear
+- Next steps are specific
+
 
 ## Data handling notes
 
-Do not include restricted roadmap, customer, or security details unless approved.
+Remove sensitive roadmap, customer, financial, security, and legal details unless approved.
+
+
+## Done when
+
+The review is ready when the program owner knows what to fix before the plan goes forward.

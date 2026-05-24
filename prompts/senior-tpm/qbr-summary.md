@@ -1,24 +1,21 @@
 # QBR Summary Prompt
 
-## Purpose
+## Use this when
 
-Create a quarterly business review summary that connects delivery, outcomes, risks reduced, lessons learned, and next quarter priorities.
+A quarter is closing and the TPM needs to turn delivery, risk, customer, and execution data into a clear business review.
 
-## Best used for
+## Why it matters
 
-- QBRs
-- Operating reviews
-- Portfolio reviews
-- Leadership summaries
-- Annual planning inputs
+A good QBR is not a victory lap or a task list. It explains what was committed, what changed, what was delivered, what risk was reduced, and what needs attention next.
 
-## Inputs
+## Inputs to gather
 
-- Quarterly commitments
+- Quarter goals
 - Delivered work
+- Missed or moved work
 - Metrics
-- Jira summaries
-- Salesforce customer signals
+- Customer signals
+- Security or compliance impact
 - Risks reduced
 - Lessons learned
 - Next quarter priorities
@@ -26,9 +23,9 @@ Create a quarterly business review summary that connects delivery, outcomes, ris
 ## Prompt
 
 ```text
-You are helping me prepare a quarterly business review summary.
+Help me prepare a QBR program summary using the sanitized context below.
 
-Create a QBR ready program summary with:
+Create a summary with:
 1. What we committed to
 2. What we delivered
 3. What changed
@@ -40,18 +37,19 @@ Create a QBR ready program summary with:
 9. Lessons learned
 10. Next quarter priorities
 11. Leadership asks
+12. Missing information
 
-Use concise executive language. Do not overstate impact beyond the evidence provided. Identify missing metrics.
+Keep it concise and factual. Do not overstate impact if the evidence is incomplete.
 
 Context:
-[paste sanitized quarterly notes, Jira data, Salesforce signals, and status updates]
+[paste sanitized context]
 ```
 
 ## Expected output
 
-- QBR narrative
-- Outcome summary
-- Metrics table
+- QBR summary
+- Commitment vs delivery view
+- Impact summary
 - Risks reduced
 - Lessons learned
 - Next quarter priorities
@@ -59,12 +57,19 @@ Context:
 
 ## Human review checklist
 
-- Validate metrics
-- Validate customer impact
-- Validate leadership asks
-- Confirm alignment with portfolio priorities
-- Remove sensitive customer or financial details unless approved
+- Metrics are accurate
+- Impact claims are supported
+- Misses are not hidden
+- Risks reduced are real
+- Next quarter asks are clear
+- Sensitive data is removed
+
 
 ## Data handling notes
 
-QBRs often combine customer, financial, roadmap, and security information. Use approved tools and sanitize context.
+Be careful with customer, revenue, legal, and security details. Use approved summaries where possible.
+
+
+## Done when
+
+The summary is ready when it gives leadership a fair view of the quarter and a clear view of what comes next.

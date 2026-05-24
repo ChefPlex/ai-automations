@@ -1,35 +1,30 @@
 # Launch Readiness Review Prompt
 
-## Purpose
+## Use this when
 
-Prepare a launch readiness review with readiness status, risks, blockers, rollback plan, and go or no go recommendation.
+A launch is close enough that the team needs a go or no go view across engineering, security, support, communications, and operations.
 
-## Best used for
+## Why it matters
 
-- Product launches
-- Platform migrations
-- Security control rollouts
-- Compliance deadlines
-- Customer facing changes
-- Internal platform changes
+Launch readiness should not be a confidence exercise. It should make gaps visible early enough to fix them, accept them, or move the date.
 
-## Inputs
+## Inputs to gather
 
 - Launch scope
-- Milestones
-- Engineering status
-- Security status
-- Support readiness
-- Customer communication plan
-- Rollback plan
+- Launch date
+- Readiness tracker
+- Jira status
+- Security review status
+- Support plan
+- Monitoring and rollback plan
 - Known risks
 
 ## Prompt
 
 ```text
-You are helping me run a launch readiness review.
+Help me prepare a launch readiness review using the sanitized context below.
 
-Create a launch readiness checklist covering:
+Create a readiness checklist covering:
 1. Product readiness
 2. Engineering readiness
 3. Security readiness
@@ -42,8 +37,9 @@ Create a launch readiness checklist covering:
 10. Known risks
 11. Launch decision criteria
 12. Go or no go recommendation
+13. Missing information
 
-Separate confirmed facts from assumptions. Do not recommend Go if critical readiness evidence is missing.
+Do not recommend go unless the evidence supports it. If something is unknown, call it unknown.
 
 Context:
 [paste sanitized context]
@@ -51,23 +47,27 @@ Context:
 
 ## Expected output
 
-- Readiness checklist
+- Readiness table
 - Open blockers
-- Risks and mitigations
+- Top risks
 - Decision criteria
-- Go, No Go, or Conditional Go recommendation
-- Missing evidence
+- Go or no go recommendation
+- Missing information
 
 ## Human review checklist
 
-- Engineering approves readiness
-- Security approves readiness
-- Support approves readiness
-- Product approves customer messaging
-- Rollback plan is validated
-- Monitoring is live
-- Decision maker approves final launch decision
+- Readiness status is evidence-based
+- Rollback is real and tested or clearly not tested
+- Support readiness is confirmed
+- Security risks are approved
+- Decision criteria are explicit
+
 
 ## Data handling notes
 
-Remove unreleased product details, customer identifiers, and restricted architecture information unless approved.
+Remove unreleased product details, customer-specific plans, security details, and internal links unless approved.
+
+
+## Done when
+
+The review is ready when the decision owner can make a go or no go call without hunting for missing context.

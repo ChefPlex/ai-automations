@@ -1,31 +1,26 @@
 # Acceptance Criteria Builder Prompt
 
-## Purpose
+## Use this when
 
-Improve Jira ticket quality by making acceptance criteria clear, testable, and aligned to program goals.
+A Jira ticket is too vague for engineering, QA, security, support, or a program reviewer to know what done means.
 
-## Best used for
+## Why it matters
 
-- Jira story cleanup
-- Sprint planning
-- Milestone planning
-- Engineering handoff
-- QA validation planning
+Unclear acceptance criteria create rework. They also create polite disagreement at exactly the wrong time, usually near a milestone.
 
-## Inputs
+## Inputs to gather
 
-- Jira ticket draft
+- Existing Jira ticket
 - Program goal
-- Expected behavior
+- Expected user or system behavior
 - Validation method
-- Dependencies
+- Known dependencies
+- Out of scope items
 
 ## Prompt
 
 ```text
-You are helping a junior TPM improve Jira ticket quality.
-
-Rewrite the Jira ticket below so that the acceptance criteria are clear, testable, and aligned to the program goal.
+Rewrite the sanitized Jira ticket below so the acceptance criteria are clear, testable, and tied to the program goal.
 
 Include:
 1. Improved summary
@@ -36,7 +31,7 @@ Include:
 6. Validation method
 7. Questions for the engineering owner
 
-Do not add technical requirements that are not supported by the context. Mark uncertain items as questions.
+Do not add requirements that are not supported by the context. Mark missing information clearly.
 
 Jira ticket:
 [paste sanitized ticket]
@@ -44,21 +39,28 @@ Jira ticket:
 
 ## Expected output
 
-- Improved Jira summary
+- Improved ticket summary
 - Improved description
 - Acceptance criteria
-- Out of scope
+- Out of scope list
 - Dependencies
 - Validation method
-- Engineering questions
+- Owner questions
 
 ## Human review checklist
 
-- Engineering owner approves technical details
 - Acceptance criteria are testable
-- Scope is clear
-- Dependencies are linked in Jira
+- Out of scope is explicit
+- Dependencies are named
+- Validation can be performed by a human or system
+- No unsupported requirements were added
+
 
 ## Data handling notes
 
-Remove internal links, customer identifiers, and sensitive implementation details before prompting.
+Remove internal links, customer names, security details, and proprietary implementation details unless approved.
+
+
+## Done when
+
+The ticket is ready when an engineer can start work and a reviewer can tell whether the work is complete.

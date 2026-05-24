@@ -1,30 +1,28 @@
 # Blameless Retrospective Prompt
 
-## Purpose
+## Use this when
 
-Create a structured retrospective that identifies what happened, root causes, missed signals, decision points, process gaps, technical gaps, and prevention actions.
+A launch, incident, milestone, or program phase needs a retrospective that is honest without becoming personal.
 
-## Best used for
+## Why it matters
 
-- Program retrospectives
-- Launch retrospectives
-- Missed milestone reviews
-- Escalation retrospectives
-- Post incident adjacent program reviews
+A useful retrospective does not ask who failed. It asks what signals were missed, what decisions mattered, what process broke, and how to prevent the same problem next time.
 
-## Inputs
+## Inputs to gather
 
+- Event summary
 - Timeline
-- Program notes
+- What went well
+- What did not go well
+- Impact
 - Decisions made
-- Risks known at the time
-- Outcomes
-- Stakeholder feedback
+- Signals missed
+- Action items
 
 ## Prompt
 
 ```text
-You are helping me run a blameless program retrospective.
+Help me prepare a blameless program retrospective using the sanitized context below.
 
 Create a retrospective covering:
 1. What happened
@@ -40,7 +38,7 @@ Create a retrospective covering:
 11. Owners
 12. Prevention plan
 
-Use a blameless tone. Focus on systems, signals, decisions, and improvements rather than individual blame.
+Keep the language factual and respectful. Do not assign blame. Do not avoid uncomfortable facts.
 
 Context:
 [paste sanitized context]
@@ -48,21 +46,29 @@ Context:
 
 ## Expected output
 
-- Retrospective draft
+- Retrospective summary
 - Timeline
+- What worked
+- What did not
 - Root causes
-- Gaps
-- Actions
+- Missed signals
+- Action items
 - Prevention plan
 
 ## Human review checklist
 
-- Remove names if not necessary
-- Validate timeline
-- Confirm root causes with stakeholders
-- Convert actions into tracked work
-- Avoid blame language
+- Language is blameless
+- Root causes are supported by evidence
+- Action items have owners
+- Prevention steps are concrete
+- Sensitive incident or customer details are removed
+
 
 ## Data handling notes
 
-Do not paste HR, personnel, sensitive incident, or customer data into unapproved AI tools.
+Be careful with incident, security, HR, customer, and performance-sensitive information. Use approved summaries.
+
+
+## Done when
+
+The retrospective is ready when the team can learn from the issue without turning the review into a courtroom.

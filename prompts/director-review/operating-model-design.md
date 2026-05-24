@@ -1,31 +1,28 @@
 # Operating Model Design Prompt
 
-## Purpose
+## Use this when
 
-Design a repeatable operating model for a complex cross functional program.
+A complex program needs clearer governance, meetings, decision rights, escalation paths, and reporting rhythm.
 
-## Best used for
+## Why it matters
 
-- Large scale platform programs
-- Security programs
-- Compliance programs
-- Migration programs
-- Multi quarter initiatives
+Without an operating model, teams improvise. Sometimes that works. Usually it creates duplicate meetings, unclear decisions, and escalation by surprise.
 
-## Inputs
+## Inputs to gather
 
-- Program scope
+- Program goal
+- Teams involved
 - Workstreams
-- Teams
-- Milestones
-- Governance needs
-- Reporting expectations
-- Tooling environment
+- Decision makers
+- Current cadence
+- Risks
+- Systems of record
+- Executive review needs
 
 ## Prompt
 
 ```text
-You are helping me design an operating model for a complex cross functional program.
+Use the sanitized context below to design a program operating model.
 
 Create:
 1. Governance structure
@@ -34,12 +31,13 @@ Create:
 4. Escalation path
 5. Status reporting model
 6. Jira structure
-7. Slack channel strategy
-8. Google Drive structure
-9. Metrics dashboard
+7. Slack channel plan
+8. Google Drive or docs structure
+9. Metrics dashboard approach
 10. Risk review process
 11. Executive review cadence
-12. Program artifact set
+
+Keep the model as light as possible while still giving the program enough structure to run well.
 
 Context:
 [paste sanitized context]
@@ -48,20 +46,26 @@ Context:
 ## Expected output
 
 - Operating model
-- Governance structure
 - Meeting cadence
-- Decision model
-- Tooling structure
-- Metrics model
+- Decision rights
+- Escalation path
+- System of record plan
+- Metrics and risk review model
 
 ## Human review checklist
 
-- Confirm meeting load is reasonable
-- Confirm decision owners
-- Confirm system of record
-- Confirm executive cadence
-- Confirm team capacity
+- Meetings have a clear purpose
+- Decision rights are named
+- Escalation path is realistic
+- Systems of record are clear
+- The model is not heavier than the program needs
+
 
 ## Data handling notes
 
-Remove sensitive org structure, customer details, and restricted program names unless approved.
+Remove internal links and sensitive details that are not needed for operating model design.
+
+
+## Done when
+
+The model is ready when a new team can join the program and understand how work, decisions, risks, and updates flow.

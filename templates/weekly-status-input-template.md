@@ -1,5 +1,7 @@
 # Weekly Status Input Template
 
+Use this template before running a weekly status prompt. The goal is to collect the facts once, cleanly, before asking the model to shape the update.
+
 ## Program
 
 Program name:
@@ -20,7 +22,7 @@ Program health this week:
 |---|---|---|---|
 | | | | |
 
-## In progress work
+## Work in progress
 
 | Work item | Owner | Target date | Status | Notes |
 |---|---|---|---|---|
@@ -28,32 +30,34 @@ Program health this week:
 
 ## Risks
 
-| Risk | Impact | Owner | Mitigation | Escalation threshold |
+| Risk | Impact | Owner | Mitigation | Escalation point |
 |---|---|---|---|---|
 | | | | | |
 
 ## Blockers
 
-| Blocker | Impact | Owner | Help needed | Deadline |
-|---|---|---|---|---|
-| | | | | |
+| Blocker | Owner | Needed by | Help needed |
+|---|---|---|---|
+| | | | |
 
 ## Decisions needed
 
-| Decision | Owner | Options | Recommendation | Needed by |
-|---|---|---|---|---|
-| | | | | |
+| Decision | Owner | Needed by | Recommendation |
+|---|---|---|---|
+| | | | |
 
-## Customer or business signals
+## Customer or business signal
 
-Use sanitized summaries only.
+Use approved and sanitized context only.
 
-- 
-
-## Next week focus
-
-- 
+| Segment or customer alias | Signal | Program implication | Approved for audience |
+|---|---|---|---|
+| | | | |
 
 ## Missing information
 
--
+- 
+
+## Notes for the TPM
+
+If the health color changed, explain why. If it did not change but risk increased, say that too. Leaders can work with a clear Yellow. They cannot work with a polite Green that should have been Yellow.

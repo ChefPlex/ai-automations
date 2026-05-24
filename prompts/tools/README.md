@@ -1,22 +1,18 @@
-# Tool Specific Prompt Packs
+# Tool Prompt Packs
 
-This directory contains prompt patterns optimized for common TPM tools.
+These prompt packs are organized around the systems TPMs use every day: Google Workspace, Slack, Salesforce, and Jira.
 
-## Tools covered
+Each tool carries a different kind of signal. Jira shows execution. Slack shows friction. Salesforce shows customer and business pressure. Google Workspace usually holds the narrative, the plan, and the decision record.
 
-- Google Workspace
-- Slack
-- Salesforce
-- Jira
+The TPM job is to connect those signals without confusing one for another.
 
-## Usage pattern
+## Prompt packs
 
-1. Export or summarize only the minimum data needed.
-2. Sanitize sensitive information.
-3. Choose the prompt that maps to the source tool.
-4. Convert the output into the destination artifact.
-5. Update the correct system of record.
+- `google-workspace.md`: Docs, Sheets, and Slides support
+- `slack.md`: Thread summaries, blocker removal, getting teams aligned, deescalation
+- `salesforce.md`: Customer signals, escalation briefs, business risk summaries
+- `jira.md`: Epic reviews, roadmap summaries, sprint risk, executive translation
 
 ## Reminder
 
-AI output is not a system of record. Jira, Salesforce, approved Google Docs, official dashboards, and formal approval systems remain the source of truth.
+Do not paste raw data into a model just because it is available. Use the smallest useful context and keep the system of record clean afterward.

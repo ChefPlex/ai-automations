@@ -1,18 +1,18 @@
 # Salesforce Prompt Pack
 
-Prompts for turning Salesforce account, case, opportunity, and customer signal data into TPM program insights.
+Salesforce carries customer and business signal. Treat it carefully.
+
+Use these prompts only with approved, sanitized context. Most of the time, the model does not need the customer name, exact revenue, renewal date, contract language, or account notes to help a TPM understand the program implication.
 
 ## Customer Signal Summary
 
 ```text
-You are helping me summarize Salesforce customer signals for a program review.
-
-Analyze the following account, case, opportunity, or support notes.
+Use the sanitized Salesforce context below to summarize customer signals for a program review.
 
 Return:
-1. Customer names or anonymized segments
+1. Customer names only if approved, otherwise anonymized segments
 2. Common pain points
-3. Revenue or renewal relevance, if available and approved for use
+3. Revenue or renewal relevance, only if available and approved for use
 4. Product or platform capability involved
 5. Severity
 6. Trend across customers
@@ -28,49 +28,51 @@ Salesforce context:
 ## Customer Escalation Brief
 
 ```text
-Create a customer escalation brief.
+Create a customer escalation brief from the sanitized context below.
 
 Include:
-1. Customer or anonymized customer segment
-2. Account context
+1. Customer or anonymized segment
+2. Account context, only if approved
 3. Issue summary
 4. Business impact
 5. Technical impact
 6. Current owner
 7. Current mitigation
-8. Long term fix
+8. Long-term fix
 9. Timeline
 10. Risks
 11. Executive ask
 12. Customer communication recommendation
 
+Keep the brief factual. Do not create commitments that have not been approved.
+
 Context:
 [paste sanitized Salesforce and program context]
 ```
 
-## Connect Program Work to Revenue Risk
+## Connect Program Work to Business Risk
 
 ```text
-You are helping me connect platform work to business impact.
+Use the sanitized Salesforce context below to connect platform work to business impact.
 
-Using the Salesforce context below, identify:
-1. Which customers or segments are impacted
-2. Whether this relates to open opportunities, renewals, escalations, or support cases
-3. The likely business risk
+Identify:
+1. Customers or segments impacted
+2. Whether this relates to opportunities, renewals, escalations, or support cases
+3. Likely business risk, only if supported by the context
 4. How the program reduces that risk
-5. What metric could show impact
+5. Metric that could show impact
 6. How to explain this to executives without overstating the data
 
 Context:
-[paste sanitized Salesforce context]
+[paste sanitized context]
 ```
 
 ## Customer Theme Detection
 
 ```text
-Review these Salesforce notes and identify recurring themes.
+Review the sanitized Salesforce notes below and identify recurring themes.
 
-Group the themes by:
+Group themes by:
 1. Security
 2. Reliability
 3. Performance
@@ -80,12 +82,16 @@ Group the themes by:
 7. Documentation
 8. Adoption blocker
 
-For each theme, include supporting examples, affected customer segments, recommended owner, and program implication.
+For each theme, include supporting examples, affected segment, recommended owner, and program implication.
 
 Salesforce notes:
 [paste sanitized notes]
 ```
 
-## Data handling notes
+## Review before publishing
 
-Salesforce can contain customer names, contacts, commercial terms, legal commitments, support history, renewal risk, and account strategy. Use only approved AI tools and sanitize context before prompting.
+- Confirm Salesforce data is approved for the AI tool
+- Remove customer names unless approved
+- Remove revenue, renewal, contract, and commercial details unless approved
+- Do not create customer commitments
+- Validate conclusions with Sales, Support, Customer Success, Product, or Engineering as needed

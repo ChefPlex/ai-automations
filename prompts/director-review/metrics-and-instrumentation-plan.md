@@ -1,33 +1,29 @@
 # Metrics and Instrumentation Plan Prompt
 
-## Purpose
+## Use this when
 
-Define measurable program metrics across outcomes, execution, quality, risk, adoption, customer impact, and operational health.
+A program needs better metrics than percent complete and a few optimistic milestone dates.
 
-## Best used for
+## Why it matters
 
-- Program charters
-- Executive updates
-- QBRs
-- Launch readiness
-- Operational reviews
-- Compliance tracking
+Metrics should tell the team whether risk is going down, quality is improving, adoption is happening, and the program is producing the outcome it promised.
 
-## Inputs
+## Inputs to gather
 
-- Program goal
-- Success criteria
-- Data sources
+- Program objective
+- Business or customer goal
 - Current metrics
-- Dashboard options
-- Review cadence
+- Source systems
+- Milestones
+- Risks
+- Teams involved
 
 ## Prompt
 
 ```text
-You are helping me define program metrics.
+Help me define a metrics and instrumentation plan using the sanitized context below.
 
-Create a metrics plan with:
+Create a plan with:
 1. Outcome metrics
 2. Execution metrics
 3. Quality metrics
@@ -38,9 +34,8 @@ Create a metrics plan with:
 8. Data source for each metric
 9. Review cadence
 10. Owner
-11. Caveats or measurement limitations
 
-Make sure each metric has a clear purpose and is not just activity tracking.
+Also identify metrics that look useful but may be misleading.
 
 Context:
 [paste sanitized context]
@@ -49,19 +44,26 @@ Context:
 ## Expected output
 
 - Metrics plan
-- Data source table
+- Data sources
 - Review cadence
 - Owners
-- Caveats
+- Misleading metrics to avoid
+- Open instrumentation gaps
 
 ## Human review checklist
 
-- Confirm data availability
-- Confirm dashboard ownership
-- Avoid vanity metrics
-- Validate metrics with stakeholders
-- Ensure privacy and data policies are followed
+- Metrics connect to outcomes
+- Data sources are real
+- Owners are clear
+- Review cadence is reasonable
+- Misleading metrics are flagged
+
 
 ## Data handling notes
 
-Do not paste restricted dashboards or customer level data into unapproved tools.
+Remove sensitive customer, production, commercial, and security details unless approved.
+
+
+## Done when
+
+The plan is ready when the team can tell whether the program is getting healthier or just getting busier.
