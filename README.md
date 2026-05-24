@@ -1,49 +1,20 @@
 # ai-automations
 
-AI-powered scripts, prompts, and workflows for TPM productivity and program management. Built from actual daily use: things that save real time on the job, not proof-of-concept demos.
+AI-assisted workflows, prompts, and templates for TPM productivity and program management.
+
+This is not a prompt dump. It is a working library for the parts of TPM work that are repetitive, messy, and easy to make worse with vague language: weekly status, executive updates, meeting notes, Jira hygiene, risk reviews, escalation drafts, launch readiness, customer signals, and program reviews.
 
 The point is not to replace judgment. The point is to remove some of the mechanical work so TPMs have more room for the work that actually requires judgment: clarifying ambiguity, surfacing risk, aligning teams, making tradeoffs, and helping leaders make better decisions.
 
-This repo is written from the perspective of a director-level Technical Program Manager leading platform security, infrastructure, compliance, customer trust, and engineering execution programs at enterprise scale.
+AI can help structure the first draft. The TPM still owns the facts, risk call, decision ask, and final artifact.
 
-## What is here now
+## What this is
 
-This repo contains a practical TPM AI workflow library for teams working across Google Workspace, Slack, Salesforce, and Jira.
+This repo contains practical AI workflows for TPMs working across Google Workspace, Slack, Salesforce, Jira, and normal meeting-note chaos.
 
-The first release covers the work TPMs do every week:
+The bar for inclusion is higher than having a prompt that worked once. A prompt that only works for one person in one meeting is not a tool yet. A tool is documented, reusable, safe to adapt, and clear enough that another TPM can use it without needing the backstory.
 
-- Weekly status reporting
-- Executive program updates
-- RAID log creation and cleanup
-- Jira hygiene reviews
-- Slack thread summaries
-- Meeting notes to action items
-- Decision memos
-- Escalation drafts
-- Dependency mapping
-- Risk burndown planning
-- Technical tradeoff analysis
-- Launch readiness reviews
-- QBR summaries
-- Customer signal summaries from Salesforce context
-- Director-level artifact reviews
-- Program strategy reviews
-- Operating model design
-- Influence without authority planning
-- Blameless retrospectives
-- Compliance intake workflows
-
-The bar for inclusion is higher than having a prompt that worked once. A prompt that only works for one person in one meeting is not really a tool yet. A tool is documented, reusable, safe to adapt, and clear enough that another TPM can use it without needing the backstory.
-
-## Why this exists
-
-TPMs spend a lot of time turning scattered inputs into usable program artifacts.
-
-A single weekly update might pull signal from Jira epics, Slack threads, Google Docs, Sheets, Salesforce cases, meeting notes, dashboards, and a few hallway conversations that never quite made it into a system of record. The writing is not always the hard part. The hard part is figuring out what changed, what is real, what is assumed, what is blocked, and what decision needs to happen next.
-
-This repo is meant to help with that middle step.
-
-AI can get a first pass into shape quickly. The TPM still owns the judgment. That is where the job is.
+Some files are more mature than others. Treat this as a working library: useful now, but still subject to hard editing as prompts survive real inputs.
 
 ## Start here
 
@@ -57,7 +28,69 @@ Read these first:
 6. [Director artifact critique prompt](prompts/director-review/artifact-critique.md)
 7. [Prompt quality rubric](prompt-quality-rubric.md)
 
-Not a big deal if you start somewhere else, but the safety file should come first. Bad inputs create bad outputs, and sometimes they create data handling problems no one needed.
+The safety file should come first. Bad inputs create bad outputs, and sometimes they create data handling problems no one needed.
+
+## Flagship workflows
+
+Start with these. They are the clearest examples of how this repo is meant to be used.
+
+| Workflow | Use it for | Why it matters |
+|---|---|---|
+| [Weekly status workflow](workflows/weekly-status-workflow.md) | Turning Jira, Slack, meeting notes, and RAID updates into a weekly status draft | Keeps status focused on what changed, what is blocked, and what decision is needed |
+| [Executive program update](prompts/senior-tpm/executive-program-update.md) | Preparing director or VP-level updates from sanitized program context | Separates facts, assumptions, risks, decisions, and asks |
+| [Meeting notes to actions](prompts/junior-tpm/meeting-notes-to-actions.md) | Converting messy meeting notes into decisions, owners, due dates, and open questions | Fixes the handoff problem after the meeting ends |
+| [Artifact critique](prompts/director-review/artifact-critique.md) | Reviewing TPM artifacts before leadership review | Makes the human review bar explicit before the artifact goes upstairs |
+
+## What is here now
+
+The first release focuses on common TPM workflows.
+
+### Execution hygiene
+
+- Weekly status reporting
+- Meeting notes to action items
+- Jira hygiene reviews
+- Slack thread summaries
+- RAID log creation and cleanup
+- Standup prep
+- Acceptance criteria cleanup
+
+### Leadership communication
+
+- Executive program updates
+- Decision memos
+- Escalation drafts
+- QBR summaries
+- Director-level artifact reviews
+
+### Program risk and readiness
+
+- Dependency mapping
+- Risk burndown planning
+- Technical tradeoff analysis
+- Launch readiness reviews
+- Compliance intake workflows
+- Customer escalation workflows
+
+### Operating model and review
+
+- Program strategy reviews
+- Operating model design
+- Influence without authority planning
+- Metrics and instrumentation planning
+- Blameless retrospectives
+
+## Why this exists
+
+TPMs spend a lot of time turning scattered inputs into usable program artifacts.
+
+A single weekly update might pull signal from Jira epics, Slack threads, Google Docs, Sheets, Salesforce cases, meeting notes, dashboards, and a few hallway conversations that never quite made it into a system of record.
+
+The writing is not always the hard part. The hard part is figuring out what changed, what is real, what is assumed, what is blocked, and what decision needs to happen next.
+
+This repo is meant to help with that middle step.
+
+AI can get a first pass into shape quickly. The TPM still owns the judgment. That is where the job is.
 
 ## Quick example
 
@@ -177,7 +210,7 @@ A useful TPM prompt usually needs:
 - Milestone or target date
 - Jira context
 - Slack context
-- Google Doc, Sheet, Slide, or meeting note context
+- Google Doc, Sheet, Slide, or meeting-note context
 - Salesforce customer signal context, when relevant and approved
 - Known risks
 - Known blockers
@@ -230,6 +263,21 @@ Customer A in the financial services segment has a renewal risk tied to delayed 
 
 That is usually enough for a useful program summary without carrying data you do not need.
 
+## Where this breaks
+
+This repo breaks when the prompts are treated as authority instead of drafting aids.
+
+Common failure modes:
+
+- The source data is stale, incomplete, or political.
+- Slack opinions get treated like confirmed facts.
+- Jira says Green because no one updated the ticket.
+- A polished executive summary hides a missing decision.
+- The model invents certainty because the prompt did not force assumptions into the open.
+- A TPM ships the draft without checking owners, dates, metrics, and risks.
+
+The dangerous output is not the obviously bad one. The dangerous output is clean, confident, and wrong.
+
 ## How this fits with the other repos
 
 This repo sits next to the broader TPM materials:
@@ -241,26 +289,18 @@ This repo sits next to the broader TPM materials:
 
 This repo is the AI layer. It helps turn messy inputs into better TPM artifacts faster.
 
-## What this is not
-
-This is not a collection of clever prompts for their own sake.
-
-It is not a shortcut around understanding the program.
-
-It is not a replacement for stakeholder conversations, engineering judgment, customer context, security review, legal review, or executive decision-making.
-
-It is a working set of tools for getting from scattered information to a clearer next step.
-
 ## Contribution standard
 
 A new prompt or workflow should be added only if it meets this standard:
 
-- It solves a real TPM problem
-- It explains when to use it
-- It names the inputs needed
-- It produces a useful artifact
-- It includes human review checks
-- It has data handling notes
-- It helps someone make a decision or reduce risk
+- It solves a real TPM problem.
+- It explains when to use it.
+- It names the inputs needed.
+- It includes the prompt or workflow steps.
+- It includes example input and output, or links to a sanitized example.
+- It explains where the prompt fails.
+- It includes human review checks.
+- It has data handling notes.
+- It helps someone make a decision or reduce risk.
 
-PS: If a prompt only makes something sound nicer, it probably does not belong here yet. Nice is fine. Useful is the bar.
+If a prompt only makes something sound nicer, it probably does not belong here yet. Nice is fine. Useful is the bar.
