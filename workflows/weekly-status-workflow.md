@@ -47,6 +47,7 @@ Before prompting:
 Help me prepare a weekly executive status update using the sanitized combined context below.
 
 Create:
+
 1. Program health as Green, Yellow, or Red
 2. One paragraph summary
 3. What changed this week
@@ -59,8 +60,18 @@ Create:
 Do not overstate progress. Separate facts from assumptions. Keep the output concise and useful.
 
 Context:
+
 [paste sanitized combined context]
 ```
+
+## Example
+
+See:
+
+- [Weekly status source input](../examples/weekly-status-source-input.md)
+- [Processed weekly status output](../examples/processed-weekly-status-output.md)
+
+These examples show the expected conversion from scattered Jira, Slack, RAID, and meeting-note signal into a status update someone can actually act on.
 
 ## Human review checklist
 
@@ -70,6 +81,7 @@ Context:
 - Dates are accurate
 - Customer or business impacts are approved for the audience
 - Decision ask is clear
+- Systems of record match the message
 
 ## Output artifacts
 
@@ -85,6 +97,12 @@ Context:
 - Slack program channel
 - Google Doc program tracker
 - Salesforce notes only if customer-facing follow-up is needed and approved
+
+## Where this fails
+
+This workflow works only as well as the source material. If Jira is stale, Slack has unconfirmed opinions, or the actual risk lives in side conversations, the generated update can look clean while missing the real problem.
+
+Do not let the status draft become the system of record. Use it to write the update, then make sure Jira, the RAID log, and the program tracker agree with what you are about to publish.
 
 ## Done when
 

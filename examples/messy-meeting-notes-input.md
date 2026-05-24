@@ -4,9 +4,9 @@ Fictional, sanitized example.
 
 ## Context
 
-Program: Project Atlas Encryption Migration  
-Meeting: Weekly execution sync  
-Audience for follow-up: Engineering leads, TPM, security partner  
+Program: Project Atlas Encryption Migration
+Meeting: Weekly execution sync
+Audience for follow-up: Engineering leads, TPM, security partner
 Target milestone: Q3 control validation
 
 ## Raw notes
@@ -21,3 +21,7 @@ Target milestone: Q3 control validation
 - Platform owner to confirm env access by Tuesday?
 - Someone needs to add observability dependency to Jira.
 - Decision needed: do we keep the current validation window or move it?
+
+## Notes for the prompt
+
+This is intentionally messy. The prompt should not invent certainty. The right output should separate confirmed facts, open questions, action items, risks, and items that need follow-up.

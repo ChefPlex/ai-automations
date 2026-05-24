@@ -23,6 +23,7 @@ Meetings usually fail in the handoff. The value is not the notes. The value is k
 Use the sanitized meeting notes below and turn them into a clean follow-up.
 
 Extract:
+
 1. Decisions made
 2. Open questions
 3. Action items
@@ -35,6 +36,7 @@ Extract:
 Write the action items in a format I can paste into Slack or Jira. Do not invent owners or dates. If they are missing, mark them as missing.
 
 Meeting notes:
+
 [paste sanitized notes]
 ```
 
@@ -47,18 +49,29 @@ Meeting notes:
 - Follow-up needed
 - Missing information
 
+## Example
+
+See:
+
+- [Messy meeting notes input](../../examples/messy-meeting-notes-input.md)
+- [Processed meeting notes output](../../examples/processed-meeting-notes-output.md)
+
+These examples show the intended behavior: clean up the notes, but do not pretend uncertainty is a decision.
+
 ## Human review checklist
 
 - Every action has an owner or is marked owner needed
 - Every date is confirmed or marked date needed
 - Decisions are not confused with discussion points
 - Risks are not softened
+- Unclear items are listed for confirmation
 - No sensitive information remains
-
 
 ## Data handling notes
 
 Remove names, customer references, internal links, and restricted technical details unless they are approved for the AI tool.
+
+Use roles instead of names when the name does not matter. Use fictional or generic program names in examples.
 
 ## Where this fails
 
@@ -66,7 +79,6 @@ This prompt cannot recover decisions that were never made. It can organize messy
 
 If the meeting notes are ambiguous, the correct output is not a cleaner lie. The correct output is a list of items that need confirmation.
 
-
 ## Done when
 
-The follow-up is ready when someone who missed the meeting can understand what happened and what they owe.
+The follow-up is ready when someone who missed the meeting can understand what happened, what they owe, what still needs confirmation, and what risk changed because of the meeting.
