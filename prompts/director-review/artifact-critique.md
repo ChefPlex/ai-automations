@@ -23,6 +23,7 @@ A good review does not just clean up writing. It tests whether the artifact has 
 Act as a director-level Technical Program Manager reviewing the artifact below.
 
 Evaluate it for:
+
 1. Strategic clarity
 2. Customer or business impact
 3. Technical depth
@@ -35,6 +36,7 @@ Evaluate it for:
 10. Missing information
 
 Then provide:
+
 1. Concise critique
 2. Stronger rewritten version
 3. Questions I should answer before sending
@@ -44,6 +46,7 @@ Then provide:
 Do not make the artifact sound more positive than the facts support.
 
 Artifact:
+
 [paste sanitized artifact]
 ```
 
@@ -55,6 +58,15 @@ Artifact:
 - Underestimated risks
 - Recommended next action
 
+## Example
+
+See:
+
+- [Artifact critique input](../../examples/artifact-critique-input.md)
+- [Artifact critique output](../../examples/artifact-critique-output.md)
+
+These examples show the intended behavior: make the artifact sharper, but do not hide the risk just because the rewrite sounds better.
+
 ## Human review checklist
 
 - The rewrite keeps the facts intact
@@ -62,12 +74,19 @@ Artifact:
 - Decision ask is clearer
 - Audience fit is improved
 - Missing information is explicit
-
+- The critique says what is actually wrong, not just what could be nicer
 
 ## Data handling notes
 
 Remove sensitive customer, security, legal, commercial, and internal details before prompting.
 
+If the artifact contains executive names, customer details, legal commitments, vulnerability details, or internal incident facts, sanitize or summarize those details before using an AI tool.
+
+## Where this fails
+
+This prompt can make weak content sound finished. That is useful for style, but dangerous for judgment.
+
+The failure mode is a polished artifact that still has no owner, no date, no real decision ask, or no honest risk statement. Do not accept the rewrite just because it reads better. Check that it is truer and more useful.
 
 ## Done when
 
