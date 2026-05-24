@@ -67,6 +67,14 @@ Context:
 
 Be careful with customer signals, security risks, legal commitments, and revenue impact. Use only approved and sanitized context.
 
+## Where this fails
+
+This prompt works best when the source material contains real signal: dates, owners, milestones, risks, blockers, and decisions needed.
+
+It works poorly when the input is mostly vague status language, stale Jira data, or Slack opinions that have not been confirmed. In those cases, the output may sound polished while still being wrong.
+
+Watch for the dangerous version of a bad output: a clean executive update that makes the program sound more certain than the evidence supports.
+
 
 ## Done when
 
