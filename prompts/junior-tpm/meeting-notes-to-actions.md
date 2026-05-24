@@ -60,6 +60,12 @@ Meeting notes:
 
 Remove names, customer references, internal links, and restricted technical details unless they are approved for the AI tool.
 
+## Where this fails
+
+This prompt cannot recover decisions that were never made. It can organize messy notes, but it should not invent agreement, owners, or dates.
+
+If the meeting notes are ambiguous, the correct output is not a cleaner lie. The correct output is a list of items that need confirmation.
+
 
 ## Done when
 
