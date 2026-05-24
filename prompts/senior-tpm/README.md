@@ -1,20 +1,20 @@
 # Senior TPM Prompts
 
-These prompts support complex program execution, leadership communication, technical tradeoffs, escalation management, launch readiness, and quarterly planning.
+These prompts support the work senior TPMs usually own: executive updates, decisions, escalations, dependencies, risk, tradeoffs, launch readiness, and quarterly summaries.
 
-## Recommended usage
+At this level, the output should not just report activity. It should explain what changed, why it matters, what risk remains, and what decision or tradeoff leadership needs to make.
 
-Use these prompts when you need to:
+## Good use cases
 
-- Brief executives
-- Make or request decisions
-- Escalate blockers
-- Map dependencies
-- Evaluate risks
-- Compare technical options
-- Prepare for launch
-- Summarize quarterly outcomes
+- Preparing an executive program update
+- Writing a decision memo
+- Drafting a factual escalation
+- Mapping dependencies across teams
+- Building a risk burndown plan
+- Comparing technical options
+- Running launch readiness
+- Preparing a QBR summary
 
-## Senior TPM principle
+## Senior TPM bar
 
-A senior TPM should use AI to sharpen judgment, not outsource judgment. The output should make the decision, tradeoff, or risk clearer than the raw data did.
+A senior TPM artifact should make leadership smarter faster. If it takes three paragraphs to find the ask, the artifact is not done yet.

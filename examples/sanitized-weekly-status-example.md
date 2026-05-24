@@ -47,3 +47,7 @@ The program remains on track for the Q3 control validation milestone, but health
 - Complete validation environment provisioning
 - Finalize support runbook
 - Update Jira dependencies and RAID log
+
+## TPM note
+
+This is a normal Yellow, not a fire drill. The risk is manageable if the two open items get owners and dates this week.

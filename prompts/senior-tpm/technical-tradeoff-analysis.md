@@ -1,33 +1,30 @@
 # Technical Tradeoff Analysis Prompt
 
-## Purpose
+## Use this when
 
-Prepare for a technical decision by comparing options across customer impact, engineering complexity, security risk, reliability, operational burden, compliance impact, and reversibility.
+A program needs to compare technical options and the TPM needs to frame the tradeoffs clearly for engineering and leadership.
 
-## Best used for
+## Why it matters
 
-- Architecture reviews
-- Migration planning
-- Platform design choices
-- Security controls
-- Reliability improvements
-- Build versus buy decisions
+Tradeoff analysis is not about making the TPM the architect. It is about making the decision visible: customer impact, complexity, risk, reversibility, timing, and long-term cost.
 
-## Inputs
+## Inputs to gather
 
-- Options being considered
-- Technical constraints
+- Options under consideration
 - Customer impact
+- Engineering constraints
+- Security considerations
+- Reliability considerations
+- Compliance needs
 - Timeline
-- Risk context
-- Engineering feedback
+- Operational impact
 
 ## Prompt
 
 ```text
-You are helping a senior TPM prepare for a technical tradeoff discussion.
+Use the sanitized context below to compare the technical options.
 
-Analyze the options below and compare them across:
+Compare each option across:
 1. Customer impact
 2. Engineering complexity
 3. Security risk
@@ -35,11 +32,11 @@ Analyze the options below and compare them across:
 5. Operational burden
 6. Compliance impact
 7. Time to deliver
-8. Long term maintainability
+8. Long-term maintainability
 9. Reversibility
 10. Recommendation
 
-Make assumptions explicit. Identify where engineering input is required. Do not create a final decision if the context is insufficient.
+Make assumptions explicit and identify where engineering input is required.
 
 Context:
 [paste sanitized context]
@@ -47,20 +44,27 @@ Context:
 
 ## Expected output
 
-- Options comparison table
-- Recommendation
+- Comparison table
 - Assumptions
+- Recommendation
+- Tradeoffs
 - Engineering questions
 - Decision needed
 
 ## Human review checklist
 
-- Engineering validates technical claims
-- Security validates risk claims
-- Product validates customer impact
-- Compliance validates regulatory claims
-- Decision owner is clear
+- Technical claims are validated or marked for engineering review
+- Security and reliability risks are not softened
+- Recommendation is tied to evidence
+- Reversibility is addressed
+- Missing data is visible
+
 
 ## Data handling notes
 
-Avoid including proprietary architecture, source code, vulnerability details, or restricted system diagrams in unapproved tools.
+Remove proprietary architecture details, vulnerability details, source code, and internal links unless approved.
+
+
+## Done when
+
+The analysis is ready when engineering can correct the technical details and leadership can understand the tradeoff.

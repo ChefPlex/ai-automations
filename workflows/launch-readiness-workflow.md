@@ -10,7 +10,7 @@ Prepare for a launch decision by confirming readiness across product, engineerin
 - Google Docs for launch plan
 - Google Sheets for readiness tracker
 - Slack for open blockers
-- Salesforce for customer impact, if applicable
+- Salesforce for customer impact, if applicable and approved
 
 ## Inputs to gather
 
@@ -31,64 +31,63 @@ Prepare for a launch decision by confirming readiness across product, engineerin
 
 Before prompting:
 
-- Remove unreleased product details if tool is not approved
-- Remove customer names unless approved
-- Remove restricted security and architecture details
-- Do not include sensitive launch dependencies in unapproved tools
+- Remove unreleased product details unless approved
+- Remove customer names and communication details unless approved
+- Remove sensitive security or architecture details
+- Confirm launch materials are approved for the AI tool
+- Use roles instead of names when possible
 
 ## Prompt sequence
 
-1. Use `prompts/senior-tpm/dependency-map.md` to identify launch dependencies.
-2. Use `prompts/senior-tpm/risk-burndown-plan.md` for top risks.
-3. Use `prompts/senior-tpm/launch-readiness-review.md` for readiness output.
-4. Use `prompts/senior-tpm/decision-memo.md` for final go or no go decision support.
+1. Use `prompts/senior-tpm/launch-readiness-review.md` to create the readiness view.
+2. Use `prompts/senior-tpm/risk-burndown-plan.md` for open launch risks.
+3. Use `prompts/tools/slack.md` to draft blocker follow-ups if needed.
+4. Review with engineering, security, support, and product owners before the decision meeting.
 
 ## Final prompt
 
 ```text
-You are helping me prepare a launch readiness review.
+Help me prepare a launch readiness review using the sanitized context below.
 
-Using the sanitized context below, create:
-1. Launch summary
-2. Readiness by workstream
-3. Open blockers
-4. Top risks and mitigations
-5. Rollback readiness
-6. Monitoring readiness
-7. Customer and support readiness
-8. Missing evidence
-9. Go, No Go, or Conditional Go recommendation
-10. Decision owner and deadline
+Create:
+1. Readiness status by area
+2. Open blockers
+3. Top risks
+4. Decision criteria
+5. Go, no go, or conditional go recommendation
+6. Required actions before launch
+7. Missing information
 
-Do not recommend Go if critical evidence is missing.
+Do not recommend go unless the evidence supports it. If a readiness area is unknown, mark it unknown.
 
 Context:
-[paste sanitized context]
+[paste sanitized combined context]
 ```
 
 ## Human review checklist
 
-- Engineering readiness confirmed
-- Security readiness confirmed
-- Reliability readiness confirmed
-- Support readiness confirmed
-- Documentation published
-- Monitoring validated
-- Rollback tested or accepted by decision owner
-- Decision owner signs off
+- Readiness status is evidence-based
+- Unknowns are not treated as green
+- Rollback is validated or clearly not validated
+- Security and support readiness are confirmed
+- The decision criteria are clear
 
 ## Output artifacts
 
-- Launch readiness checklist
-- Go or no go decision memo
-- Slack launch status update
-- Jira readiness updates
-- Post launch validation checklist
+- Launch readiness doc
+- Go or no go recommendation
+- Blocker follow-up messages
+- Jira updates
+- Risk log updates
 
 ## Systems to update
 
 - Jira launch epic
-- Google Sheets readiness tracker
+- Readiness tracker
+- Program doc
 - Slack launch channel
-- Program RAID log
-- Launch approval record
+- RAID log
+
+## Done when
+
+The decision owner has enough evidence to make the launch call, and every conditional action has an owner and due date.

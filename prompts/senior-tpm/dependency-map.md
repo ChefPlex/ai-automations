@@ -1,45 +1,41 @@
 # Dependency Map Prompt
 
-## Purpose
+## Use this when
 
-Identify cross functional dependencies, missing owners, escalation candidates, and sequencing risks.
+A program spans multiple teams and the TPM needs to know where handoffs, owners, and timing can break.
 
-## Best used for
+## Why it matters
 
-- Large platform programs
-- Security programs
-- Compliance programs
-- Multi team migrations
-- Launch readiness planning
+Most program slips are not surprises. They usually live in unclear dependencies, soft commitments, and handoffs no one owns yet.
 
-## Inputs
+## Inputs to gather
 
 - Program plan
 - Workstreams
 - Jira epics
-- Stakeholders
-- Milestones
-- Known risks
+- Team owners
+- Target milestones
+- Known blockers
+- Compliance or security needs
 
 ## Prompt
 
 ```text
-You are a senior TPM identifying cross functional dependencies.
+Review the sanitized program context below and build a dependency map.
 
-Analyze the program context below and produce:
+Identify:
 1. Internal engineering dependencies
 2. Product dependencies
 3. Security dependencies
 4. Compliance dependencies
 5. Legal or privacy dependencies
-6. Customer facing dependencies
+6. Customer-facing dependencies
 7. Operational readiness dependencies
-8. Dependencies that are not yet owned
-9. Suggested dependency owners
+8. Dependencies without clear owners
+9. Suggested owners
 10. Escalation candidates
-11. Sequencing risks
 
-Return the output as a dependency table and a short narrative summary.
+Return the output as a table with Dependency, Provider, Consumer, Needed By, Risk, Owner, and Next Step.
 
 Context:
 [paste sanitized context]
@@ -48,19 +44,25 @@ Context:
 ## Expected output
 
 - Dependency table
-- Missing owners
-- Sequencing risks
+- Unowned dependencies
+- Critical path items
 - Escalation candidates
-- Recommended next steps
+- Questions to confirm
 
 ## Human review checklist
 
-- Confirm dependency owners
-- Confirm target dates
-- Link dependencies in Jira
-- Add high risk dependencies to RAID log
-- Align with stakeholder teams before escalation
+- Provider and consumer are both named
+- Needed-by dates are present or marked missing
+- Critical path items are clear
+- Unowned dependencies are called out
+- Next steps are specific
+
 
 ## Data handling notes
 
-Remove sensitive team, customer, and architecture details unless approved.
+Remove internal links and sensitive technical, customer, or security details not needed for the mapping exercise.
+
+
+## Done when
+
+The map is ready when the TPM can tell which handoff is most likely to break the milestone.

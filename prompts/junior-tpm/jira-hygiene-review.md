@@ -1,31 +1,27 @@
 # Jira Hygiene Review Prompt
 
-## Purpose
+## Use this when
 
-Review Jira issues for missing ownership, unclear acceptance criteria, stale work, blocked work, and dependency gaps.
+A Jira epic or sprint looks noisy, stale, or hard to trust, and the TPM needs a cleanup plan.
 
-## Best used for
+## Why it matters
 
-- Sprint planning
-- Program milestone reviews
-- Pre executive review cleanup
-- Jira epic quality checks
+Jira does not have to be perfect, but it does need to be useful. If ownership, dates, acceptance criteria, and dependencies are unclear, program status becomes guesswork.
 
-## Inputs
+## Inputs to gather
 
-- Jira issue export
-- Epic summary
-- Ticket status
-- Owners
-- Due dates
-- Dependencies
+- Jira issue export or summary
+- Epic goal
+- Target milestone
+- Known dependencies
+- Current sprint or release context
 
 ## Prompt
 
 ```text
-You are a TPM reviewing Jira hygiene for a program.
+Review the sanitized Jira issues below for program hygiene.
 
-Analyze the Jira issues below and identify:
+Identify:
 1. Tickets missing owners
 2. Tickets missing due dates
 3. Tickets with unclear acceptance criteria
@@ -35,10 +31,7 @@ Analyze the Jira issues below and identify:
 7. Tickets that need dependency links
 8. Suggested cleanup actions
 
-Return the output as a table with:
-Issue, Problem, Why It Matters, Recommended Fix, Owner Question.
-
-Do not infer missing information. Mark unclear fields as "Needs confirmation."
+Return a table with Issue, Problem, Why It Matters, Recommended Fix, and Owner Question.
 
 Jira data:
 [paste sanitized Jira export or ticket summaries]
@@ -46,16 +39,25 @@ Jira data:
 
 ## Expected output
 
-A Jira cleanup table with recommended actions.
+- Jira cleanup table
+- Top hygiene risks
+- Questions for owners
+- Recommended next cleanup step
 
 ## Human review checklist
 
-- Validate issue status in Jira
-- Confirm due dates with engineering owners
-- Confirm dependency links
-- Update Jira directly after review
-- Do not use AI output as the system of record
+- No customer names or sensitive details remain
+- Each recommendation is specific
+- Blocked work is called out plainly
+- Stale tickets are based on update dates or evidence
+- Recommended changes can be validated in Jira
+
 
 ## Data handling notes
 
-Remove internal URLs, customer identifiers, restricted vulnerability details, and sensitive architecture details before prompting.
+Jira exports may include internal links, customer references, security details, and comments. Remove anything not needed for the review.
+
+
+## Done when
+
+The review is ready when the TPM can run a 15 minute cleanup with owners instead of debating what the tickets mean.

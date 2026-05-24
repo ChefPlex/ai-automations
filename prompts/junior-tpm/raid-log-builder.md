@@ -1,56 +1,62 @@
 # RAID Log Builder Prompt
 
-## Purpose
+## Use this when
 
-Convert scattered program notes into a RAID log covering risks, assumptions, issues, and dependencies.
+Program context is scattered and the TPM needs to separate risks, assumptions, issues, and dependencies.
 
-## Best used for
+## Why it matters
 
-- Program planning
-- Weekly status preparation
-- Executive review preparation
-- Milestone risk review
+RAID logs are useful only when they make the next action visible. A long list of vague concerns is just a parking lot with columns.
 
-## Inputs
+## Inputs to gather
 
 - Program notes
-- Jira data
+- Jira status
 - Slack updates
 - Meeting notes
-- Known blockers
-- Current milestone
+- Known owners
+- Target milestone
 
 ## Prompt
 
 ```text
-You are a TPM creating a RAID log.
+Use the sanitized context below to build a RAID log.
 
-From the context below, identify:
+Identify:
 1. Risks
 2. Assumptions
 3. Issues
 4. Dependencies
 
-For each item, include:
-Description, Impact, Owner, Due Date, Mitigation, Status, and Escalation Needed.
+For each item, include Description, Impact, Owner, Due Date, Mitigation or Next Step, Status, and Escalation Needed.
 
-Separate facts from assumptions. Do not invent owners or due dates. Mark unclear fields as "Needs confirmation."
+Separate facts from assumptions. If an owner or date is missing, say so plainly.
 
 Context:
-[paste sanitized notes, Jira data, Slack updates, or planning doc]
+[paste sanitized context]
 ```
 
 ## Expected output
 
-A RAID log table.
+- RAID table
+- Top three items needing attention
+- Missing owners or dates
+- Escalation candidates
 
 ## Human review checklist
 
-- Validate risks with stakeholders
-- Confirm owners and dates
-- Escalate only after checking with owners
-- Update the official RAID log after review
+- Risks are future-looking
+- Issues are current problems
+- Assumptions are things to validate
+- Dependencies name both sides of the handoff
+- Every item has a next step or a missing field
+
 
 ## Data handling notes
 
-Remove customer names, sensitive system names, and restricted risk details before prompting.
+Remove sensitive customer, security, commercial, and internal system details before prompting.
+
+
+## Done when
+
+The RAID log is ready when the highest-risk item has an owner, a mitigation, and a clear escalation point.

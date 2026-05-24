@@ -1,33 +1,26 @@
-# Director Artifact Critique Prompt
+# Artifact Critique Prompt
 
-## Purpose
+## Use this when
 
-Review and improve a TPM artifact from a director level perspective.
+A TPM artifact is close, but it needs a director-level review before it goes to leadership or a broad audience.
 
-## Best used for
+## Why it matters
 
-- Executive updates
-- Program charters
-- Decision memos
-- Escalations
-- Launch readiness reviews
-- QBR summaries
-- Strategy documents
+A good review does not just clean up writing. It tests whether the artifact has the right context, risk, ownership, decision quality, and audience fit.
 
-## Inputs
+## Inputs to gather
 
-- TPM artifact
+- Artifact draft
 - Audience
 - Program context
 - Decision needed
-- Known constraints
+- Known risks
+- Any sensitive data constraints
 
 ## Prompt
 
 ```text
-You are acting as a director level Technical Program Manager with deep experience in platform security, infrastructure, customer trust, engineering execution, and executive communication.
-
-Help me improve the following TPM artifact.
+Act as a director-level Technical Program Manager reviewing the artifact below.
 
 Evaluate it for:
 1. Strategic clarity
@@ -38,13 +31,13 @@ Evaluate it for:
 6. Dependency management
 7. Ownership clarity
 8. Decision quality
-9. Executive readability
+9. Audience fit
 10. Missing information
 
 Then provide:
-1. A concise critique
-2. A stronger rewritten version
-3. Questions I should answer
+1. Concise critique
+2. Stronger rewritten version
+3. Questions I should answer before sending
 4. Risks I may be underestimating
 5. Recommended next action
 
@@ -58,18 +51,24 @@ Artifact:
 
 - Critique
 - Rewritten artifact
-- Questions
+- Questions to answer
 - Underestimated risks
 - Recommended next action
 
 ## Human review checklist
 
-- Confirm the rewrite preserves the facts
-- Confirm the tone matches the audience
-- Confirm risks are not softened
-- Confirm decision ask is clear
-- Remove sensitive data
+- The rewrite keeps the facts intact
+- Risk language is not softened
+- Decision ask is clearer
+- Audience fit is improved
+- Missing information is explicit
+
 
 ## Data handling notes
 
-Use sanitized artifacts only. Do not paste confidential executive notes unless approved.
+Remove sensitive customer, security, legal, commercial, and internal details before prompting.
+
+
+## Done when
+
+The artifact is ready when the reader can understand the situation, the risk, and the ask without needing a pre-brief.

@@ -1,35 +1,33 @@
-# Director Level Program Review Prompt
+# Director-Level Program Review Prompt
 
-## Purpose
+## Use this when
 
-Assess a senior TPM program across strategy, execution, stakeholder alignment, technical depth, risk, metrics, and communication.
+A senior TPM program needs a broad health check across strategy, execution, risk, metrics, and communication.
 
-## Best used for
+## Why it matters
 
-- Director one on ones
-- Program audits
-- Senior TPM coaching
-- Portfolio reviews
-- Program recovery
+Director review should help the TPM see around corners. The goal is not to nitpick. The goal is to find the few things that will matter most to delivery, trust, and leadership confidence.
 
-## Inputs
+## Inputs to gather
 
 - Program context
-- Current status
+- Status update
+- Plan
 - Metrics
-- Stakeholder feedback
 - Risks
-- Executive updates
+- Dependencies
+- Recent decisions
+- Audience
 
 ## Prompt
 
 ```text
-You are acting as a director level TPM reviewing a senior TPM's program.
+Review the sanitized program material below as a director-level TPM.
 
 Assess the program across:
 1. Strategy
 2. Execution
-3. Stakeholder alignment
+3. Cross-functional coordination
 4. Technical depth
 5. Risk management
 6. Metrics
@@ -43,7 +41,9 @@ Return:
 2. Concerns
 3. Questions to ask
 4. Recommendations
-5. Whether this program is leadership ready
+5. Whether this is ready for leadership review
+
+Be direct and practical. Do not over-polish weak areas.
 
 Context:
 [paste sanitized program context]
@@ -51,19 +51,26 @@ Context:
 
 ## Expected output
 
-- Program assessment
 - Strengths
 - Concerns
-- Coaching questions
+- Questions
 - Recommendations
-- Leadership readiness view
+- Leadership readiness assessment
 
 ## Human review checklist
 
-- Validate concerns with source data
-- Avoid using AI output as performance feedback without human judgment
-- Use as coaching input, not a final evaluation
+- Feedback is specific
+- Risks are tied to impact
+- Recommendations are practical
+- Leadership readiness is justified
+- Missing information is explicit
+
 
 ## Data handling notes
 
-Do not paste performance management content or sensitive personnel information into unapproved AI tools.
+Remove restricted program, customer, security, legal, and commercial information before prompting.
+
+
+## Done when
+
+The review is ready when the TPM knows what to keep, what to fix, and what to escalate.

@@ -1,83 +1,54 @@
 # Repo Manifest
 
-This manifest summarizes what is included in the repo package.
+This manifest summarizes the package. It is here so a TPM can scan the repo quickly and know where to start.
 
 ## Root files
 
-- README.md: Repo overview and usage guide
-- operating-principles.md: How TPMs should use AI responsibly
-- safety-and-data-handling.md: Data handling guidance for Google Workspace, Slack, Salesforce, and Jira
-- prompt-quality-rubric.md: Scoring model for reusable TPM prompts
-- REPO_MANIFEST.md: File index
+| File | Purpose |
+|---|---|
+| `README.md` | Repo overview, usage model, and starting points |
+| `operating-principles.md` | Practical principles for AI-assisted TPM work |
+| `safety-and-data-handling.md` | Data handling guidance for Google Workspace, Slack, Salesforce, and Jira |
+| `prompt-quality-rubric.md` | Rubric for deciding whether a prompt is ready to reuse |
+| `REPO_MANIFEST.md` | This file index |
 
 ## Prompt categories
 
-### Junior TPM prompts
-
-These help junior TPMs convert raw information into clean execution artifacts.
-
-- Weekly status update
-- Meeting notes to action items
-- Jira hygiene review
-- Slack thread summary
-- RAID log builder
-- Standup prep
-- Acceptance criteria builder
-
-### Senior TPM prompts
-
-These help senior TPMs drive complex programs, risk management, executive communication, and tradeoff decisions.
-
-- Executive program update
-- Decision memo
-- Escalation draft
-- Dependency map
-- Risk burndown plan
-- Technical tradeoff analysis
-- Launch readiness review
-- QBR summary
-
-### Director review prompts
-
-These help director level TPMs coach, challenge, and improve program artifacts.
-
-- Artifact critique
-- Program strategy review
-- What am I missing
-- Director level program review
-- Influence without authority plan
-- Operating model design
-- Metrics and instrumentation plan
-- Blameless retrospective
-
-### Tool specific prompts
-
-These prompts are optimized for common TPM source systems.
-
-- Google Workspace
-- Slack
-- Salesforce
-- Jira
+| Directory | Purpose |
+|---|---|
+| `prompts/junior-tpm` | Execution hygiene, status, action items, Jira cleanup, Slack summaries |
+| `prompts/senior-tpm` | Executive updates, decisions, escalations, launch readiness, risk, tradeoffs |
+| `prompts/director-review` | Program reviews, strategy checks, operating models, metrics, and coaching prompts |
+| `prompts/tools` | Google Workspace, Slack, Salesforce, and Jira prompt packs |
 
 ## Workflows
 
-- Weekly status workflow
-- Customer escalation workflow
-- Launch readiness workflow
-- Compliance intake workflow
-- Executive review workflow
+| Workflow | Use when |
+|---|---|
+| `weekly-status-workflow.md` | Weekly status needs to pull from Jira, Slack, docs, and customer signals |
+| `customer-escalation-workflow.md` | Customer signals show delivery risk, urgency, or leadership attention |
+| `launch-readiness-workflow.md` | A program is close to launch and needs a go or no go view |
+| `compliance-intake-workflow.md` | Audit, policy, or control requests need to become engineering work |
+| `executive-review-workflow.md` | Leadership needs a clean view of outcomes, risks, and decisions |
 
 ## Templates
 
-- Weekly status input template
-- Salesforce signal intake template
-- Jira export field list
+| Template | Purpose |
+|---|---|
+| `weekly-status-input-template.md` | Collect weekly program inputs before prompting |
+| `salesforce-signal-intake-template.md` | Summarize customer signals safely |
+| `jira-export-field-list.md` | Export only the Jira fields that are useful for TPM workflows |
 
 ## Examples
 
-All examples are sanitized and fictional.
+The examples are sanitized and fictional. They show the shape of a good artifact without carrying real company, customer, security, or commercial data.
 
-- Weekly status example
-- Escalation example
-- Decision memo example
-- Launch readiness example
+## Suggested first pass
+
+1. Read the safety guide.
+2. Read the operating principles.
+3. Try the weekly status workflow with sanitized data.
+4. Compare the output to the examples.
+5. Use the rubric before adding new prompts.
+
+PS: The repo is only useful if the files stay practical. If something reads nicely but does not help a TPM make a decision, it needs more work.

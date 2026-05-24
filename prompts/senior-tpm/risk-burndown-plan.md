@@ -1,33 +1,27 @@
 # Risk Burndown Plan Prompt
 
-## Purpose
+## Use this when
 
-Create a structured plan to reduce top program risks before a key milestone.
+A program has real risk and needs a plan to reduce it, not just a list of concerns.
 
-## Best used for
+## Why it matters
 
-- Executive reviews
-- Pre launch reviews
-- Security programs
-- Compliance deadlines
-- Platform migrations
-- Customer commitments
+Risk management is only useful when it changes behavior. Each risk needs a signal, owner, mitigation, contingency, and point where it must be escalated.
 
-## Inputs
+## Inputs to gather
 
-- Program objective
-- Target milestone
+- Program context
 - Known risks
+- Milestones
 - Owners
+- Dependencies
 - Current mitigations
-- Escalation thresholds
+- Escalation path
 
 ## Prompt
 
 ```text
-You are helping me create a risk burndown plan for a complex program.
-
-Identify the top risks and create a mitigation plan for each.
+Use the sanitized context below to create a risk burndown plan.
 
 For each risk, include:
 1. Risk statement
@@ -38,10 +32,10 @@ For each risk, include:
 6. Contingency
 7. Owner
 8. Deadline
-9. Escalation threshold
+9. Escalation point
 10. Current status
 
-Separate risks from active issues. Do not invent owners or deadlines. Mark unclear items as "Needs confirmation."
+Then identify the top three risks that need attention this week.
 
 Context:
 [paste sanitized context]
@@ -49,19 +43,25 @@ Context:
 
 ## Expected output
 
-- Risk burndown table
-- Top risk narrative
-- Immediate actions
-- Escalation thresholds
+- Risk table
+- Top three risks this week
+- Missing owners or dates
+- Escalation recommendations
 
 ## Human review checklist
 
-- Validate probability and impact
-- Confirm owners
-- Confirm mitigation feasibility
-- Add accepted risks to the proper approval process
-- Update the official RAID log
+- Risks are specific and future-looking
+- Detection signals are measurable
+- Mitigations are real actions
+- Contingencies are clear
+- Owners and deadlines are present or marked missing
+
 
 ## Data handling notes
 
-Be careful with customer impact, security severity, legal obligations, and compliance dates.
+Do not include restricted security, customer, legal, or incident details unless approved for the tool.
+
+
+## Done when
+
+The plan is ready when the team knows what to do this week to reduce the largest risk.

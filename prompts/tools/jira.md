@@ -1,17 +1,17 @@
 # Jira Prompt Pack
 
-Prompts for Jira epic review, roadmap summaries, executive translation, and sprint risk review.
+Jira is the execution system, not the whole story. These prompts help translate Jira details into cleaner TPM views without losing the connection back to the source of record.
 
 ## Epic Quality Review
 
 ```text
-You are reviewing a Jira epic as a senior TPM.
+Review the sanitized Jira epic below as a senior TPM.
 
 Evaluate whether the epic has:
 1. Clear business objective
 2. Clear customer impact
 3. Defined scope
-4. Non goals
+4. Non-goals
 5. Acceptance criteria
 6. Milestones
 7. Linked dependencies
@@ -21,7 +21,7 @@ Evaluate whether the epic has:
 11. Rollout plan
 12. Validation plan
 
-Return recommended edits and missing fields.
+Return recommended edits and missing fields. Do not invent missing details.
 
 Jira epic:
 [paste sanitized epic]
@@ -30,7 +30,7 @@ Jira epic:
 ## Jira Roadmap Summary
 
 ```text
-Create a roadmap summary from these Jira epics and stories.
+Create a roadmap summary from the sanitized Jira epics and stories below.
 
 Group work into:
 1. Now
@@ -46,6 +46,8 @@ For each group, include:
 6. Customer or business value
 7. Leadership questions
 
+Do not just list tickets. Translate the work into outcomes.
+
 Jira data:
 [paste sanitized Jira export]
 ```
@@ -53,17 +55,20 @@ Jira data:
 ## Jira to Executive Translation
 
 ```text
-Translate the following Jira details into an executive ready update.
+Translate the sanitized Jira details below into an executive update.
 
-Do not list tickets. Explain the work as outcomes.
+Explain the work as outcomes, not ticket counts.
 
 Include:
-1. What outcome we are driving
-2. What progress has been made
+1. Outcome we are working toward
+2. Progress made
 3. What remains
 4. Where we are blocked
 5. What risk exists
 6. What decision is needed
+7. Missing information
+
+Keep it clear enough for a leader who will not read the tickets.
 
 Jira details:
 [paste sanitized Jira data]
@@ -72,9 +77,9 @@ Jira details:
 ## Sprint Risk Review
 
 ```text
-You are helping me review sprint risk.
+Review the sanitized Jira sprint data below and identify sprint risk.
 
-Analyze the following Jira sprint data and identify:
+Look for:
 1. Work at risk
 2. Tickets with unclear ownership
 3. Tickets that are too large
@@ -87,6 +92,10 @@ Jira data:
 [paste sanitized sprint data]
 ```
 
-## Data handling notes
+## Review before updating Jira
 
-Jira is a system of record. AI output should be reviewed and then reflected back in Jira. Remove restricted system details, customer identifiers, vulnerability details, and internal links unless approved.
+- Confirm ticket status with owners when needed
+- Do not use AI output as the only source of truth
+- Add missing dates, owners, blockers, and dependencies back into Jira
+- Keep Jira comments factual and short
+- Link final artifacts only when the team is allowed to see them

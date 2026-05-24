@@ -1,8 +1,8 @@
 # Standard Context Block
 
-Use this context block at the top of most TPM prompts.
+Use this block before most prompts in this repo.
 
-## Full version
+The model does better when the TPM gives it the same context a human reviewer would need: what program this is, why it matters, what systems are involved, what is known, what is blocked, and what decision is needed.
 
 ```text
 Program:
@@ -11,40 +11,33 @@ Customer impact:
 Current phase:
 Critical milestone:
 Target date:
-Program health:
 Engineering teams involved:
 Product teams involved:
-Security, compliance, legal, privacy, or support dependencies:
+Security, compliance, or legal dependencies:
 Jira epic or project:
-Relevant Slack threads:
+Relevant Slack context:
 Relevant Google Docs, Sheets, or Slides:
 Relevant Salesforce accounts, cases, opportunities, or customer signals:
 Known risks:
 Known blockers:
-Known dependencies:
-Recent decisions:
-Decision needed now:
-Audience:
-Desired output format:
-Data handling notes:
-```
-
-## Condensed version
-
-```text
-Program:
-Goal:
-Audience:
-Current status:
-Milestone and date:
-Key context:
-Risks or blockers:
 Decision needed:
-Desired output:
+Audience:
+Output format:
+Facts already confirmed:
+Assumptions to validate:
+Information that must not be inferred:
 ```
 
-## Safety wrapper
+## Notes
+
+Use only the fields that matter for the task. Leaving a field blank is better than making something up.
+
+Before prompting, remove or anonymize anything the tool is not approved to process. That includes customer names, account details, security details, internal links, commercial terms, personal data, secrets, and restricted incident content.
+
+## Useful wrapper
 
 ```text
-Use the sanitized context below. Do not infer customer names, revenue, legal obligations, security severity, or launch commitments beyond what is explicitly stated. Separate facts from assumptions. Identify missing information.
+Use only the context provided. Separate facts, assumptions, open questions, and recommendations. Do not invent missing facts. If the context is not enough to support a conclusion, say what is missing and why it matters.
 ```
+
+That wrapper saves a lot of cleanup later.

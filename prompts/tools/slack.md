@@ -1,20 +1,22 @@
 # Slack Prompt Pack
 
-Prompts for summarizing threads, aligning stakeholders, removing blockers, and deescalating conflict.
+Slack is good for speed and terrible for memory. Use these prompts to turn threads into cleaner summaries, asks, and follow-ups without treating every comment as a decision.
 
-## Slack Message for Alignment
+## Slack Message to Get the Group Aligned
 
 ```text
-Write a Slack message to align cross functional stakeholders.
+Write a Slack message to align the group using the sanitized context below.
 
 The message should:
 1. State the issue clearly
 2. Summarize current understanding
 3. Name the decision or action needed
-4. Identify owners
+4. Identify owners or roles
 5. Provide a deadline
 6. Invite corrections
 7. Keep the tone collaborative
+
+Make the message short enough that people will read it.
 
 Context:
 [paste sanitized context]
@@ -25,8 +27,6 @@ Context:
 ```text
 Write a Slack message asking for help removing a blocker.
 
-Tone should be respectful, clear, and direct.
-
 Include:
 1. What is blocked
 2. Why it matters
@@ -36,6 +36,8 @@ Include:
 6. What happens if it is not resolved
 7. Suggested next step
 
+Use a respectful, direct tone. No blame, no drama, just the facts and the ask.
+
 Context:
 [paste sanitized context]
 ```
@@ -43,7 +45,7 @@ Context:
 ## Slack Executive Update
 
 ```text
-Write a brief Slack update for senior leadership.
+Write a brief Slack update for senior leadership using the sanitized context below.
 
 Include:
 1. Current health
@@ -52,7 +54,7 @@ Include:
 4. Decision needed, if any
 5. Next milestone
 
-Use fewer than 150 words. Do not overstate progress.
+Use fewer than 150 words. Make the ask clear if there is one.
 
 Context:
 [paste sanitized context]
@@ -61,7 +63,7 @@ Context:
 ## Slack Conflict Deescalation
 
 ```text
-You are helping a TPM respond to a tense Slack thread.
+Help me respond to the sanitized Slack thread below.
 
 Write a message that:
 1. Acknowledges the concern
@@ -71,10 +73,16 @@ Write a message that:
 5. Avoids blame
 6. Creates a path to decision
 
+Tone should be calm and human. The goal is to move the work forward, not win the thread.
+
 Slack thread:
 [paste sanitized thread]
 ```
 
-## Data handling notes
+## Review before posting
 
-Slack can include informal opinions, sensitive links, customer identifiers, and screenshots. Sanitize before prompting and validate the output before posting.
+- Confirm the facts
+- Remove names if roles are enough
+- Check whether the message should be public or private
+- Make sure the ask is clear
+- Do not surprise a team with an escalation they have not seen coming unless urgency requires it

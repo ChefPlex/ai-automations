@@ -30,36 +30,36 @@ Prepare a concise executive review that focuses on outcomes, risks, decisions, a
 
 Before prompting:
 
-- Remove sensitive customer and account details unless approved
-- Remove confidential financial data unless approved
-- Remove restricted roadmap, legal, security, or incident information unless approved
-- Confirm intended audience
+- Remove sensitive customer, commercial, security, legal, and roadmap details unless approved
+- Confirm metrics are approved for the audience
+- Use sanitized summaries instead of raw Slack or Salesforce data
+- Separate facts from assumptions
 
 ## Prompt sequence
 
-1. Use `prompts/senior-tpm/executive-program-update.md` for current status.
-2. Use `prompts/senior-tpm/decision-memo.md` for leadership decisions.
-3. Use `prompts/director-review/artifact-critique.md` to improve the draft.
-4. Use `prompts/tools/google-workspace.md` to create the slide outline.
+1. Use `prompts/senior-tpm/executive-program-update.md` to draft the narrative.
+2. Use `prompts/director-review/artifact-critique.md` to review the artifact.
+3. Use `prompts/tools/google-workspace.md` to shape the slides or doc.
+4. Validate with program owners before sending to leadership.
 
 ## Final prompt
 
 ```text
-You are a director level TPM preparing an executive review.
+Help me prepare an executive review using the sanitized context below.
 
-Using the sanitized context below, create:
-1. Executive summary
+Create:
+1. One paragraph summary
 2. Why this program matters now
 3. Current status
 4. Progress against milestones
-5. Metrics and evidence
-6. Top risks
+5. Metrics that matter
+6. Top risks and mitigations
 7. Decisions needed
 8. Recommendation
 9. Leadership asks
-10. Slide by slide outline for a concise review
+10. Missing information
 
-Write for a VP or SVP audience. Keep the narrative clear, direct, and decision oriented.
+Keep the message clear, direct, and decision-oriented. Do not bury the ask.
 
 Context:
 [paste sanitized context]
@@ -67,25 +67,29 @@ Context:
 
 ## Human review checklist
 
-- Executive ask is explicit
-- Status is evidence based
-- Metrics are accurate
-- Risks are not hidden
-- Decisions are assigned to the correct leaders
-- Slide deck does not contain sensitive details outside the intended audience
+- Summary leads with the main point
+- Metrics are accurate and approved
+- Risks are specific
+- Decision ask is obvious
+- Recommendation is supported by evidence
+- No sensitive data remains
 
 ## Output artifacts
 
-- Executive summary
-- Slide outline
-- Decision memo
-- Leadership ask list
-- Updated RAID log
+- Executive review doc
+- Google Slides outline
+- Leadership email or Slack summary
+- Decision log update
+- RAID updates
 
 ## Systems to update
 
-- Google Slides deck
-- Google Doc program plan
-- Jira status
+- Program doc
+- Decision log
+- Jira
 - RAID log
-- Slack leadership update
+- Slack channel after review
+
+## Done when
+
+Leadership has a clear readout, the decision is captured, and the systems of record reflect what changed.
