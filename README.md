@@ -16,6 +16,24 @@ The bar for inclusion is higher than having a prompt that worked once. A prompt 
 
 Some files are more mature than others. Treat this as a working library: useful now, but still subject to hard editing as prompts survive real inputs.
 
+## Current Scope
+
+This repo is currently focused on AI-assisted TPM workflows for:
+
+- Weekly status synthesis
+- Executive program updates
+- Meeting notes to action items
+- Jira, Slack, Salesforce, and Google Workspace cleanup
+- Risk and dependency reviews
+- Escalation drafts
+- Launch readiness reviews
+- Customer-signal synthesis
+- Director-level artifact critique
+
+The strongest materials are the weekly status workflow, executive program update prompt, meeting-notes workflow, artifact critique prompt, safety guidance, and prompt quality rubric.
+
+This repo is not trying to be a general AI prompt library. Prompts belong here only if they help a TPM make a better decision, reduce execution risk, clarify ownership, improve reporting, or turn scattered inputs into a usable program artifact.
+
 ## Start here
 
 Read these first:
