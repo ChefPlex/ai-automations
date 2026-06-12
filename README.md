@@ -4,7 +4,7 @@ AI-assisted prompts, workflows, and examples for TPM productivity and program ma
 
 The tools here are not about replacing judgment. They are about removing mechanical work so there is more time for the work that actually requires it.
 
-Each workflow follows the same pattern: a **persona or context file** that carries stable domain knowledge, and a **prompt file** that drives the session interaction. Keeping them separate means you can reuse the domain knowledge across different prompt formats, and swap the prompt without rewriting the expertise.
+Each workflow follows the same pattern: a **context or persona file** that carries stable domain knowledge, and a **prompt file** that drives the session interaction. Keeping them separate means you can reuse the domain knowledge across different prompt formats, and swap the prompt without rewriting the expertise.
 
 ---
 
@@ -14,6 +14,7 @@ Each workflow follows the same pattern: a **persona or context file** that carri
 
 | Workflow | What It Does |
 |----------|-------------|
+| [Status Report Generator](status-report-generator/) | Reads a folder of raw inputs - meeting notes, Slack exports, RAID log updates, ticket summaries - and produces a structured draft status report. Nine sections including overall status, decisions needed, risks and issues, and a NEEDS REVIEW section that flags what requires TPM judgment before sending. Integrates with the Slack Crawler in tpm-toolbox. |
 | [Landscape Planner](landscape-planner/) | AI landscape architect consultation for Sonoma County conditions. Give it your budget, yard situation, and goals. Receive a visual layout, phased implementation guide, plant shopping list, and budget breakdown. Covers fire safety, drought tolerance, deer and gopher pressure, and local nursery recommendations. |
 | [App Builder](app-builder/) | Two-prompt system for going from a rough app idea to a working web application. The intake prompt interviews a non-technical person and produces a structured developer brief. The builder prompt takes that brief through six phases - idea refinement, tech stack, architecture, MVP scope, UI/UX direction, and feature-by-feature build with complete copy-paste-ready code. |
 
@@ -25,17 +26,10 @@ Each workflow follows the same pattern: a **persona or context file** that carri
 
 | Workflow | What It Will Do |
 |----------|----------------|
-| Status Report Generator | Feed it a week of meeting notes, ticket updates, and RAID log changes. Get a structured status report draft in your existing format. The hard part of status reporting is pulling signal from noise - this handles the first pass. |
-| Meeting Notes Processor | Takes raw meeting notes and extracts decisions, action items, and open questions in structured format. One prompt, organized output. |
-| Pre-Meeting Brief Generator | Given an agenda and participant list, generates a one-page brief: what each stakeholder likely cares about, what decisions are needed, and where the blockers are likely to be. |
+| Meeting Notes Processor | Takes raw meeting notes and extracts decisions, action items, and open questions in structured format. One prompt, organized output ready to paste into the meeting notes tracker in tpm-toolbox. |
+| Pre-Meeting Brief Generator | Given an agenda and participant list, generates a one-page brief: what each stakeholder likely cares about, what decisions are needed, and where the blockers are likely to be. Useful before steering committees and exec reviews. |
 | Escalation Draft | Takes a problem description and generates a structured escalation: what is happening, what the impact is, what has been tried, and what decision is needed. Hard to write under pressure. Easier with a starting point. |
 | Compliance Intake Triage | Given a new regulatory requirement or audit finding, generates an initial analysis: likely scope, evidence probably needed, remediation timeline estimate. First cut only - not a substitute for GRC review. |
-
-### How-It-Works Examples
-
-| Example | What It Shows |
-|---------|--------------|
-| Persona + Prompt Pattern | How to separate stable domain knowledge (the persona) from session interaction logic (the prompt). The landscape planner is the reference implementation. |
 
 ---
 
@@ -53,9 +47,9 @@ Each workflow follows the same pattern: a **persona or context file** that carri
 
 ## How This Fits With the Other Repos
 
-- **tpm-templates** - The output formats these tools produce match the templates there
-- **program-reporting-frameworks** - The status and steering committee tools feed into those frameworks
-- **tpm-toolbox** - The Slack Canvas Status Synthesis and Slack Crawler tools in tpm-toolbox are the automation layer; prompts here are the reasoning layer
+- **tpm-templates** - The output formats the status report generator produces match the templates there
+- **program-reporting-frameworks** - The status and steering committee frameworks explain what goes in each section and why
+- **tpm-toolbox** - The Slack Crawler produces intelligence briefs that feed directly into the status report generator; the canvas synthesis tool handles the other direction
 
 ---
 
