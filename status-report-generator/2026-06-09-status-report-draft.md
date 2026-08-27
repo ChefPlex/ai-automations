@@ -1,4 +1,4 @@
-# TLS Modernization Program — Status Report
+# TLS Modernization Program - Status Report
 
 REAL LOOK AND FEEL, BUT THE FOLLOWING IS BASED ON FAKE DATA
 
