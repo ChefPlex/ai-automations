@@ -20,6 +20,24 @@ Each workflow follows the same pattern: a **context or persona file** that carri
 
 ---
 
+## Frameworks
+
+The prompts and workflows above answer "how do I do this piece of work well." The [frameworks](frameworks/)
+answer the question underneath that one: which work should AI be touching at all, who does it, and
+where does the human stay.
+
+| Framework | Answers |
+|----------|--------------|
+| [AI Execution Tiers](frameworks/ai-execution-tiers.md) | How much AI belongs in a given activity, on a five-tier scale from human-only to AI-only, and how to classify without kidding yourself. |
+| [Activity Mapping Method](frameworks/activity-mapping-method.md) | How to map an entire company's work against those tiers in about a week, at three levels of resolution. |
+| [Multi-Agent Delivery Framework](frameworks/multi-agent-delivery-framework.md) | 19 roles across 8 phases, ideation through operations, with senior/junior tier selection logic and an audit trail. Describes the framework; the individual role specifications are not published. |
+| [AI Tool Decision Matrix](frameworks/ai-tool-decision-matrix.md) | What to buy and in what order, and why the AI layer is phase 4 of 5 rather than the first purchase. |
+
+Regulated environments change the adoption order. That overlay lives in
+[security-program-playbooks](https://github.com/ChefPlex/security-program-playbooks/blob/main/ai-tooling-regulated-data.md).
+
+---
+
 ## The TPM Workflows, and Where They Live
 
 These four were listed here as "coming" for a while. Three of them had already shipped into this
