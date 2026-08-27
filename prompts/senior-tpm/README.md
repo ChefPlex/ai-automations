@@ -1,12 +1,13 @@
 # Senior TPM Prompts
 
-These prompts support the work senior TPMs usually own: executive updates, decisions, escalations, dependencies, risk, tradeoffs, launch readiness, and quarterly summaries.
+These prompts support the work senior TPMs usually own: executive updates, decisions, escalations, dependencies, risk, tradeoffs, launch readiness, quarterly summaries, and preparing for the meeting where a decision has to land.
 
 At this level, the output should not just report activity. It should explain what changed, why it matters, what risk remains, and what decision or tradeoff leadership needs to make.
 
 ## Good use cases
 
 - Preparing an executive program update
+- Preparing for a steering committee or exec review before you walk in
 - Writing a decision memo
 - Drafting a factual escalation
 - Mapping dependencies across teams
