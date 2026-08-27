@@ -20,16 +20,21 @@ Each workflow follows the same pattern: a **context or persona file** that carri
 
 ---
 
-## What Is Coming
+## The TPM Workflows, and Where They Live
 
-### TPM Workflows
+These four were listed here as "coming" for a while. Three of them had already shipped into this
+repo and the list did not keep up, which is a good argument for indexing what exists rather than
+advertising what might.
 
-| Workflow | What It Will Do |
-|----------|----------------|
-| Meeting Notes Processor | Takes raw meeting notes and extracts decisions, action items, and open questions in structured format. One prompt, organized output ready to paste into the meeting notes tracker in tpm-toolbox. |
-| Pre-Meeting Brief Generator | Given an agenda and participant list, generates a one-page brief: what each stakeholder likely cares about, what decisions are needed, and where the blockers are likely to be. Useful before steering committees and exec reviews. |
-| Escalation Draft | Takes a problem description and generates a structured escalation: what is happening, what the impact is, what has been tried, and what decision is needed. Hard to write under pressure. Easier with a starting point. |
-| Compliance Intake Triage | Given a new regulatory requirement or audit finding, generates an initial analysis: likely scope, evidence probably needed, remediation timeline estimate. First cut only - not a substitute for GRC review. |
+| Workflow | What It Does | Where |
+|----------|--------------|-------|
+| Meeting Notes Processor | Takes raw meeting notes and extracts decisions, action items, and open questions in structured format. Output slots into the meeting notes tracker in [tpm-toolbox](https://github.com/ChefPlex/tpm-toolbox). | [meeting-notes-to-actions.md](prompts/junior-tpm/meeting-notes-to-actions.md) · worked example: [input](examples/messy-meeting-notes-input.md) / [output](examples/processed-meeting-notes-output.md) |
+| Pre-Meeting Brief Generator | Given an agenda and participant list, produces a one-page brief: the one outcome worth protecting, what each participant will push on, which decisions can actually close, and the objection you would least like to be asked. | [pre-meeting-brief.md](prompts/senior-tpm/pre-meeting-brief.md) |
+| Escalation Draft | Takes a problem description and produces a structured escalation: what is blocked, the impact, what has been tried, the decision needed, and the deadline. Hard to write under pressure, easier from a starting point. | [escalation-draft.md](prompts/senior-tpm/escalation-draft.md) · worked example: [sanitized escalation](examples/sanitized-escalation-example.md) |
+| Compliance Intake Triage | Turns a regulatory requirement, audit finding, or control request into engineering work with owners, evidence needs, milestones, and risk visibility. First cut only, not a substitute for GRC review. | [compliance-intake-workflow.md](workflows/compliance-intake-workflow.md) |
+
+Nothing is queued beyond this right now. Additions happen when a prompt has been used on real work
+often enough to be worth writing down, not on a roadmap.
 
 ---
 
