@@ -23,6 +23,21 @@ This manifest is the quick map for the repo. It is here so a TPM can scan the pa
 | `prompts/senior-tpm/executive-program-update.md` | You need a leadership-ready program update from sanitized context |
 | `prompts/director-review/artifact-critique.md` | You want a hard review before sending an artifact upstream |
 | `prompt-quality-rubric.md` | You are deciding whether a prompt is good enough to keep |
+| `frameworks/ai-tool-decision-matrix.md` | A license has been bought and nothing improved, and you need the order of operations |
+| `frameworks/ai-execution-tiers.md` | You need a shared vocabulary for how much AI belongs in a piece of work |
+
+## Frameworks
+
+| Directory | Purpose |
+|---|---|
+| `frameworks/` | Decision frameworks for AI adoption: execution tiers, the activity mapping method, the multi-agent delivery framework, and the tool decision matrix |
+
+| File | Start here when |
+|---|---|
+| `frameworks/ai-execution-tiers.md` | You need to decide how much AI belongs in a given activity |
+| `frameworks/activity-mapping-method.md` | You want to map a whole company's work against those tiers |
+| `frameworks/multi-agent-delivery-framework.md` | You are building a multi-agent delivery process and need roles, phases, and gates |
+| `frameworks/ai-tool-decision-matrix.md` | Someone is asking what to buy, or why the license they bought did not help |
 
 ## Prompt categories
 
