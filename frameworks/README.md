@@ -19,6 +19,12 @@ as the rest of the repo: written down because it was used often enough to be wor
 Regulated environments (HIPAA, SOC 2, PHI) change the adoption order. That overlay lives in
 [security-program-playbooks](https://github.com/ChefPlex/security-program-playbooks).
 
+**These four documents are the method. For what running it actually teaches you** - why you are
+never introducing AI but getting control of something already running, why the headcount objection
+is rational, and how a human review gate rots into a rubber stamp - see
+[Lessons from Putting AI Into a Company](https://github.com/ChefPlex/learning-notes/blob/main/lessons-from-putting-ai-into-a-company.md)
+in learning-notes.
+
 ---
 
 ## The through-line
