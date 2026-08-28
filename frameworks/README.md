@@ -19,11 +19,38 @@ as the rest of the repo: written down because it was used often enough to be wor
 Regulated environments (HIPAA, SOC 2, PHI) change the adoption order. That overlay lives in
 [security-program-playbooks](https://github.com/ChefPlex/security-program-playbooks).
 
-**These four documents are the method. For what running it actually teaches you** - why you are
-never introducing AI but getting control of something already running, why the headcount objection
-is rational, and how a human review gate rots into a rubber stamp - see
-[Lessons from Putting AI Into a Company](https://github.com/ChefPlex/learning-notes/blob/main/lessons-from-putting-ai-into-a-company.md)
-in learning-notes.
+---
+
+## Where this sits relative to the AI governance standards
+
+**This is not a standard and it does not replace one.** It is an operational framework: it answers
+*where AI belongs in the work, who does it, and where the human stays.* The standards answer a
+different question - *how do you govern AI risk across an organization and prove that you did.*
+Both questions are real and the answers are not substitutes for each other.
+
+Three bodies of work anchor the space as of **August 2026**, and they are maturing quickly:
+
+| | What it is | Status |
+|---|---|---|
+| **ISO/IEC 42001:2023** | A certifiable international management-system standard for AI - the structures and processes an organization needs to govern AI responsibly | Voluntary, certifiable |
+| **NIST AI Risk Management Framework** | A voluntary US risk-function framework, with a Generative AI Profile (AI 600-1, July 2024) covering 12 risk categories | Voluntary |
+| **EU AI Act** | The first comprehensive risk-based AI regulation. GPAI obligations took effect 2 August 2025; **European Commission enforcement began 2 August 2026** | Mandatory within EU scope |
+
+They are generally treated as **complementary rather than competing** - management-system framing,
+risk-function structure, and binding legal requirements respectively - and larger organizations
+commonly operate under more than one at the same time.
+
+**What that means for this framework:** the tiers, the activity map and the delivery model sit
+*underneath* whichever of those apply to you. A tier assignment is an operational decision about
+how a specific activity gets done. It is not a risk classification, it is not a conformity
+assessment, and it will not satisfy an auditor on its own. ⚠️ **If you are subject to any of the
+above, treat this as the layer that describes what your organization actually does, and the
+standard as the layer that says what you must be able to demonstrate.**
+
+⛔ **This document does not claim expertise in any of them.** It notes that they exist, that they
+are getting better, and that anyone building an AI operating model in 2026 should know they are
+there. **Dates and obligations move** - the EU AI Act in particular has amendments under
+negotiation - so verify current status against the source rather than against this table.
 
 ---
 
