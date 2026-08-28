@@ -28,13 +28,49 @@ Regulated environments (HIPAA, SOC 2, PHI) change the adoption order. That overl
 different question - *how do you govern AI risk across an organization and prove that you did.*
 Both questions are real and the answers are not substitutes for each other.
 
-Three bodies of work anchor the space as of **August 2026**, and they are maturing quickly:
+The landscape as of **August 2026**, in four layers. It is moving quickly and this is a map, not a
+compliance reference.
 
-| | What it is | Status |
-|---|---|---|
-| **ISO/IEC 42001:2023** | A certifiable international management-system standard for AI - the structures and processes an organization needs to govern AI responsibly | Voluntary, certifiable |
-| **NIST AI Risk Management Framework** | A voluntary US risk-function framework, with a Generative AI Profile (AI 600-1, July 2024) covering 12 risk categories | Voluntary |
-| **EU AI Act** | The first comprehensive risk-based AI regulation. GPAI obligations took effect 2 August 2025; **Commission enforcement and the Article 50 transparency obligations began 2 August 2026** | Mandatory within EU scope |
+### Management and process standards - the ISO/IEC family
+
+**42001 is the one people name, and it does not stand alone.** It sits in a family where each part
+answers a different question, and knowing the shape is more useful than knowing any one of them:
+
+| Standard | Answers |
+|---|---|
+| **ISO/IEC 42001:2023** | Does the organization have an AI management system? **Certifiable** - third-party audit, formal certificate |
+| **ISO/IEC 23894** | How do you actually run AI risk management? The technical companion to 42001's risk requirements |
+| **ISO/IEC 42005** | What impact does this specific AI system have on people, society and the environment? Impact assessment methodology, **not certifiable** |
+| **ISO/IEC 22989** | What do the words mean? The vocabulary standard, so governance, risk, engineering and vendors are describing the same things |
+| **ISO/IEC 5338** | What does the AI system lifecycle look like as a set of processes? |
+| **ISO/IEC 38507** | What does a board need to understand and decide? Governance-body guidance, above the management system |
+
+### Risk frameworks - voluntary
+
+- **NIST AI Risk Management Framework** - a US risk-function framework, widely referenced well
+  outside the US. Its **Generative AI Profile (AI 600-1, July 2024)** sets out 12 risk categories
+  specific to generative systems.
+
+### Binding regulation
+
+- **EU AI Act** - the first comprehensive risk-based AI regulation. GPAI obligations took effect
+  2 August 2025; **Commission enforcement and the Article 50 transparency obligations began
+  2 August 2026.** Mandatory within EU scope, with amendments under negotiation.
+- **A US state patchwork, changing fast.** Several states now have AI statutes with different
+  scopes and different effective dates, and at least one has already been narrowed after passage.
+  ⚠️ **This is the layer most likely to be out of date in any document you read, including this
+  one.** Do not plan against a summary; check the current text for the states you operate in.
+
+### Intergovernmental and soft law
+
+Non-binding, but they shape the ones above and get cited in procurement:
+
+- **OECD AI Principles** - first intergovernmental AI standard, adopted 2019 and updated 2024, with
+  49 adherents as of April 2026. Five values-based principles.
+- **UNESCO Recommendation on the Ethics of AI** - adopted 2021, applicable across all 194 member
+  states, framed around the full system lifecycle.
+- **Council of Europe Framework Convention on AI and human rights, democracy and the rule of law** -
+  applies existing human-rights obligations to AI activity.
 
 ⚖️ **One point of contact is worth knowing about, because it lands on tier 4.** The Act's Article 50
 transparency rules do **not** cover every use of AI - the scope is disclosure when someone is
@@ -60,10 +96,17 @@ assessment, and it will not satisfy an auditor on its own. ⚠️ **If you are s
 above, treat this as the layer that describes what your organization actually does, and the
 standard as the layer that says what you must be able to demonstrate.**
 
-⛔ **This document does not claim expertise in any of them.** It notes that they exist, that they
-are getting better, and that anyone building an AI operating model in 2026 should know they are
-there. **Dates and obligations move** - the EU AI Act in particular has amendments under
-negotiation - so verify current status against the source rather than against this table.
+⛔ **This document claims no expertise in any of them.** It records that they exist, that they are
+maturing, and that anyone building an AI operating model in 2026 should know they are there.
+**Dates and obligations move** - the EU AI Act has amendments under negotiation and the US state
+picture has already shifted once - so verify current status against the source rather than against
+this page.
+
+🔑 **The one structural observation worth taking from the layers above:** almost all of it governs
+**risk and accountability** - what could go wrong, who is answerable, what you must be able to
+demonstrate. **Very little of it addresses how the work gets divided between people and machines in
+the first place.** That gap is what these frameworks are for. It is also why they cannot substitute
+for a standard, and why a standard will not tell you which activities to hand over.
 
 ---
 
