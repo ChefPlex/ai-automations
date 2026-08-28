@@ -97,6 +97,38 @@ Three things keep a tier-4 gate real, and they are cheap:
    gate. It is a log. Either promote the activity to tier 5 honestly, or find out why review stopped.
 3. **Name the reviewer, not the team.** "Engineering reviews it" means nobody reviews it.
 
+### ⚖️ In EU scope, a rotted tier-4 gate now has a legal consequence
+
+**This stopped being purely an operational concern on 2 August 2026**, when the EU AI Act's
+Article 50 transparency obligations took effect.
+
+Article 50 does **not** require disclosing every use of AI. Its scope is specific: telling people
+when they are interacting with an AI system, labelling deepfakes, and labelling AI-generated or
+manipulated **text published to inform the public on matters of public interest.**
+
+🔑 **What matters here is the carve-out.** The labelling obligation does not apply where the content
+**has undergone human review or editorial control and a named person or organization holds editorial
+responsibility** - and the guidance is explicit that such review must be **substantive, not limited
+to superficial matters or cursory approval.**
+
+Read that against the failure mode above:
+
+- **A tier-4 gate doing real review is the exemption.** A human with named editorial responsibility
+  is reviewing before publication, which is precisely what the carve-out describes.
+- **A tier-4 gate that has rotted into a rubber stamp is "cursory approval"** - the thing the
+  guidance names as insufficient. The activity is then operating as tier 5 while being documented
+  as tier 4, and the exemption it was relying on may not hold.
+
+**So the rejection-rate measurement above is not only hygiene.** In EU scope it is the difference
+between a defensible position and a claimed exemption you cannot evidence. **And "name the reviewer,
+not the team" turns out to match the law's own requirement for a natural or legal person holding
+editorial responsibility.**
+
+⚠️ **This is a framework note, not legal advice, and it is a moving target** - the Act has
+amendments under negotiation. **Verify scope and current obligations with counsel** rather than
+against this paragraph. The point worth carrying is structural: **the honesty of your human-review
+gate is now something you may have to demonstrate, not merely assert.**
+
 ---
 
 ## Tier 5 - AI-only execution

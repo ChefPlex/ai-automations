@@ -34,7 +34,20 @@ Three bodies of work anchor the space as of **August 2026**, and they are maturi
 |---|---|---|
 | **ISO/IEC 42001:2023** | A certifiable international management-system standard for AI - the structures and processes an organization needs to govern AI responsibly | Voluntary, certifiable |
 | **NIST AI Risk Management Framework** | A voluntary US risk-function framework, with a Generative AI Profile (AI 600-1, July 2024) covering 12 risk categories | Voluntary |
-| **EU AI Act** | The first comprehensive risk-based AI regulation. GPAI obligations took effect 2 August 2025; **European Commission enforcement began 2 August 2026** | Mandatory within EU scope |
+| **EU AI Act** | The first comprehensive risk-based AI regulation. GPAI obligations took effect 2 August 2025; **Commission enforcement and the Article 50 transparency obligations began 2 August 2026** | Mandatory within EU scope |
+
+⚖️ **One point of contact is worth knowing about, because it lands on tier 4.** The Act's Article 50
+transparency rules do **not** cover every use of AI - the scope is disclosure when someone is
+interacting with an AI system, deepfakes, and AI-generated text published to inform the public on
+matters of public interest. **The labelling obligation is lifted where content has had human review
+or editorial control with a named person holding editorial responsibility, and that review must be
+substantive rather than cursory approval.**
+
+**That is the same distinction the tier model already draws** between a real tier-4 gate and one
+that has degraded into a rubber stamp - see
+[AI Execution Tiers](ai-execution-tiers.md#tier-4---ai-drives--humans-review). It is not legal
+advice and the obligations are moving; the structural point is that **the honesty of a human-review
+gate may now have to be demonstrated rather than asserted.**
 
 They are generally treated as **complementary rather than competing** - management-system framing,
 risk-function structure, and binding legal requirements respectively - and larger organizations
