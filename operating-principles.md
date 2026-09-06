@@ -2,17 +2,17 @@
 
 These principles define how TPMs should use AI in program execution.
 
-The short version is simple: use AI to get clearer faster, but do not hand it the judgment.
+The short version is simple: use AI to get clearer faster, but don't hand it the judgment.
 
 ## 1. AI is a clarity engine, not a decision maker
 
-AI can summarize, structure, rewrite, compare, and point out gaps. It should not make final decisions for program owners, engineering leaders, security leaders, legal teams, product leaders, or executives.
+AI can summarize, structure, rewrite, compare, and point out gaps. It shouldn't make final decisions for program owners, engineering leaders, security leaders, legal teams, product leaders, or executives.
 
 The TPM remains accountable for the final artifact. That includes the facts, the tone, the risk language, the owners, and the decision ask.
 
 ## 2. The TPM owns the truth
 
-A generated update is not true because it sounds good. It is true only when it matches the source systems, the current program reality, and the people accountable for the work.
+A generated update is not true because it sounds good. It's true only when it matches the source systems, the current program reality, and the people accountable for the work.
 
 Before sending anything, check the facts that matter:
 
@@ -105,17 +105,17 @@ If the output is going to a VP, customer-facing leader, security leader, legal r
 
 ## 8. The system of record still matters
 
-AI summaries do not replace Jira, Salesforce, Google Docs, dashboards, approval records, or decision logs.
+AI summaries don't replace Jira, Salesforce, Google Docs, dashboards, approval records, or decision logs.
 
-After using AI, update the right system of record. The work is not complete until the people and systems that depend on the information can trust it.
+After using AI, update the right system of record. The work isn't complete until the people and systems that depend on the information can trust it.
 
-The prettiest status update in the world does not help much if Jira still says the blocked work is green.
+The prettiest status update in the world doesn't help much if Jira still says the blocked work is green.
 
 ## 9. Good automation builds trust
 
 A good AI-assisted workflow should make teams feel more aligned, not more watched.
 
-Use automation to remove manual burden, clarify ownership, and reduce ambiguity. Do not use it to surprise teams with public escalations, unreviewed status claims, or inaccurate summaries.
+Use automation to remove manual burden, clarify ownership, and reduce ambiguity. Don't use it to surprise teams with public escalations, unreviewed status claims, or inaccurate summaries.
 
 If a generated artifact will change how someone is perceived, escalated, measured, or held accountable, slow down and review it carefully.
 
@@ -136,11 +136,11 @@ If the answer is fuzzy, shrink the input.
 
 A TPM artifact should move the reader toward something: a decision, a follow-up, a risk acceptance, a tradeoff, or a next step.
 
-If the output ends with everyone politely informed and no one clearer about what happens next, it is not done.
+If the output ends with everyone politely informed and no one clearer about what happens next, it's not done.
 
 ## 12. Do not use AI as a shield
 
-Do not hide behind a generated summary when the hard work is a conversation.
+Don't hide behind a generated summary when the hard work is a conversation.
 
 Some problems need a prompt. Some need a meeting. Some need an escalation. Some need a direct conversation with the person who owns the risk.
 

@@ -86,13 +86,13 @@ The session is stateful - each phase builds on the previous one. Keep the conver
 
 ## Design Notes
 
-**Why one question at a time in the intake prompt:** Most people with app ideas have never had to articulate them in a structured way. A list of questions produces vague answers. A conversation surfaces things the person did not know they knew - constraints, edge cases, competitive context. The one-at-a-time approach takes longer but produces a substantially better Developer Notes output.
+**Why one question at a time in the intake prompt:** Most people with app ideas have never had to articulate them in a structured way. A list of questions produces vague answers. A conversation surfaces things the person didn't know they knew - constraints, edge cases, competitive context. The one-at-a-time approach takes longer but produces a substantially better Developer Notes output.
 
 **Why six phases in the builder prompt:** The most common failure mode for beginner developers is starting to code before the idea is clear, the stack is chosen, and the scope is bounded. The phase structure prevents scope expansion and context switching. Skipping phases is how projects stall at 70%.
 
 **Why complete code only:** Prompts that produce placeholder comments are useless for someone learning by doing. The builder prompt explicitly prohibits them and asks for complete, copy-paste-ready code at every step.
 
-**Why one stack recommendation, not options:** Beginners do not benefit from "you could use X or Y." They need a decision with a reason. The builder prompt asks Claude to make the call and explain it simply.
+**Why one stack recommendation, not options:** Beginners don't benefit from "you could use X or Y." They need a decision with a reason. The builder prompt asks Claude to make the call and explain it simply.
 
 ---
 

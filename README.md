@@ -2,7 +2,7 @@
 
 AI-assisted prompts, workflows, and examples for TPM productivity and program management. Built from real use - things that save time on actual work, not proof-of-concept demos.
 
-The tools here are not about replacing judgment. They are about removing mechanical work so there is more time for the work that actually requires it.
+The tools here are not about replacing judgment. They're about removing mechanical work so there's more time for the work that actually requires it.
 
 Each workflow follows the same pattern: a **context or persona file** that carries stable domain knowledge, and a **prompt file** that drives the session interaction. Keeping them separate means you can reuse the domain knowledge across different prompt formats, and swap the prompt without rewriting the expertise.
 
@@ -41,7 +41,7 @@ Regulated environments change the adoption order. That overlay lives in
 ## The TPM Workflows, and Where They Live
 
 These four were listed here as "coming" for a while. Three of them had already shipped into this
-repo and the list did not keep up, which is a good argument for indexing what exists rather than
+repo and the list didn't keep up, which is a good argument for indexing what exists rather than
 advertising what might.
 
 | Workflow | What It Does | Where |
@@ -58,9 +58,9 @@ often enough to be worth writing down, not on a roadmap.
 
 ## Design Principles
 
-**Output you can use, not output you have to rewrite.** Prompts here are tuned for specific formats and real contexts. They produce things that slot into existing workflows, not generic text that needs heavy editing.
+**Output you can use, not output you've to rewrite.** Prompts here are tuned for specific formats and real contexts. They produce things that slot into existing workflows, not generic text that needs heavy editing.
 
-**Transparent about what AI is good at and what it is not.** AI is good at structure, first drafts, and pattern recognition. It is not good at knowing your specific situation, your org dynamics, or what the executive in the room actually cares about. These tools handle structural work. Judgment stays with you.
+**Transparent about what AI is good at and what it's not.** AI is good at structure, first drafts, and pattern recognition. It's not good at knowing your specific situation, your org dynamics, or what the executive in the room actually cares about. These tools handle structural work. Judgment stays with you.
 
 **Documented well enough to adapt.** Every workflow includes the prompt, expected input format, expected output format, and notes on where it tends to go wrong. If you need to adapt it to your context, you should be able to do that without reverse-engineering it.
 
@@ -78,7 +78,7 @@ often enough to be worth writing down, not on a roadmap.
 
 ## Contributing
 
-If you have a prompt, workflow, or pattern that saves real time on meaningful work and can be documented well enough to be useful to someone else, open a PR or file an issue. The bar: it has to work, it has to be documented, and it has to be general enough to apply outside one specific organization.
+If you've a prompt, workflow, or pattern that saves real time on meaningful work and can be documented well enough to be useful to someone else, open a PR or file an issue. The bar: it has to work, it has to be documented, and it has to be general enough to apply outside one specific organization.
 
 ---
 

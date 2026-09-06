@@ -3,14 +3,14 @@
 **A sequencing guide for AI and DevOps tooling, ordered by return rather than by hype.**
 
 Ratings current as of **August 2026**. Check that date before relying on any row. AI tooling moves
-faster than any static document, and a matrix presented as current when it is eighteen months old
+faster than any static document, and a matrix presented as current when it's eighteen months old
 does more damage than no matrix at all.
 
 ---
 
 ## The order of operations
 
-Most companies that have already bought an enterprise AI license are not getting return from it.
+Most companies that have already bought an enterprise AI license aren't getting return from it.
 The reason is consistent: **they added intelligence to a broken system and got faster chaos.**
 
 The companies that do get measurable return share one pattern. They fixed visibility, coverage, and
@@ -30,7 +30,7 @@ everything after them.
 
 - **GitGuardian and GitHub Secret Scanning.** Credentials sitting in your repos right now. Deploys
   in a day, zero workflow change for developers.
-- **SonarQube Community.** Technical debt you cannot see is debt you cannot pay. Free, CI
+- **SonarQube Community.** Technical debt you can't see is debt you can't pay. Free, CI
   integration in hours.
 - **ESLint.** Already in most JavaScript and TypeScript stacks. Turn it on as a blocking CI gate.
 
@@ -54,7 +54,7 @@ Pick **one** manual workflow costing more than four hours per person per week. A
 the hours saved. Then pick the next one.
 
 The discipline is the sequencing, not the tool. One workflow, proven, before the second. A team
-that automates six things at once cannot tell you which one paid.
+that automates six things at once can't tell you which one paid.
 
 ## Phase 4: The AI layer
 
@@ -72,7 +72,7 @@ AI augments a working system instead of amplifying a broken one.**
 
 *Month 6 and beyond.*
 
-Return is now measurable, adoption is real, and you have internal champions. **Expansion is pull,
+Return is now measurable, adoption is real, and you've internal champions. **Expansion is pull,
 not push.** Evaluate enterprise LLM tiers, compliance automation, and runtime security based on
 actual needs rather than vendor pitches.
 
@@ -85,7 +85,7 @@ This is the part people argue with, so here is the reasoning stated plainly.
 AI amplifies whatever process it lands on. Point it at a codebase with unknown secrets exposure, no
 test coverage, and six manual handoffs, and you get the same mess produced faster and with more
 confidence attached. **The phases before it are not prerequisites out of caution. They are what
-makes the AI investment legible** - you cannot measure what a tool gave you if you could not measure
+makes the AI investment legible** - you can't measure what a tool gave you if you couldn't measure
 the baseline.
 
 There is a second reason, and it is organizational. Phases 1 to 3 produce visible wins cheaply, and
@@ -136,8 +136,8 @@ the foundation exists is the single most common way to spend a lot and show noth
 AI use first.** You will find people already solving real problems with consumer tools, and that
 usage map is a far better procurement input than a vendor's deployment guide.
 
-**Autonomous coding agents are `Not Yet` on evidence, not on principle.** Benchmark numbers are not
-production reliability. Watch the space, do not build a plan that depends on it.
+**Autonomous coding agents are `Not Yet` on evidence, not on principle.** Benchmark numbers aren't
+production reliability. Watch the space, don't build a plan that depends on it.
 
 **Compliance automation moves earlier in regulated environments.** In a HIPAA or SOC 2 context,
 evidence automation is closer to phase 1 than phase 5, because audit readiness gates enterprise
@@ -149,7 +149,7 @@ sales. See the regulated-data guidance in
 ## The one-paragraph version
 
 Do not buy AI first. Buy visibility first. Find out where you are bleeding, then decide what plugs
-the holes. The companies that get return from AI are not the ones who bought the biggest model. They
+the holes. The companies that get return from AI aren't the ones who bought the biggest model. They
 are the ones who had clean data, tested code, and automated workflows before they added the
 intelligence layer.
 

@@ -8,7 +8,7 @@ The draft handles structure and assembly. You handle judgment.
 
 ## The Problem It Solves
 
-The hard part of status reporting is not the writing. It is pulling a useful signal from a week of scattered notes, deciding what actually moved, figuring out what decisions are buried in meeting threads, and assembling it into a format that the right people will read.
+The hard part of status reporting is not the writing. It's pulling a useful signal from a week of scattered notes, deciding what actually moved, figuring out what decisions are buried in meeting threads, and assembling it into a format that the right people will read.
 
 This prompt does the first pass. It reads everything you give it, extracts what matters, structures it into a complete report, and flags the gaps you need to fill in before sending. You go from "staring at a blank page" to "editing a draft" - which is a fundamentally different and faster problem.
 
@@ -56,7 +56,7 @@ For multiple projects, use one folder per project at the top level:
 ## Quick Start
 
 1. Create your inputs folder for the current period
-2. Drop in whatever you have - rough meeting notes are fine, cleaned-up notes are better
+2. Drop in whatever you've - rough meeting notes are fine, cleaned-up notes are better
 3. Open Claude at claude.ai
 4. Open `status-report-generator-prompt.md`
 5. Copy the prompt from between the triple backtick fences
@@ -150,8 +150,8 @@ Running both tools in sequence typically reduces the Needs Review section to nea
 
 The prompt is explicit about this, but worth repeating:
 
-- It does not decide whether the status is Green, Yellow, or Red. That judgment is yours.
-- It does not know your org dynamics, what is politically sensitive, or what the sponsor needs to hear this week.
+- It doesn't decide whether the status is Green, Yellow, or Red. That judgment is yours.
+- It doesn't know your org dynamics, what is politically sensitive, or what the sponsor needs to hear this week.
 - It does not replace the review step. Read everything before sending.
 
 A well-written draft that you review in five minutes is the point. Not an automated report that goes out without your eyes on it.

@@ -3,7 +3,7 @@
 **19 roles, 8 phases, ideation through operations - with tier-selection logic and an audit trail.**
 
 The execution tiers say *how much* AI belongs in an activity. This says *who does the work* when
-that activity is building software, and it is the part most multi-agent write-ups skip: a list of
+that activity is building software, and it's the part most multi-agent write-ups skip: a list of
 agents is not a delivery framework. A delivery framework has phases, gates, handoffs, and a record
 of what was decided and by whom.
 
@@ -61,7 +61,7 @@ architecture is still soft.
 | 7 - Release | Release Manager, DevOps, Sysadmin | Go / no-go |
 | 8 - Operations | Sysadmin, Engineering Manager | Ongoing |
 
-**Every phase ends in a named gate, and every gate is a human decision.** That is the through-line
+**Every phase ends in a named gate, and every gate is a human decision.** That's the through-line
 with the execution tiers: agents do the work, a person decides whether it advances.
 
 Phases 2 and 3 run in parallel deliberately. Requirements and architecture inform each other, and
@@ -72,7 +72,7 @@ requirements written without knowing what is expensive.
 
 ## Tier selection: the decision that costs the most when you get it wrong
 
-Each role can be run by a **senior** agent or a **junior** agent, and some work should not be an
+Each role can be run by a **senior** agent or a **junior** agent, and some work shouldn't be an
 agent at all. Choosing badly is the single most common failure, and it fails in two directions.
 
 | Tier | Quality | Speed | Cost | Use for |
@@ -92,7 +92,7 @@ or in an incident.
 
 ### 11 of 19 roles cannot be delegated
 
-Eight roles have a junior variant. Eleven do not, and that asymmetry is the most useful thing the
+Eight roles have a junior variant. Eleven don't, and that asymmetry is the most useful thing the
 framework knows about itself.
 
 **Senior-only** - a mistake here propagates through every phase that follows:
@@ -115,7 +115,7 @@ senior for the design and the review pass.
 
 🔑 **The review gate is what makes the cheap tier safe.** Junior output never flows downstream
 without senior validation. Remove that gate and the framework is just a cheaper way to generate
-work nobody checked - which maps exactly to how tier 4 fails in the execution-tier model, and it is
+work nobody checked - which maps exactly to how tier 4 fails in the execution-tier model, and it's
 the same discipline in a different vocabulary.
 
 ---

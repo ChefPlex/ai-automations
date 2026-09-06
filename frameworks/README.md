@@ -23,17 +23,17 @@ Regulated environments (HIPAA, SOC 2, PHI) change the adoption order. That overl
 
 ## Where this sits relative to the AI governance standards
 
-**This is not a standard and it does not replace one.** It is an operational framework: it answers
+**This isn't a standard and it doesn't replace one.** It's an operational framework: it answers
 *where AI belongs in the work, who does it, and where the human stays.* The standards answer a
 different question - *how do you govern AI risk across an organization and prove that you did.*
-Both questions are real and the answers are not substitutes for each other.
+Both questions are real and the answers aren't substitutes for each other.
 
 The landscape as of **August 2026**, in four layers. It is moving quickly and this is a map, not a
 compliance reference.
 
 ### Management and process standards - the ISO/IEC family
 
-**42001 is the one people name, and it does not stand alone.** It sits in a family where each part
+**42001 is the one people name, and it doesn't stand alone.** It sits in a family where each part
 answers a different question, and knowing the shape is more useful than knowing any one of them:
 
 | Standard | Answers |
@@ -59,7 +59,7 @@ answers a different question, and knowing the shape is more useful than knowing 
 - **A US state patchwork, changing fast.** Several states now have AI statutes with different
   scopes and different effective dates, and at least one has already been narrowed after passage.
   ⚠️ **This is the layer most likely to be out of date in any document you read, including this
-  one.** Do not plan against a summary; check the current text for the states you operate in.
+  one.** Don't plan against a summary; check the current text for the states you operate in.
 
 ### Intergovernmental and soft law
 
@@ -79,13 +79,13 @@ matters of public interest. **The labelling obligation is lifted where content h
 or editorial control with a named person holding editorial responsibility, and that review must be
 substantive rather than cursory approval.**
 
-**That is the same distinction the tier model already draws** between a real tier-4 gate and one
+**That's the same distinction the tier model already draws** between a real tier-4 gate and one
 that has degraded into a rubber stamp - see
 [AI Execution Tiers](ai-execution-tiers.md#tier-4---ai-drives--humans-review). It is not legal
 advice and the obligations are moving; the structural point is that **the honesty of a human-review
 gate may now have to be demonstrated rather than asserted.**
 
-They are generally treated as **complementary rather than competing** - management-system framing,
+They're generally treated as **complementary rather than competing** - management-system framing,
 risk-function structure, and binding legal requirements respectively - and larger organizations
 commonly operate under more than one at the same time.
 
@@ -96,8 +96,8 @@ assessment, and it will not satisfy an auditor on its own. ⚠️ **If you are s
 above, treat this as the layer that describes what your organization actually does, and the
 standard as the layer that says what you must be able to demonstrate.**
 
-⛔ **This document claims no expertise in any of them.** It records that they exist, that they are
-maturing, and that anyone building an AI operating model in 2026 should know they are there.
+⛔ **This document claims no expertise in any of them.** It records that they exist, that they're
+maturing, and that anyone building an AI operating model in 2026 should know they're there.
 **Dates and obligations move** - the EU AI Act has amendments under negotiation and the US state
 picture has already shifted once - so verify current status against the source rather than against
 this page.
@@ -106,14 +106,14 @@ this page.
 **risk and accountability** - what could go wrong, who is answerable, what you must be able to
 demonstrate. **Very little of it addresses how the work gets divided between people and machines in
 the first place.** That gap is what these frameworks are for. It is also why they cannot substitute
-for a standard, and why a standard will not tell you which activities to hand over.
+for a standard, and why a standard won't tell you which activities to hand over.
 
 ---
 
 ## The through-line
 
-All four documents are one argument, and it is the same one this repo opens with: **the tools are
-not about replacing judgment, they are about removing mechanical work so there is more time for the
+All four documents are one argument, and it's the same one this repo opens with: **the tools are
+not about replacing judgment, they're about removing mechanical work so there's more time for the
 work that actually requires it.**
 
 The execution tiers make that concrete by forcing every activity onto exactly one rung, in writing,
@@ -125,4 +125,4 @@ Read in that order if you are starting from nothing. Start with the tool matrix 
 already bought the license and is asking why nothing improved.
 
 **A human is always in the loop.** They edit, they approve, and they stay part of the solution. What
-moves across the tiers is where they stand, never whether they are there.
+moves across the tiers is where they stand, never whether they're there.

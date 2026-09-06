@@ -6,7 +6,7 @@ Always follow your company's approved AI usage, data classification, security, p
 
 ## Golden rule
 
-Only paste data into an AI tool when you are allowed to use that tool for that data.
+Only paste data into an AI tool when you're allowed to use that tool for that data.
 
 When uncertain, remove the data or ask the appropriate internal owner before using it. Not every useful prompt needs raw data. A clean summary is usually enough.
 
@@ -62,7 +62,7 @@ Use placeholders that preserve meaning without carrying sensitive details.
 | Internal URL | Link removed, source system noted |
 | Log excerpt | Sanitized symptom summary |
 
-The goal is to keep enough signal to do the TPM work while removing details the model does not need.
+The goal is to keep enough signal to do the TPM work while removing details the model doesn't need.
 
 ## Prompting with Salesforce data
 
@@ -109,12 +109,12 @@ Jira is often cleaner than raw Slack, but it can still contain sensitive details
 Before using Jira content:
 
 - Remove customer identifiers.
-- Remove sensitive security details that are not approved for AI tools.
+- Remove sensitive security details that aren't approved for AI tools.
 - Remove internal links if they are not needed.
 - Preserve owners, status, due dates, and dependencies only when allowed.
 - Validate output against Jira before publishing.
 
-Jira should be used to ground status. If the model says something is complete but Jira does not, trust Jira until a human confirms otherwise.
+Jira should be used to ground status. If the model says something is complete but Jira doesn't, trust Jira until a human confirms otherwise.
 
 ## Prompting with Google Workspace data
 

@@ -27,4 +27,4 @@ Each workflow follows the same basic structure:
 
 ## Reminder
 
-A workflow is not complete until the right system of record is updated. If the update says the risk is mitigated but the RAID log still says open, the work is not actually closed.
+A workflow isn't complete until the right system of record is updated. If the update says the risk is mitigated but the RAID log still says open, the work isn't actually closed.

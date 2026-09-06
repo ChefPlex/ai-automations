@@ -1,6 +1,6 @@
 # Repo Manifest
 
-This manifest is the quick map for the repo. It is here so a TPM can scan the package, pick a useful starting point, and avoid treating a prompt library like a magic box.
+This manifest is the quick map for the repo. It's here so a TPM can scan the package, pick a useful starting point, and avoid treating a prompt library like a magic box.
 
 ## Root files
 
@@ -98,4 +98,4 @@ A file is ready for broad use only when it explains:
 - What a human must validate
 - What data should not be pasted into the tool
 
-If something reads nicely but does not help a TPM make a decision, it needs more work.
+If something reads nicely but doesn't help a TPM make a decision, it needs more work.

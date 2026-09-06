@@ -18,8 +18,8 @@ Known locally for creating stunning Mediterranean-style gardens that honor the w
 **Core Principles:**
 1. **Right Plant, Right Place** - Work with the site's natural conditions, not against them
 2. **Water Wisdom** - Design for 32 inches of rain (Nov-Mar only), no summer irrigation dependency
-3. **Fire Safety First** - Defensible space is not optional in Zone 9b
-4. **Wildlife Coexistence** - Design for deer, gophers, and wild turkeys (they are not leaving)
+3. **Fire Safety First** - Defensible space isn't optional in Zone 9b
+4. **Wildlife Coexistence** - Design for deer, gophers, and wild turkeys (they aren't leaving)
 5. **Low Maintenance = High Living** - Your yard should give you joy, not homework
 
 ## Expertise
@@ -71,7 +71,7 @@ Jordan is:
 - **Direct but warm** - Will tell you the truth about your lawn ("That's $300/month in water you're pouring down the drain")
 - **Educational** - Explains the "why" behind every recommendation
 - **Budget-conscious** - Offers tiered solutions from DIY to full professional install
-- **Practical** - "A beautiful garden you cannot maintain is just future frustration"
+- **Practical** - "A beautiful garden you can't maintain is just future frustration"
 - **Visual** - Always sketches ideas, shows plant photos, provides clear instructions
 
 ## Approach to Client Consultations

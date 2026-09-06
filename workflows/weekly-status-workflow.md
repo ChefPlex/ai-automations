@@ -2,7 +2,7 @@
 
 ## Goal
 
-Create a weekly program status update that is accurate, concise, and useful for stakeholders. The update should show what changed, what is at risk, and what decision or help is needed next.
+Create a weekly program status update that's accurate, concise, and useful for stakeholders. The update should show what changed, what is at risk, and what decision or help is needed next.
 
 ## Source systems
 
@@ -102,7 +102,7 @@ These examples show the expected conversion from scattered Jira, Slack, RAID, an
 
 This workflow works only as well as the source material. If Jira is stale, Slack has unconfirmed opinions, or the actual risk lives in side conversations, the generated update can look clean while missing the real problem.
 
-Do not let the status draft become the system of record. Use it to write the update, then make sure Jira, the RAID log, and the program tracker agree with what you are about to publish.
+Do not let the status draft become the system of record. Use it to write the update, then make sure Jira, the RAID log, and the program tracker agree with what you're about to publish.
 
 ## Done when
 

@@ -35,7 +35,7 @@ are enough to decide what to buy and what to change.
 **L3 is expensive and worth it in exactly one situation:** where the cost of getting a step wrong
 is high and the step is currently undefined. In practice that means the functions with gates in
 them. Security review, release decisions, incident response, anything with a regulator attached.
-Building L3 for marketing content production is precision applied to a problem that did not need it.
+Building L3 for marketing content production is precision applied to a problem that didn't need it.
 
 ---
 
@@ -52,7 +52,7 @@ not job titles. **Activities.**
 
 Then assign each one a tier. One tier, no ranges.
 
-**What good looks like at L1:** one page, colour-coded, and someone who does not work at the
+**What good looks like at L1:** one page, colour-coded, and someone who doesn't work at the
 company can read it and tell you where the humans are.
 
 ### Do the tier 1 column first
@@ -61,9 +61,9 @@ Before classifying anything else, go through every activity and mark the ones wh
 alone, always. Hiring decisions. Architecture tradeoffs. Go/no-go calls. Investor conversations.
 Difficult performance conversations.
 
-**Draw that boundary before you know what it will cost you.** It is much easier to defend a line
+**Draw that boundary before you know what it will cost you.** It's much easier to defend a line
 you drew on principle than one you drew after someone showed you the savings from crossing it. A
-map with an empty tier 1 column is not an efficient company. It is a company that has not thought
+map with an empty tier 1 column isn't an efficient company. It is a company that has not thought
 about this.
 
 ---
@@ -81,11 +81,11 @@ happen. For each, record four fields:
 | **Gate** | For tiers 4 and 5: who can stop it, or an explicit "nobody, and here is why" |
 
 **Do this with two people who do the work, not one person who owns the org chart.** Where they
-disagree about the tier, you have found an undefined process, and you found it for the price of a
+disagree about the tier, you've found an undefined process, and you found it for the price of a
 conversation.
 
-**Expect the map to be wrong in useful ways.** The common finding is not "we should automate this."
-It is "three people are doing this differently and none of them knew."
+**Expect the map to be wrong in useful ways.** The common finding isn't "we should automate this."
+It's "three people are doing this differently and none of them knew."
 
 ---
 
@@ -94,8 +94,8 @@ It is "three people are doing this differently and none of them knew."
 Only where the gates matter. Take one L2 phase and break it into sub-streams, then into steps, and
 for every step name the tool, the owner, and where the human gate sits.
 
-The value of L3 is not the diagram. It is that **you cannot draw it without discovering that a gate
-you believed existed does not.** That discovery is the entire return on the exercise, and it is
+The value of L3 is not the diagram. It's that **you can't draw it without discovering that a gate
+you believed existed doesn't.** That discovery is the entire return on the exercise, and it's
 common enough to expect.
 
 ---
@@ -117,7 +117,7 @@ different tiers is an undefined process. That list is more actionable than the m
 
 ## What to do with the finished map
 
-**Do not go shopping.** The map tells you where the work is, not what to buy, and a map is not a
+**Don't go shopping.** The map tells you where the work is, not what to buy, and a map isn't a
 budget request. Sequencing what to adopt is a separate exercise with its own order of operations,
 and the order matters more than the tools.
 

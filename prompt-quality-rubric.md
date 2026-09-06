@@ -2,7 +2,7 @@
 
 Use this rubric to decide whether a TPM prompt is ready to share with another person.
 
-The question is not, "Did it produce something?" The question is, "Would I trust another TPM to use this safely and get a useful result?"
+The question isn't, "Did it produce something?" The question is, "Would I trust another TPM to use this safely and get a useful result?"
 
 Score each category from 1 to 5.
 
@@ -32,7 +32,7 @@ Score each category from 1 to 5.
 
 ## Required sections for reusable prompts
 
-A prompt file should include these sections before it is treated as reusable:
+A prompt file should include these sections before it's treated as reusable:
 
 ```text
 What this does
@@ -135,7 +135,7 @@ Ask these before adding a prompt to the repo:
 - What must a human validate?
 - Where does this prompt fail?
 
-If those questions are hard to answer, the prompt is not ready yet. That is fine. Better to tighten it now than have someone find the gap in a leadership review.
+If those questions are hard to answer, the prompt isn't ready yet. That is fine. Better to tighten it now than have someone find the gap in a leadership review.
 
 ## Stop signs
 
@@ -145,7 +145,7 @@ Do not publish or reuse a prompt when it:
 - Turns uncertainty into confidence
 - Hides risk behind pleasant language
 - Requires sensitive raw data when a sanitized summary would work
-- Produces an artifact that sounds better but does not help anyone act
+- Produces an artifact that sounds better but doesn't help anyone act
 - Has no human review checklist
 - Has no failure mode
 
