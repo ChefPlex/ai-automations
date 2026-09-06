@@ -83,3 +83,8 @@ If you've a prompt, workflow, or pattern that saves real time on meaningful work
 ---
 
 *Built from experience running platform security, infrastructure, and compliance programs at enterprise scale. Maintained by [Eric White](https://www.linkedin.com/in/edwhite) | [ChefPlex](https://github.com/ChefPlex)*
+
+## License
+
+Copyright (c) 2026 Eric White. Licensed under [CC BY 4.0](LICENSE): use it, adapt it, put it to
+work in your own program. Credit is the only condition.
