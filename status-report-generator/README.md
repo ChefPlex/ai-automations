@@ -56,7 +56,7 @@ For multiple projects, use one folder per project at the top level:
 ## Quick Start
 
 1. Create your inputs folder for the current period
-2. Drop in whatever you've - rough meeting notes are fine, cleaned-up notes are better
+2. Drop in whatever you have - rough meeting notes are fine, cleaned-up notes are better
 3. Open Claude at claude.ai
 4. Open `status-report-generator-prompt.md`
 5. Copy the prompt from between the triple backtick fences

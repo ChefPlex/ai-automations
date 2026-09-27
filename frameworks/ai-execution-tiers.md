@@ -36,7 +36,7 @@ Use it when the activity carries one of:
 - **Relationship as the substance of the work.** Investor conversations. Negotiating key contract
   terms. A difficult conversation with a struggling employee.
 
-⚠️ **This tier is the one people quietly skip, and skipping it's the single most expensive mistake
+⚠️ **This tier is the one people quietly skip, and skipping it is the single most expensive mistake
 in the model.** A framework with no tier 1 is a framework that will eventually recommend automating
 a firing. Populate this tier first, deliberately, before you classify anything else - it's much
 easier to defend a boundary you drew before you knew what it would cost you.

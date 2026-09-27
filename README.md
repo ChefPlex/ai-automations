@@ -58,7 +58,7 @@ often enough to be worth writing down, not on a roadmap.
 
 ## Design Principles
 
-**Output you can use, not output you've to rewrite.** Prompts here are tuned for specific formats and real contexts. They produce things that slot into existing workflows, not generic text that needs heavy editing.
+**Output you can use, not output you have to rewrite.** Prompts here are tuned for specific formats and real contexts. They produce things that slot into existing workflows, not generic text that needs heavy editing.
 
 **Transparent about what AI is good at and what it's not.** AI is good at structure, first drafts, and pattern recognition. It's not good at knowing your specific situation, your org dynamics, or what the executive in the room actually cares about. These tools handle structural work. Judgment stays with you.
 
@@ -78,7 +78,7 @@ often enough to be worth writing down, not on a roadmap.
 
 ## Contributing
 
-If you've a prompt, workflow, or pattern that saves real time on meaningful work and can be documented well enough to be useful to someone else, open a PR or file an issue. The bar: it has to work, it has to be documented, and it has to be general enough to apply outside one specific organization.
+If you have a prompt, workflow, or pattern that saves real time on meaningful work and can be documented well enough to be useful to someone else, open a PR or file an issue. The bar: it has to work, it has to be documented, and it has to be general enough to apply outside one specific organization.
 
 ---
 

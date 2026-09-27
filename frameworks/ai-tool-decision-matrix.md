@@ -72,7 +72,7 @@ AI augments a working system instead of amplifying a broken one.**
 
 *Month 6 and beyond.*
 
-Return is now measurable, adoption is real, and you've internal champions. **Expansion is pull,
+Return is now measurable, adoption is real, and you have internal champions. **Expansion is pull,
 not push.** Evaluate enterprise LLM tiers, compliance automation, and runtime security based on
 actual needs rather than vendor pitches.
 
