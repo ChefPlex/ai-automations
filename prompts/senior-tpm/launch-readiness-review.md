@@ -36,10 +36,10 @@ Create a readiness checklist covering:
 9. Rollback plan
 10. Known risks
 11. Launch decision criteria
-12. Go or no go recommendation
+12. Evidence for go, evidence against go, and missing items
 13. Missing information
 
-Do not recommend go unless the evidence supports it. If something is unknown, call it unknown.
+Do not make the go or no go call. That decision belongs to the named decision owner. Lay out the evidence on both sides so they can make it. If something is unknown, call it unknown.
 
 Context:
 [paste sanitized context]
@@ -51,7 +51,7 @@ Context:
 - Open blockers
 - Top risks
 - Decision criteria
-- Go or no go recommendation
+- Evidence for and against go, and missing items (the decision owner makes the call)
 - Missing information
 
 ## Human review checklist

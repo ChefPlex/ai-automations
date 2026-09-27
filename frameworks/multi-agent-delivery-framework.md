@@ -68,6 +68,23 @@ Phases 2 and 3 run in parallel deliberately. Requirements and architecture infor
 serializing them produces either an architecture built for requirements that changed or
 requirements written without knowing what is expensive.
 
+### Every handoff loses information
+
+Each handoff between sequential roles is a summary, and a summary drops detail. When stage N's
+only input is stage N-1's output, the loss compounds down the chain, and nothing downstream can
+recover what was dropped upstream. So the default is **one context doing the work**, not a relay of
+roles. Split work across agents where it earns its place:
+
+- **Parallel fan-out for reading and review.** Several agents each read a different part of the
+  material and report back to one coordinator. No agent depends on another's summary, so nothing
+  compounds, and together they read more than one agent would.
+- **A sequential handoff only at a real boundary**, such as a human gate, a different set of
+  permissions, or a different system. When a handoff happens, pass the source material along with
+  the summary so the next role can check it.
+
+The 19 roles are a map of the responsibilities a build has to cover. They are not a
+recommendation to run 19 agents in a chain.
+
 ---
 
 ## Tier selection: the decision that costs the most when you get it wrong
@@ -81,6 +98,9 @@ agent at all. Choosing badly is the single most common failure, and it fails in 
 | **Junior** | Adequate | Fast | Cheap | Execution against a complete spec - **with a mandatory senior review gate** |
 | **Script** | Deterministic | Fastest | Negligible | Enumerating, scanning, validating more than ~10 items |
 
+*The quality ratings in this table are design judgement from building with the framework, not a
+measured comparison. Speed and cost can be measured from the cost log; quality has not been.*
+
 **Failure mode 1 - a senior agent doing execution.** Enumerating 200 files or generating report
 stubs from a template burns expensive reasoning on work a script does better, because a script does
 it the same way every time.
@@ -93,7 +113,8 @@ or in an incident.
 ### 11 of 19 roles cannot be delegated
 
 Eight roles have a junior variant. Eleven don't, and that asymmetry is the most useful thing the
-framework knows about itself.
+framework knows about itself. The split below is design judgement about where a mistake costs the
+most. It is not the result of a measurement, and no role has been removed and re-run to test it.
 
 **Senior-only** - a mistake here propagates through every phase that follows:
 
@@ -113,10 +134,23 @@ framework knows about itself.
 **Context-dependent** - 04, 08, 09, 12 can run junior for implementation once the design is settled,
 senior for the design and the review pass.
 
-🔑 **The review gate is what makes the cheap tier safe.** Junior output never flows downstream
-without senior validation. Remove that gate and the framework is just a cheaper way to generate
-work nobody checked - which maps exactly to how tier 4 fails in the execution-tier model, and it's
-the same discipline in a different vocabulary.
+🔑 **The review gate is what makes the cheap tier safe, but only if the review is independent.**
+Junior output never flows downstream without review. Remove that gate and the framework is just a
+cheaper way to generate work nobody checked - which maps exactly to how tier 4 fails in the
+execution-tier model.
+
+⚠️ **A "senior" agent on the same model is not independent verification.** Agents that share a
+model, a prompt shape and a method are one sample drawn more than once. They tend to make the same
+mistakes, so their agreement is not verification. A review counts only when it brings
+**failure-mode diversity**, at least one of:
+
+- **A different model**, ideally a different model family
+- **The source evidence** - the reviewer checks the output against the original material, not
+  against the writer's summary of it
+- **Execution** - run the tests, serve the application, query the system
+
+Every review also ends with a **coverage footer**: what each reviewer read, and what it did not
+read. A review that does not say what it skipped reports an unknown as a pass.
 
 ---
 
@@ -151,6 +185,22 @@ is there a simpler alternative nobody priced. Logged to the decision record befo
 the point where cost starts accruing fast.
 
 Neither gate is advisory. Both are logged, and both can stop the run.
+
+---
+
+## Bounds and terminal states
+
+An agent loop without limits does not fail, it keeps going. Set these before a run starts:
+
+- **A maximum number of fix rounds.** When review and fix have cycled that many times without
+  converging, stop. Another round usually repeats the same mistake.
+- **A maximum spawn depth.** An agent may start sub-agents only to a fixed depth, so work cannot
+  fan out without limit.
+- **"Blocked, needs a human" is a terminal state.** It is a legitimate way for a run to end, logged
+  with what was tried and what is missing. It is not a failure to be retried until it goes away.
+- **Downstream roles re-authorise inherited actions.** An approval given to one role does not pass
+  down the chain. A role that inherits a pending action, such as a deploy, a send, or a data
+  change, checks that it is still authorised before it acts.
 
 ---
 

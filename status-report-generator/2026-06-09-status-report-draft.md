@@ -12,9 +12,16 @@ REAL LOOK AND FEEL, BUT THE FOLLOWING IS BASED ON FAKE DATA
 
 ## 1. Overall Status
 
-**🟡 YELLOW**
+**TPM CALL**
 
-Payments team (billing pipeline) is not committed to the June 15 deadline and estimates a 3-week slip to July 1. This creates a direct compliance gap with the DSA audit window opening July 1. Escalation decision pending by Wednesday EOD.
+| Colour | Evidence for it | Source |
+|--------|-----------------|--------|
+| GREEN | 23 of 37 services complete; non-payments track on target for June 20; budget on track | Meeting notes (June 9), RAID log |
+| YELLOW | Payments team (billing pipeline) not committed to June 15 and estimates a 3-week slip to July 1; escalation decision pending by Wednesday EOD; two cipher suite issues in QA, root cause known | Meeting notes, Slack export |
+| RED | If billing slips to July 1, it lands on the DSA audit window opening July 1, and June 30 is a hard date for evidence packages | Slack export (Marcus, Tue 9:03 AM) |
+
+**Previous status:** GREEN
+**What would change the call:** Raj's June 13 plan. A firm June 15 commitment supports YELLOW or better; a confirmed July 1 slip with no exception path supports RED.
 
 ---
 
@@ -41,7 +48,7 @@ The TLS modernization program is 23 of 37 services complete and on track for all
 
 | Decision | Owner | Needed By | Impact if Delayed |
 |----------|-------|-----------|-------------------|
-| Escalate billing pipeline dependency to VP? | Eric | Wednesday June 11 EOD | If Raj does not commit to June 15 by Wed and we do not escalate, we lose another week before VP is aware; DSA audit gap risk grows |
+| Escalate billing pipeline dependency to VP? | <TPM> | Wednesday June 11 EOD | If Raj does not commit to June 15 by Wed and we do not escalate, we lose another week before VP is aware; DSA audit gap risk grows |
 | Formal exception required if billing misses June 30 audit evidence deadline? | Marcus (Security) | June 14 | DSA audit team needs documentation; no exception = compliance finding |
 
 ---
@@ -63,7 +70,7 @@ The TLS modernization program is 23 of 37 services complete and on track for all
 | QA validation complete for all done services | Priya | June 13 | On Track |
 | Cipher suite fix - reporting-service + data-export | Dev | June 20 | On Track |
 | Billing pipeline (payments team) TLS upgrade | Raj (Payments) | June 15 | At Risk |
-| DSA audit evidence packages - all services | Eric + Marcus | June 30 | At Risk (dependent on billing) |
+| DSA audit evidence packages - all services | <TPM> + Marcus | June 30 | At Risk (dependent on billing) |
 
 ---
 
@@ -71,9 +78,9 @@ The TLS modernization program is 23 of 37 services complete and on track for all
 
 | # | Type | Description | Owner | Mitigation / Resolution | Status Change |
 |---|------|-------------|-------|------------------------|---------------|
-| R-14 | RISK | Billing pipeline TLS upgrade - payments team (Raj) estimates 3-week slip from June 15 to ~July 1. If confirmed, creates compliance gap with DSA audit window opening July 1. | Eric | Direct outreach to Raj underway; Raj committed to provide plan by Friday June 13. If no firm commitment, escalate to VP Monday June 16. | **NEW this period** |
+| R-14 | RISK | Billing pipeline TLS upgrade - payments team (Raj) estimates 3-week slip from June 15 to ~July 1. If confirmed, creates compliance gap with DSA audit window opening July 1. | <TPM> | Direct outreach to Raj underway; Raj committed to provide plan by Friday June 13. If no firm commitment, escalate to VP Monday June 16. | **NEW this period** |
 | I-07 | ISSUE | Cipher suite issues on reporting-service and data-export - non-compliant cipher configuration identified during QA validation. Same root cause as api-gateway (old cipher list in config template). Not blocking completed services but required for program close. | Dev | Root cause confirmed; config template fix in progress. Target June 20. | Ongoing |
-| R-09 | RISK | Legacy service inventory completeness | Eric | Final inventory confirmed at 37 services. | **CLOSED June 8** |
+| R-09 | RISK | Legacy service inventory completeness | <TPM> | Final inventory confirmed at 37 services. | **CLOSED June 8** |
 
 ---
 
@@ -81,19 +88,23 @@ The TLS modernization program is 23 of 37 services complete and on track for all
 
 | Gap | What Would Resolve It | Who Probably Has It |
 |-----|----------------------|---------------------|
-| Raj's June 13 plan - is it a firm commitment or another estimate? | Direct conversation with Raj; follow-up email confirming outcome | Eric (action item from meeting) |
+| Raj's June 13 plan - is it a firm commitment or another estimate? | Direct conversation with Raj; follow-up email confirming outcome | <TPM> (action item from meeting) |
 | Does the DSA audit exception process require VP sign-off or can Marcus initiate directly? | Check with Marcus and Legal | Marcus |
 | Cipher suite fix - is June 20 achievable or does it need to move to coincide with other June 20 service completions? | Dev to confirm in writing | Dev |
 
 ---
 
-## 9. Raw Source Notes
+## 9. Source Coverage
 
-*(Remove this section before sending)*
+*(Working file only. Keep it here; leave it out of the sent version.)*
 
-**Sources provided:** Weekly sync meeting notes (June 9), RAID log updates, Slack export from #tls-modernization.
+| Input | Sections that cite it | Notes |
+|-------|-----------------------|-------|
+| Weekly sync meeting notes (June 9) | 1, 2, 3, 4, 5, 6, 7, 8 | Primary source for the billing dependency and the escalation timeline |
+| RAID log updates | 1, 3, 7 | R-09 closure and R-14 rating |
+| Slack export, #tls-modernization | 1, 2, 5, 7 | Only source for the June 30 hard date; confirms Raj's non-commitment |
 
-**Key signals:** The billing pipeline situation is the dominant story this period. Raj's non-commitment is documented in meeting notes and confirmed in Slack (Eric's message Wed 8:15 AM: "not a commitment yet"). The escalation timeline is clear: firm commitment needed by Wednesday EOD, VP escalation by Monday June 16 if not received.
+**Key signals:** The billing pipeline situation is the dominant story this period. Raj's non-commitment is documented in meeting notes and confirmed in Slack (<TPM>'s message Wed 8:15 AM: "not a commitment yet"). The escalation timeline is clear: firm commitment needed by Wednesday EOD, VP escalation by Monday June 16 if not received.
 
 The cipher suite issue appears lower urgency than it might read - Priya and Dev both confirmed it's the same root cause as a previously resolved issue (api-gateway), root cause identified quickly, fix in progress. Watch for QA sign-off confirmation by June 13.
 
@@ -103,4 +114,4 @@ One source gap: no budget detail beyond "still on track" from Dev. If VP-level a
 
 ---
 
-*DRAFT COMPLETE. Before sending: verify Overall Status is defensible, confirm all decision owners are correct, fill in any NEEDS REVIEW items, and remove Section 9.*
+*DRAFT COMPLETE. Before sending: make the overall status call in Section 1, confirm all decision owners are correct, fill in any NEEDS REVIEW items, and check Section 9 for inputs marked 'not used'. Keep Section 9 in the working file; leave it out of the sent version.*

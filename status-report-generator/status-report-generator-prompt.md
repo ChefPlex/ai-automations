@@ -44,11 +44,22 @@ Do not invent facts. If something is missing, say it is missing. If status canno
 
 SECTION 1: OVERALL STATUS
 
-State: GREEN / YELLOW / RED
+State: TPM CALL
 
-Provide a one-sentence rationale. Be specific - name the thing driving the status. "On track" is not a rationale. "All milestones on schedule and no active blockers" is a rationale. "Auth dependency not confirmed, June 15 launch at risk" is a rationale.
+Do not choose GREEN, YELLOW, or RED. The overall status is a judgment the TPM makes and defends. Your job is to lay out the evidence so that call is fast and honest.
 
-If you cannot determine overall status from source material, state: NEEDS REVIEW - [what information is missing]
+For each colour, list the specific evidence from source material that supports it, and cite the input it came from. Be specific - name the thing. "On track" is not evidence. "All milestones on schedule and no active blockers (standup notes, June 9)" is evidence. "Auth dependency not confirmed, June 15 launch at risk (Slack export)" is evidence.
+
+Format:
+
+| Colour | Evidence for it | Source |
+|--------|-----------------|--------|
+| GREEN | [evidence, or "none found"] | [input] |
+| YELLOW | [evidence, or "none found"] | [input] |
+| RED | [evidence, or "none found"] | [input] |
+
+Previous status: [from the context block, or NEEDS REVIEW]
+What would change the call: [the one or two facts that, if confirmed, would move it]
 
 ---
 
@@ -149,15 +160,21 @@ This section is not a failure - it is the most useful part of the draft for the 
 
 ---
 
-SECTION 9: RAW SOURCE NOTES
+SECTION 9: SOURCE COVERAGE (working file only)
 
-Brief summary of what source material was provided and what the most useful signals were. Note any source material that seemed contradictory or unclear.
+One row per input you were given. List every input, including ones you did not use. An input that shaped nothing should be visible as "not used", not silently absent.
+
+| Input | Sections that cite it | Notes |
+|-------|-----------------------|-------|
+| [file or paste name] | [e.g. 1, 3, 7] or "not used" | [contradictory, unclear, out of date, or why it was not used] |
+
+This table stays in the working file so the TPM can see what the draft rests on. It does not go in the version that is sent.
 
 ---
 
 After producing all sections, end with:
 
-"DRAFT COMPLETE. Before sending: verify Overall Status is defensible, confirm all decision owners are correct, fill in any NEEDS REVIEW items, and remove Section 9."
+"DRAFT COMPLETE. Before sending: make the overall status call in Section 1, confirm all decision owners are correct, fill in any NEEDS REVIEW items, and check Section 9 for inputs marked 'not used'. Keep Section 9 in the working file; leave it out of the sent version."
 ```
 
 ---
@@ -288,7 +305,7 @@ For multiple projects:
 
 ## Integration With the Slack Tools
 
-If you are running the Slack Crawler in tpm-toolbox, the crawler output is excellent input for this prompt. Copy the canvas content (or the brief text output) into your inputs folder alongside your meeting notes. The combination of Slack signal plus meeting notes typically reduces the NEEDS REVIEW section to near zero.
+If you are running the Slack Crawler in tpm-toolbox, the crawler output is excellent input for this prompt. Copy the canvas content (or the brief text output) into your inputs folder alongside your meeting notes. Slack signal often fills gaps that meeting notes leave, so expect fewer NEEDS REVIEW items. Check the Section 9 coverage table to see which input each section actually drew on.
 
 ```
 Slack Crawler (weekly)  →  inputs/YYYY-MM-DD/slack-brief.txt

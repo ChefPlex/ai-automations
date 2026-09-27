@@ -64,7 +64,7 @@ For multiple projects, use one folder per project at the top level:
 7. Fill in project name, your name, reporting period, date, audience, previous status
 8. Send
 9. Copy the output to `outputs/YYYY-MM-DD-draft.md`
-10. Review, fill in NEEDS REVIEW items, verify the status call, remove Section 9, send
+10. Review, make the status call from the Section 1 evidence, fill in NEEDS REVIEW items, check Section 9 for unused inputs, send without Section 9 (keep it in the working file)
 
 ---
 
@@ -94,7 +94,7 @@ The draft produces nine sections:
 
 | Section | What It Contains |
 |---------|----------------|
-| 1. Overall Status | GREEN / YELLOW / RED with rationale |
+| 1. Overall Status | Marked TPM CALL, with the evidence for each of GREEN, YELLOW and RED and its source. The model does not pick the colour. |
 | 2. Summary | 2-4 sentence executive summary |
 | 3. Project Components | Budget, Schedule, Quality, Scope, Risks, Roadblocks - each with status and note |
 | 4. Decisions Needed | Decision, owner, deadline, impact if delayed |
@@ -102,7 +102,7 @@ The draft produces nine sections:
 | 6. Upcoming Milestones | Target dates, owners, current status |
 | 7. Risks and Issues | Typed, owned, with mitigation plans and change indicators |
 | 8. Needs Review | Gaps the TPM needs to fill before sending |
-| 9. Raw Source Notes | What was provided and what the key signals were (remove before sending) |
+| 9. Source Coverage | One row per input: which sections cite it, or "not used". Kept in the working file, left out of the sent version. |
 
 ---
 
@@ -134,7 +134,7 @@ RAID log changes        →  inputs/YYYY-MM-DD/raid-updates.txt
                     outputs/YYYY-MM-DD-draft.md
 ```
 
-Running both tools in sequence typically reduces the Needs Review section to near zero because the Slack brief captures channel activity that meeting notes often miss.
+The Slack brief captures channel activity that meeting notes often miss, so it can close some Needs Review gaps. The Section 9 coverage table shows whether it actually did.
 
 ---
 

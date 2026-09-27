@@ -1,6 +1,6 @@
 # Web App Builder Prompt
 
-A six-phase structured prompt that takes you from idea to working web app. Designed for developers with a scripting or Unix background who learn by doing - not for reading documentation end-to-end.
+A seven-phase structured prompt that takes you from idea to working web app. Designed for developers with a scripting or Unix background who learn by doing - not for reading documentation end-to-end.
 
 Fill in your idea before pasting. If you ran the App Idea Intake Prompt first, paste the Developer Notes output into the placeholder and you will hit Phase 1 already halfway done.
 
@@ -81,8 +81,9 @@ Suggest a visual design direction that fits the product. Include:
 - Layout approach for the main dashboard or core screen
 
 Then generate the HTML/CSS/JS or React code for the first key screen - make it 
-production-quality, visually distinctive, and not generic. No purple gradients, 
-no boring defaults.
+clean, visually distinctive, and not generic. No purple gradients, no boring 
+defaults. This is a starting point, not production code: nothing is production 
+quality until it has tests that have been run.
 
 ---
 
@@ -92,10 +93,30 @@ Now we build. For each feature:
 2. Write the full working code - frontend + backend if needed
 3. Tell me exactly where to put each file and what to name it
 4. Give me the terminal commands to run (I am comfortable in Unix/bash)
-5. Explain how to test it manually in the browser
-6. Flag any gotchas or common mistakes
+5. Write at least one automated test for it, give me the command to run the 
+   tests, and ask me to paste the result. A test that has not been run does 
+   not count.
+6. Explain how to test it manually in the browser
+7. Flag any gotchas or common mistakes
 
-After each feature, ask me: "Does this work? Ready to move to the next one?"
+After each feature, ask me: "Does this work? Did the tests pass? Ready to move 
+to the next one?"
+
+Before any feature that handles logins, user data, or money, walk me through 
+this checklist and do not move on until each item is answered:
+- Secrets: API keys and passwords live in environment variables, never in the 
+  code or the repo
+- Auth: every route that reads or changes user data checks who is asking
+- Input validation: every form field and API input is checked on the server, 
+  not only in the browser
+
+---
+
+PHASE 7 - HUMAN GATE BEFORE GOING LIVE
+Before I deploy to the public internet or take real payments, stop and give me 
+a short go-live list: which tests exist and passed, the checklist above, what 
+has not been tested, and what could go wrong. I decide whether to go live. Do 
+not give me deploy or payment commands until I say I have reviewed it.
 
 ---
 
@@ -135,8 +156,9 @@ If a non-technical stakeholder or collaborator ran the intake conversation first
 | 2 - Tech Stack | Stack recommendation with plain-English rationale | Approved stack before building starts |
 | 3 - Architecture | Data model, API routes, system diagram | Blueprint you understand before touching code |
 | 4 - MVP Scope | Feature prioritization, build order | Checklist that keeps scope from expanding |
-| 5 - UI/UX Direction | Visual design, color, typography, first screen code | Production-quality starting point |
-| 6 - Build | Feature by feature, full working code, file placement, terminal commands | Working app |
+| 5 - UI/UX Direction | Visual design, color, typography, first screen code | A starting point for the first screen |
+| 6 - Build | Feature by feature, full working code, executed tests, security checklist | Working app with tests you have run |
+| 7 - Go-Live Gate | Summary of tests, checklist, and untested areas | Your decision to deploy or take payments |
 
 The phase structure exists to prevent the most common beginner failure mode: starting to code before the idea is clear, the stack is chosen, and the scope is bounded. Skipping phases is how projects stall.
 

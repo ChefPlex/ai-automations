@@ -41,7 +41,9 @@ Return:
 2. Concerns
 3. Questions to ask
 4. Recommendations
-5. Whether this is ready for leadership review
+5. Leadership review readiness: the evidence that it is ready, the evidence
+   that it is not, and the items still missing. Do not give a verdict. Whether
+   it goes to leadership is the TPM's decision.
 
 Be direct and practical. Do not over-polish weak areas.
 
@@ -55,14 +57,14 @@ Context:
 - Concerns
 - Questions
 - Recommendations
-- Leadership readiness assessment
+- Evidence for and against leadership readiness, and what is missing
 
 ## Human review checklist
 
 - Feedback is specific
 - Risks are tied to impact
 - Recommendations are practical
-- Leadership readiness is justified
+- The readiness decision is made by the TPM from the evidence, not taken from the model
 - Missing information is explicit
 
 

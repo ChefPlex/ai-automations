@@ -80,22 +80,30 @@ exist and sets the frame. The AI fills it. Nothing happens unless a human starts
 The AI is deciding *that* the work should happen, not only *how*. The human gate is real - it can
 stop the output - but it's reviewing a finished thing rather than commissioning one.
 
-Examples: automated PR review posting comments; a vulnerability scanner opening tickets for
-critical CVEs; lead scoring routing prospects to a pipeline; anomaly detection paging an on-call
-engineer.
+Examples: automated PR review that drafts comments for a person to post; a vulnerability scanner
+opening tickets for critical CVEs; lead scoring routing prospects to a pipeline; anomaly detection
+paging an on-call engineer.
+
+Note the first example. An automated review that *posts* its comments has no gate before the
+effect - posting is the effect - so it is tier 5, whatever the process document says. It becomes
+tier 4 only when the comments are drafts and a named person decides what gets posted.
 
 🔴 **This is where the discipline is.** Tier 4 fails in a specific and predictable way: **the review
 degrades into a rubber stamp.** It happens gradually, it happens to good teams, and it happens
 fastest when the AI is mostly right - because being mostly right is exactly what trains a reviewer
 to stop reading.
 
-Three things keep a tier-4 gate real, and they are cheap:
+Four things keep a tier-4 gate real, and they are cheap:
 
 1. **The reviewer must be able to say no cheaply.** If rejecting means redoing the work by hand,
    they will approve. Build the path back.
-2. **Measure the rejection rate.** A gate that has approved 100% of items for a quarter isn't a
+2. **Seed known-bad items and measure the catch rate.** A rejection rate alone cannot tell a good
+   generator from a rubber stamp: a 0% rejection rate looks the same either way. Slip in items you
+   know are wrong and count how many the reviewer stops. A gate that misses the seeded items is not a
    gate. It is a log. Either promote the activity to tier 5 honestly, or find out why review stopped.
-3. **Name the reviewer, not the team.** "Engineering reviews it" means nobody reviews it.
+3. **Keep the ask rate low.** A gate that fires on everything stops being reviewed. Route only the
+   items that need a person through the gate, so each one gets real attention.
+4. **Name the reviewer, not the team.** "Engineering reviews it" means nobody reviews it.
 
 ### ⚖️ In EU scope, a rotted tier-4 gate now has a legal consequence
 
@@ -119,13 +127,15 @@ Read that against the failure mode above:
   guidance names as insufficient. The activity is then operating as tier 5 while being documented
   as tier 4, and the exemption it was relying on may not hold.
 
-**So the rejection-rate measurement above isn't only hygiene.** In EU scope it's the difference
+**So the catch-rate measurement above isn't only hygiene.** In EU scope it's the difference
 between a defensible position and a claimed exemption you cannot evidence. **And "name the reviewer,
 not the team" turns out to match the law's own requirement for a natural or legal person holding
 editorial responsibility.**
 
-⚠️ **This is a framework note, not legal advice, and it's a moving target** - the Act has
-amendments under negotiation. **Verify scope and current obligations with counsel** rather than
+⚠️ **This is a framework note, not legal advice, and it's a moving target** - the Act has since
+been amended by the Digital Omnibus on AI (Regulation (EU) 2026/1744 of 8 July 2026), which among
+other changes gives providers whose systems were already on the market a transitional period for
+the marking obligations. **Verify scope and current obligations with counsel** rather than
 against this paragraph. The point worth carrying is structural: **the honesty of your human-review
 gate is now something you may have to demonstrate, not merely assert.**
 
@@ -153,7 +163,8 @@ a decision.** They are collection, execution, and measurement.
 - **Bounded blast radius.** The worst realistic failure is recoverable and cheap.
 - **Visible failure.** If it stops working, someone finds out *without* having to check. An
   automation whose failure is silent is worse than the manual step it replaced - it's the manual
-  step, plus false confidence.
+  step, plus false confidence. And a green run proves the output was produced, not that anyone
+  read it or acted on it. Name who reads the output and what they do with it.
 - **A reason it's not tier 4.** "We got tired of approving it" is a real reason, honestly stated,
   and it's far better than a tier-4 gate everyone has stopped reading. Write it down.
 
@@ -186,15 +197,19 @@ onto the model, it is the point of the model.
 
 ---
 
-## Classifying: the four questions
+## Classifying: the five questions
 
-For each activity, in order. The first "yes" sets the tier.
+For each activity, in order. In questions 1 to 4, the first answer that stops the sequence sets
+the tier. Question 5 then checks the result.
 
 1. **Would we accept this decision being made without a human?** No → **tier 1**.
 2. **Does a human need to author the substance, or only direct it?** Author → **tier 2**.
    Direct → continue.
 3. **Who initiates - human or system?** Human → **tier 3**. System → continue.
 4. **Is there a real gate before it takes effect?** Yes → **tier 4**. No → **tier 5**.
+5. **Is the effect irreversible or outbound** - a send, a payment, a deletion, a post, a deploy?
+   Then it cannot be tier 5, and its tier-4 gate **blocks until approved** and **records who
+   approved**. An approval that times out into "go" is not a gate.
 
 **Do this with two people who do the work, not one person who owns the org chart.** The
 disagreements are the deliverable. An activity where two practitioners answer question 3

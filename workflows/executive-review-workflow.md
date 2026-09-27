@@ -38,9 +38,13 @@ Before prompting:
 ## Prompt sequence
 
 1. Use `prompts/senior-tpm/executive-program-update.md` to draft the narrative.
-2. Use `prompts/director-review/artifact-critique.md` to review the artifact.
+2. Use `prompts/director-review/artifact-critique.md` to review the artifact. Run the critique in a fresh context, not in the chat that wrote the draft. Give the critic the draft and the source material. If you can, use a different model family, or have a person do this step.
 3. Use `prompts/tools/google-workspace.md` to shape the slides or doc.
 4. Validate with program owners before sending to leadership.
+
+### Why the critique runs separately
+
+A critic only helps if it brings information the writer lacked. The same model, in the same context, grading its own draft shares every assumption and blind spot that produced the draft, so it tends to approve it. A fresh context with the source material can check the draft against the facts. A different model family, or a person, brings different failure modes, which is what makes the second look worth having.
 
 ## Final prompt
 

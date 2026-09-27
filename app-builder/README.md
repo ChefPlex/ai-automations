@@ -20,7 +20,7 @@ The conversation covers: the problem, the user, the core experience, existing al
 
 `web-app-builder-prompt.md`
 
-For the developer who is building the app. Six phases: idea refinement, tech stack selection, architecture and data model, MVP feature scope, UI/UX design direction, and feature-by-feature build. Each phase produces a concrete output before moving to the next.
+For the developer who is building the app. Seven phases: idea refinement, tech stack selection, architecture and data model, MVP feature scope, UI/UX design direction, feature-by-feature build with executed tests, and a human go-live gate. Each phase produces a concrete output before moving to the next.
 
 Designed for someone with a scripting or Unix background who learns by doing. Produces complete, copy-paste-ready code at every step - no placeholders.
 
@@ -88,7 +88,7 @@ The session is stateful - each phase builds on the previous one. Keep the conver
 
 **Why one question at a time in the intake prompt:** Most people with app ideas have never had to articulate them in a structured way. A list of questions produces vague answers. A conversation surfaces things the person didn't know they knew - constraints, edge cases, competitive context. The one-at-a-time approach takes longer but produces a substantially better Developer Notes output.
 
-**Why six phases in the builder prompt:** The most common failure mode for beginner developers is starting to code before the idea is clear, the stack is chosen, and the scope is bounded. The phase structure prevents scope expansion and context switching. Skipping phases is how projects stall at 70%.
+**Why phases in the builder prompt:** The most common failure mode for beginner developers is starting to code before the idea is clear, the stack is chosen, and the scope is bounded. The phase structure prevents scope expansion and context switching. Skipping phases is how projects stall at 70%.
 
 **Why complete code only:** Prompts that produce placeholder comments are useless for someone learning by doing. The builder prompt explicitly prohibits them and asks for complete, copy-paste-ready code at every step.
 

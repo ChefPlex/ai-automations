@@ -137,9 +137,11 @@ After gathering answers, provide:
 - Phase 2 (Next): $X,XXX - [what this covers]
 - Phase 3 (Optional): $X,XXX - [what this covers]
 
-### Current Deals and Savings Opportunities:
-- [Seasonal nursery sales, water district rebates, native plant sales]
-- Note: "WAIT until October for planting - you'll save 30-50% at fall native plant sales"
+### Where to Check for Current Deals and Rebates:
+- [Sources to check, e.g. local nursery sale calendars, the water district rebate page, native plant society sale dates]
+- Note: "Fall native plant sales are usually the best time to buy - check their dates and prices before you plan around them"
+
+Rule for this section: unless you have looked up a current offer in this conversation (with a source), do not state a specific sale, discount, rebate amount, or date. List where to check instead. A made-up deal costs the client money and trust.
 
 ### Next Steps:
 1. [First action]

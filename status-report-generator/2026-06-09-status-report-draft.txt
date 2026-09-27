@@ -12,12 +12,21 @@ Previous Status  : GREEN
 
 1. OVERALL STATUS
 -----------------
-YELLOW
+TPM CALL
 
-Payments team (billing pipeline) is not committed to the June 15 deadline
-and estimates a 3-week slip to July 1. This creates a direct compliance gap
-with the DSA audit window opening July 1. Escalation decision pending by
-Wednesday EOD.
+GREEN  : 23 of 37 services complete; non-payments track on target for
+         June 20; budget on track. (Meeting notes, RAID log)
+YELLOW : Payments team (billing pipeline) not committed to June 15 and
+         estimates a 3-week slip to July 1; escalation decision pending by
+         Wednesday EOD; two cipher suite issues in QA, root cause known.
+         (Meeting notes, Slack export)
+RED    : If billing slips to July 1, it lands on the DSA audit window opening
+         July 1, and June 30 is a hard date for evidence packages.
+         (Slack export, Marcus, Tue 9:03 AM)
+
+What would change the call: Raj's June 13 plan. A firm June 15 commitment
+supports YELLOW or better; a confirmed July 1 slip with no exception path
+supports RED.
 
 
 2. SUMMARY
@@ -53,7 +62,7 @@ Roadblocks   Minor Issues        Payments team commitment not yet received;
 4. DECISIONS NEEDED
 -------------------
 Decision:   Escalate billing pipeline dependency to VP?
-Owner:      Eric
+Owner:      <TPM>
 Needed by:  Wednesday June 11 EOD
 Impact:     If Raj does not commit and we do not escalate, we lose another
             week before VP is aware; DSA audit gap risk grows.
@@ -88,7 +97,7 @@ All non-payments services complete (12)     Sarah    June 20     On Track
 QA validation complete (all done services)  Priya    June 13     On Track
 Cipher suite fix - reporting + data-export  Dev      June 20     On Track
 Billing pipeline TLS upgrade                Raj      June 15     AT RISK
-DSA audit evidence packages (all services)  Eric +   June 30     AT RISK
+DSA audit evidence packages (all services)  <TPM> +   June 30     AT RISK
                                             Marcus               (billing dep)
 
 
@@ -98,7 +107,7 @@ R-14  RISK  [NEW]
   Billing pipeline TLS upgrade - payments team (Raj) estimates 3-week slip
   from June 15 to ~July 1. If confirmed, creates compliance gap with DSA
   audit window opening July 1.
-  Owner: Eric
+  Owner: <TPM>
   Mitigation: Raj committed to provide plan by Friday June 13. If no firm
   commitment, escalate to VP Monday June 16.
 
@@ -119,7 +128,7 @@ R-09  RISK  [CLOSED June 8]
 ---------------
 Gap 1: Raj's June 13 plan - is it a firm commitment or another estimate?
         What resolves it: Direct conversation + written confirmation from Raj
-        Who has it: Eric (action item from meeting)
+        Who has it: <TPM> (action item from meeting)
 
 Gap 2: DSA exception process - does it require VP sign-off or can Marcus initiate?
         What resolves it: Check with Marcus and Legal
@@ -130,10 +139,13 @@ Gap 3: Cipher suite fix timeline - is June 20 achievable or needs adjustment?
         Who has it: Dev
 
 
-9. RAW SOURCE NOTES (remove before sending)
--------------------------------------------
-Sources: Weekly sync meeting notes (June 9), RAID log updates (R-14 new,
-I-07 update, R-09 closed), Slack export #tls-modernization.
+9. SOURCE COVERAGE (working file only; leave out of the sent version)
+---------------------------------------------------------------------
+Input                               Sections that cite it
+----------------------------------  ----------------------
+Weekly sync meeting notes (June 9)  1, 2, 3, 4, 5, 6, 7, 8
+RAID log updates                    1, 3, 7
+Slack export #tls-modernization     1, 2, 5, 7
 
 Key signal: Billing pipeline is the dominant story. Raj's non-commitment
 documented in meeting notes and Slack (Wed 8:15 AM: "not a commitment yet").
@@ -150,6 +162,7 @@ One gap: no budget detail beyond "still on track." If VP audience will ask for
 specifics, obtain from Dev before sending.
 
 --
-DRAFT COMPLETE. Before sending: verify Overall Status is defensible, confirm
-all decision owners are correct, fill in any NEEDS REVIEW items, and remove
-Section 9.
+DRAFT COMPLETE. Before sending: make the overall status call in Section 1,
+confirm all decision owners are correct, fill in any NEEDS REVIEW items, and
+check Section 9 for inputs marked 'not used'. Keep Section 9 in the working
+file; leave it out of the sent version.
