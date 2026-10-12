@@ -32,7 +32,7 @@ Score each category from 1 to 5.
 
 ## Recommended sections for reusable prompts
 
-Every prompt in this repo carries these sections, because that is the bar I hold my own prompts to. For yours, treat them as recommended rather than required. The one I would not skip is `Where this fails`: a prompt that does not say where it breaks will be trusted where it shouldn't be.
+These are the sections I aim for in my own prompts. Every prompt and workflow in this repo has `Where this fails`, most have a human review checklist, and fewer link a worked example input and output. For yours, treat the list as recommended rather than required. The one I would not skip is `Where this fails`: a prompt that does not say where it breaks will be trusted where it shouldn't be.
 
 ```text
 What this does
