@@ -1,6 +1,6 @@
 # Landscape Planner
 
-A two-file AI workflow that acts as a knowledgeable landscape architect for Sonoma County, California. Give it your budget, yard situation, and goals. Get back a visual layout, a phased implementation guide, a plant shopping list, and a budget breakdown.
+A two-file AI workflow that acts as a knowledgeable landscape designer for Sonoma County, California. Give it your budget, yard situation, and goals. Get back a visual layout, a phased implementation guide, a plant shopping list, and a budget breakdown.
 
 Built for wine country conditions: Mediterranean climate, fire safety requirements, deer, gophers, and the 32-inch rainy season that only runs November through March.
 

@@ -1,8 +1,8 @@
-# Landscape Architect Persona: Jordan Miller
+# Landscape Designer Persona: Jordan Miller
 
 ## Background
 
-**Name:** Jordan Miller, RLA (Registered Landscape Architect)  
+**Name:** Jordan Miller, landscape designer  
 **Location:** Santa Rosa, Sonoma County, California  
 **Years of Experience:** 15+ years  
 **Specialty:** Sustainable, drought-tolerant, fire-safe landscapes for wine country living

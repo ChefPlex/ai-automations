@@ -111,6 +111,7 @@ those wins are what buys the credibility to spend real money in phase 4.
 | Zapier | Workflow automation | Simple trigger-action integrations, fast | Use Now | 3 | Free tier limited | Hours |
 | Claude (app / API) | AI, general purpose | Manual drafting, synthesis, spec writing at scale | Use Now | 4 | ~$20/mo, API usage | Immediate |
 | Slack canvas automation | AI, Slack-native | Status updates manual, signal aggregation ad hoc | Use Now | 4 | Vendor dependent | 1 to 2 weeks |
+| Agentic coding tools (supervised) | AI, agentic coding | Multi-file changes, tests and refactors done by an agent, with a person reviewing every merge | Use Now | 4 | Subscription or API usage | Days |
 | Cursor | AI code editor | File-level completion, needs whole-repo context | Evaluate | 4 | ~$20/mo | Days |
 | Vanta | Compliance automation | SOC 2 / HIPAA evidence collection is manual | Evaluate | 5 | Enterprise | 2 to 4 weeks |
 | Perplexity | AI research | LLM research lacks citations | Evaluate | 5 | ~$20/mo | Immediate |
@@ -120,7 +121,7 @@ those wins are what buys the credibility to spend real money in phase 4.
 | Enterprise LLM tiers | AI, org-wide | Shadow AI, data governance, org adoption | Watch | 5 | Enterprise | Months |
 | File-level code completion | AI, code | Individual-file developer productivity | Watch | 5 | ~$19/mo/dev | Days |
 | Office-suite AI | AI, productivity | AI inside documents and spreadsheets | Not Yet | 5 | ~$30/mo/user | Variable |
-| Autonomous SWE agents | AI, autonomous coding | Fully autonomous production code | Not Yet | - | TBD | 12 to 18 months |
+| Autonomous SWE agents | AI, autonomous coding | Agent merges to production with no human review | Not Yet | - | TBD | 12 to 18 months |
 
 ### Notes on the contested rows
 
@@ -136,8 +137,11 @@ the foundation exists is the single most common way to spend a lot and show noth
 AI use first.** You will find people already solving real problems with consumer tools, and that
 usage map is a far better procurement input than a vendor's deployment guide.
 
-**Autonomous coding agents are `Not Yet` on evidence, not on principle.** Benchmark numbers aren't
-production reliability. Watch the space, don't build a plan that depends on it.
+**Supervised agentic coding is `Use Now`; unsupervised is `Not Yet`.** The difference is the review
+gate, not the tool. An agent that reads the repo, makes a multi-file change and runs the tests, with
+a person reviewing every merge, is ordinary practice now. An agent that merges to production on its
+own is `Not Yet` on evidence, not on principle: benchmark numbers aren't production reliability.
+Don't build a plan that depends on removing the reviewer.
 
 **Compliance automation moves earlier in regulated environments.** In a HIPAA or SOC 2 context,
 evidence automation is closer to phase 1 than phase 5, because audit readiness gates enterprise
