@@ -48,6 +48,12 @@ Context:
 - Missing owners or dates
 - Escalation recommendations
 
+## Where this fails
+
+Probability and impact are where this prompt invents precision. Unless your context gives a real basis for them, the ratings are the model's guess, and they decide which risks make the top three. Detection signals can be just as soft, describing something nobody actually monitors.
+
+Have the risk owners set probability and impact themselves. For each detection signal, confirm where it would show up and who is watching for it.
+
 ## Human review checklist
 
 - Risks are specific and future-looking

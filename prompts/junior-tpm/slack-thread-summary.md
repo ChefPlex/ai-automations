@@ -44,6 +44,12 @@ Slack thread:
 - Open questions
 - Suggested reply
 
+## Where this fails
+
+A Slack thread rarely ends in a clear decision, and this prompt will want to give it one. The last confident comment, or the most senior voice, can come back as the apparent recommendation even when nobody agreed to it. The model also cannot see the DMs, the follow-up call, or the reply posted in another channel.
+
+Before you send the suggested message, check each decision in the summary against the thread itself. If no one with authority said yes, it is still an open question.
+
 ## Human review checklist
 
 - Names and sensitive details are removed unless approved

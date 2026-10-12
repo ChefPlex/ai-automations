@@ -69,6 +69,12 @@ Context:
 - A short list of evidence to have ready
 - Topics to defer, with their proper home
 
+## Where this fails
+
+The per-participant read is the riskiest part. The model is predicting how real people will behave from a few lines of context, and a confident guess about what a VP will push on is easy to walk in believing. The rules tell it to say insufficient context, but it will still lean on titles.
+
+Check each read against what that person has actually said or written recently. Verify the factual answers to the objections against current numbers, not last quarter's.
+
 ## Human review checklist
 
 - Every stakeholder read is grounded in something in the context, not in a job title

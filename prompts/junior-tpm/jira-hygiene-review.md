@@ -44,6 +44,12 @@ Jira data:
 - Questions for owners
 - Recommended next cleanup step
 
+## Where this fails
+
+This review sees only the export. It cannot tell a stale ticket from one that is quiet because the work is happening in a branch or a side channel, and it cannot see blockers that live in Slack. It will also guess at the right epic from a ticket title alone.
+
+Check flagged items with the ticket owners before changing anything. Treat stale and blocked as questions for the cleanup session, not edits to make in bulk.
+
 ## Human review checklist
 
 - No customer names or sensitive details remain

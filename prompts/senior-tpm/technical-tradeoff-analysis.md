@@ -51,6 +51,12 @@ Context:
 - Engineering questions
 - Decision needed
 
+## Where this fails
+
+This prompt will rate security, reliability, and maintainability for every option, but without engineering input those ratings are informed guesses. They read like analysis, so they get trusted. Reversibility is the rating most often wrong, because it depends on details of the system the model never saw.
+
+Have an engineer who knows the system review each rating before the recommendation goes to leadership. Where they disagree with the model, their view wins, and the assumptions section should say why.
+
 ## Human review checklist
 
 - Technical claims are validated or marked for engineering review

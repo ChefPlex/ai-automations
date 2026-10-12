@@ -99,6 +99,12 @@ Document:
 [paste sanitized doc]
 ```
 
+## Where this fails
+
+These prompts produce documents that look finished, and a finished-looking charter or deck gets approved faster than the facts deserve. The charter will fill in a sponsor, a DRI, and milestones if the context only hints at them. The slide outline will suggest charts for numbers you may not have.
+
+Check every name, date, and metric against its source before the document is shared. Leave a field marked open rather than keep a placeholder the model wrote. A clean tracker design does not mean anyone has agreed to maintain it.
+
 ## Review before publishing
 
 - Confirm the document classification

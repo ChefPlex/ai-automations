@@ -79,6 +79,12 @@ Slack thread:
 [paste sanitized thread]
 ```
 
+## Where this fails
+
+These prompts write a clean message from whatever version of events you paste in. If your context is one side of a disagreement, the alignment and deescalation messages will state that side as the current understanding, and the group will notice. The executive update will report a health status the model inferred, not one you decided.
+
+Before posting, check that the current understanding is something the other people in the thread would agree with. Set the health status yourself, and confirm deadlines with the people expected to meet them.
+
 ## Review before posting
 
 - Confirm the facts

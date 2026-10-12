@@ -88,6 +88,12 @@ Salesforce notes:
 [paste sanitized notes]
 ```
 
+## Where this fails
+
+Account notes are written by people selling or supporting, and they carry that point of view. These prompts will treat a strong note from one account as a theme and turn a passing mention of a renewal into revenue risk. Theme detection is the weakest of the four, because a few loud notes can look like a trend across customers.
+
+Count the actual cases behind each theme before you report it. Have Sales or Customer Success confirm any business risk statement, and check the customer communication recommendation with the account owner before anyone acts on it.
+
 ## Review before publishing
 
 - Confirm Salesforce data is approved for the AI tool

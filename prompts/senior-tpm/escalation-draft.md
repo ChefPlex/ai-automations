@@ -48,6 +48,12 @@ Context:
 - Recommended path
 - Risks if not resolved
 
+## Where this fails
+
+An escalation is only as fair as the prior attempts you list. The model writes from your side of the story, and it cannot know what the other team tried or why they said no. That is how a calm, factual tone ends up carrying a one-sided account.
+
+Before sending, read the prior attempts and the impact the way the other team's lead would, or check them with that lead directly. Confirm the deadline is real and not just the date you would like.
+
 ## Human review checklist
 
 - The blocker is specific

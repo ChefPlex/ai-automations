@@ -25,7 +25,7 @@ A weekly update should do more than list activity. It should show what changed, 
 Help me create a weekly program status update from the sanitized context below.
 
 The update should make the following clear:
-1. Overall program health as Green, Yellow, or Red
+1. Proposed overall program health (Green, Yellow, or Red) with the evidence for it, marked as a proposal. The TPM makes the call.
 2. What changed since last week
 3. Completed work
 4. Work in progress
@@ -43,7 +43,7 @@ Context:
 
 ## Expected output
 
-- Program health with rationale
+- Proposed program health with rationale, for the TPM to confirm or change
 - Short summary paragraph
 - Completed work
 - Work in progress
@@ -51,6 +51,12 @@ Context:
 - Decisions needed
 - Next steps
 - Missing information
+
+## Where this fails
+
+The health color is the part most likely to be wrong. The model proposes it from whatever evidence was pasted in, and a week of busy Jira activity can read as Green while the one dependency that matters has gone quiet.
+
+Make the color call yourself. Read the missing information section before anything else. If it is long, the update is not ready, however clean the summary paragraph looks.
 
 ## Human review checklist
 

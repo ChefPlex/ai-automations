@@ -66,6 +66,12 @@ Context:
 [paste sanitized combined context]
 ```
 
+## Where this fails
+
+This workflow pulls from three systems that rarely agree. Salesforce reflects what the customer said, Jira reflects what engineering logged, and Slack holds the part nobody wrote down. The brief will blend them into one story, and where they conflict it will usually pick one without saying so.
+
+Check that the technical status matches what engineering says today, not what the ticket said last week. Have the account owner confirm the business impact, and make sure no date in the brief reads like a promise to the customer.
+
 ## Human review checklist
 
 - Customer information is approved or anonymized

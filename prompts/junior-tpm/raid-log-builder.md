@@ -43,6 +43,12 @@ Context:
 - Missing owners or dates
 - Escalation candidates
 
+## Where this fails
+
+This prompt sorts what it is given. It cannot find a risk nobody wrote down, and it will be tempted to fill the Owner and Due Date columns from whoever was mentioned nearby. It also tends to file a problem that is already happening as a risk, which makes the log look calmer than the program is.
+
+Check every owner and date against the source notes and confirm them before the log is shared. Move anything already hurting the program into Issues.
+
 ## Human review checklist
 
 - Risks are future-looking

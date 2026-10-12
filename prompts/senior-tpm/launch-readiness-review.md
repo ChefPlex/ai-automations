@@ -54,6 +54,12 @@ Context:
 - Evidence for and against go, and missing items (the decision owner makes the call)
 - Missing information
 
+## Where this fails
+
+This review reads the readiness tracker, and trackers are where things get marked green before they are done. The model cannot tell a security review that is signed off from one that is scheduled, or a rollback plan that was tested from one that was written. It will report both the same way.
+
+For each item marked ready, ask for the artifact: the sign-off, the runbook, the test result. Anything without one goes in the evidence against go, and the decision owner should see that list first.
+
 ## Human review checklist
 
 - Readiness status is evidence-based

@@ -46,6 +46,12 @@ Context:
 - Decision list
 - Opening statement
 
+## Where this fails
+
+This prompt builds the agenda from the Jira updates and Slack threads you paste in. If those are a day old, the blockers it asks you to validate may already be cleared, and the one that showed up this morning will not be on the list. It will also produce five topics because it was asked for five, even on a quiet day.
+
+Skim Jira and the team channels right before the standup. Drop topics that are already resolved, and keep the meeting short if there is less to cover.
+
 ## Human review checklist
 
 - Agenda fits the meeting length

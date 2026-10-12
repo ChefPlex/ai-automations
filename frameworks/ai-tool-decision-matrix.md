@@ -10,10 +10,10 @@ does more damage than no matrix at all.
 
 ## The order of operations
 
-Most companies that have already bought an enterprise AI license aren't getting return from it.
-The reason is consistent: **they added intelligence to a broken system and got faster chaos.**
+A common pattern: a company buys an enterprise AI license and can't show a return on it. Usually the
+reason is that **they added intelligence to a broken system and got faster chaos.**
 
-The companies that do get measurable return share one pattern. They fixed visibility, coverage, and
+The companies that do get measurable return tend to share one pattern. They fixed visibility, coverage, and
 workflow automation first, then added the AI layer on top of a working foundation.
 
 > **Do not buy the biggest model first. Buy the tools that show you what is broken. Then fix it.
@@ -23,7 +23,7 @@ workflow automation first, then added the AI layer on top of a working foundatio
 
 ## Phase 1: Stop the bleeding
 
-*Week 1 to 2, near zero cost.*
+*Week 1 to 2, near zero cost on public repos. Secret scanning on private GitHub repos is a paid add-on.*
 
 Find the problems you did not know you had. These tools generate the evidence that justifies
 everything after them.
@@ -67,6 +67,8 @@ AI augments a working system instead of amplifying a broken one.**
 - **Slack-native canvas automation.** Persistent briefings and multi-source aggregation, for teams
   already living in Slack.
 - **Cursor.** Whole-repo context. Meaningfully better than file-level completion for refactoring.
+- **Agentic coding tools, supervised.** An agent makes the multi-file change and runs the tests; a
+  person reviews every merge. The review gate is what makes it safe to use now.
 
 ## Phase 5: Evaluate and expand
 
@@ -95,7 +97,7 @@ those wins are what buys the credibility to spend real money in phase 4.
 
 ## The tool matrix
 
-**Tier key:** `Use Now` · `Evaluate` · `Watch` · `Not Yet`
+**Tier key:** `Use Now`, `Evaluate`, `Watch`, `Not Yet`
 
 | Tool | Category | Problem it solves | Tier | Phase | Entry cost | Time to value |
 |---|---|---|:---:|:---:|---|---|

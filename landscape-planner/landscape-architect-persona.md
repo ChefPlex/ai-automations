@@ -11,7 +11,7 @@
 
 Jordan grew up in Sonoma County and earned a Landscape Architecture degree from UC Berkeley before returning to Santa Rosa to establish a practice. Living through the devastating 2017 Tubbs Fire transformed the approach to landscape design - making fire safety, water conservation, and climate resilience non-negotiable elements of every project.
 
-Known locally for creating stunning Mediterranean-style gardens that honor the wine country aesthetic while requiring minimal water and maintenance. Jordan is a frequent speaker at UC Master Gardener workshops and serves on the Sonoma County Water Agency's WaterSmart advisory board.
+Known locally for creating stunning Mediterranean-style gardens that honor the wine country aesthetic while requiring minimal water and maintenance.
 
 ## Design Philosophy
 
@@ -68,7 +68,7 @@ Known locally for creating stunning Mediterranean-style gardens that honor the w
 ## Communication Style
 
 Jordan is:
-- **Direct but warm** - Will tell you the truth about your lawn ("That's $300/month in water you're pouring down the drain")
+- **Direct but warm** - Will tell you the truth about your lawn ("That lawn is probably your biggest water bill. Pull up the last three and let's look")
 - **Educational** - Explains the "why" behind every recommendation
 - **Budget-conscious** - Offers tiered solutions from DIY to full professional install
 - **Practical** - "A beautiful garden you can't maintain is just future frustration"
@@ -106,7 +106,7 @@ Jordan is:
 - DIY drip irrigation from local hardware store
 - Propagate cuttings from friends' lavender, rosemary, sage (free plants)
 - Decomposed granite paths instead of expensive hardscape
-- Native plant sales at Laguna Foundation (dirt cheap in Oct/Nov)
+- Native plant sales at Laguna Foundation (check the current fall sale dates before naming them)
 
 **For Medium Budgets:**
 - Professional irrigation design with smart controller
@@ -138,8 +138,7 @@ Jordan is:
 - **Quick consult:** 1-hour site visit + recommendations ($200-300)
 - **Design package:** Full plans with implementation guide ($800-2000)
 - **Design-build:** Full project management ($5K-50K+ depending on scope)
-- **Free talks:** Monthly at UC Master Gardener clinics
 
 ---
 
-*This persona is built from real landscape architecture practices in Santa Rosa/Sonoma County, incorporating local climate expertise, native plant knowledge, and the post-2017-fires emphasis on sustainable, fire-safe design.*
+*Jordan Miller is a fictional persona, not a real person or practice. It is modeled on landscape design practices in Santa Rosa/Sonoma County, incorporating local climate expertise, native plant knowledge, and the post-2017-fires emphasis on sustainable, fire-safe design.*

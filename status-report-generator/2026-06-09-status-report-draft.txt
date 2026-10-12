@@ -15,16 +15,17 @@ Previous Status  : GREEN
 TPM CALL
 
 GREEN  : 23 of 37 services complete; non-payments track on target for
-         June 20; budget on track. (Meeting notes, RAID log)
+         June 19; budget on track. (Meeting notes, RAID log)
 YELLOW : Payments team (billing pipeline) not committed to June 15 and
          estimates a 3-week slip to July 1; escalation decision pending by
          Wednesday EOD; two cipher suite issues in QA, root cause known.
          (Meeting notes, Slack export)
-RED    : If billing slips to July 1, it lands on the DSA audit window opening
-         July 1, and June 30 is a hard date for evidence packages.
+RED    : If billing slips to July 1, it lands on the EU Digital Services
+         Act (DSA) audit window opening July 1, and June 30 is a hard date
+         for evidence packages.
          (Slack export, Marcus, Tue 9:03 AM)
 
-What would change the call: Raj's June 13 plan. A firm June 15 commitment
+What would change the call: Raj's June 12 plan. A firm June 15 commitment
 supports YELLOW or better; a confirmed July 1 slip with no exception path
 supports RED.
 
@@ -48,7 +49,7 @@ and not blocking.
 Component    Status              Notes
 -----------  ------------------  -----------------------------------------------
 Budget       On                  No variances reported this period
-Schedule     At Risk             23/37 done; non-payments track on target June 20;
+Schedule     At Risk             23/37 done; non-payments track on target June 19;
                                  billing pipeline at risk for June 15 milestone
 Quality      Issues Identified   Cipher suite issues on reporting-service and
                                  data-export; root cause confirmed; fix in progress
@@ -63,13 +64,13 @@ Roadblocks   Minor Issues        Payments team commitment not yet received;
 -------------------
 Decision:   Escalate billing pipeline dependency to VP?
 Owner:      <TPM>
-Needed by:  Wednesday June 11 EOD
+Needed by:  Wednesday June 10 EOD
 Impact:     If Raj does not commit and we do not escalate, we lose another
             week before VP is aware; DSA audit gap risk grows.
 
 Decision:   Formal exception required if billing misses June 30 audit deadline?
 Owner:      Marcus (Security)
-Needed by:  June 14
+Needed by:  June 15
 Impact:     DSA audit team needs documentation; no exception = compliance finding.
 
 
@@ -93,9 +94,9 @@ Impact:     DSA audit team needs documentation; no exception = compliance findin
 ----------------------
 Milestone                                   Owner    Target      Status
 ------------------------------------------  -------  ----------  ----------
-All non-payments services complete (12)     Sarah    June 20     On Track
-QA validation complete (all done services)  Priya    June 13     On Track
-Cipher suite fix - reporting + data-export  Dev      June 20     On Track
+All non-payments services complete (12)     Sarah    June 19     On Track
+QA validation complete (all done services)  Priya    June 12     On Track
+Cipher suite fix - reporting + data-export  Dev      June 19     On Track
 Billing pipeline TLS upgrade                Raj      June 15     AT RISK
 DSA audit evidence packages (all services)  <TPM> +   June 30     AT RISK
                                             Marcus               (billing dep)
@@ -108,8 +109,8 @@ R-14  RISK  [NEW]
   from June 15 to ~July 1. If confirmed, creates compliance gap with DSA
   audit window opening July 1.
   Owner: <TPM>
-  Mitigation: Raj committed to provide plan by Friday June 13. If no firm
-  commitment, escalate to VP Monday June 16.
+  Mitigation: Raj committed to provide plan by Friday June 12. If no firm
+  commitment, escalate to VP Monday June 15.
 
 I-07  ISSUE  [ONGOING]
   Cipher suite issues on reporting-service and data-export. Non-compliant
@@ -117,7 +118,7 @@ I-07  ISSUE  [ONGOING]
   api-gateway (old cipher list in config template). Not blocking but required
   for program close.
   Owner: Dev
-  Resolution: Config template fix in progress. Target June 20.
+  Resolution: Config template fix in progress. Target June 19.
 
 R-09  RISK  [CLOSED June 8]
   Legacy service inventory completeness.
@@ -126,7 +127,7 @@ R-09  RISK  [CLOSED June 8]
 
 8. NEEDS REVIEW
 ---------------
-Gap 1: Raj's June 13 plan - is it a firm commitment or another estimate?
+Gap 1: Raj's June 12 plan - is it a firm commitment or another estimate?
         What resolves it: Direct conversation + written confirmation from Raj
         Who has it: <TPM> (action item from meeting)
 
@@ -134,7 +135,7 @@ Gap 2: DSA exception process - does it require VP sign-off or can Marcus initiat
         What resolves it: Check with Marcus and Legal
         Who has it: Marcus
 
-Gap 3: Cipher suite fix timeline - is June 20 achievable or needs adjustment?
+Gap 3: Cipher suite fix timeline - is June 19 achievable or needs adjustment?
         What resolves it: Dev to confirm in writing
         Who has it: Dev
 
@@ -150,7 +151,7 @@ Slack export #tls-modernization     1, 2, 5, 7
 Key signal: Billing pipeline is the dominant story. Raj's non-commitment
 documented in meeting notes and Slack (Wed 8:15 AM: "not a commitment yet").
 Escalation timeline clear: firm commitment by Wed EOD, VP escalation by
-Monday June 16 if not received.
+Monday June 15 if not received.
 
 Cipher suite issue lower urgency than it reads - same root cause as
 previously resolved api-gateway issue, Dev confirmed quickly, fix in progress.

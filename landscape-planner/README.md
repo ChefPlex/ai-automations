@@ -55,7 +55,7 @@ user_prompt = open("yard-planning-prompt.md").read()
 
 **Climate and timing:** Zone 9b, Mediterranean growing conditions, fall planting advocacy, summer heat warnings. It will tell you not to buy plants in May and explain exactly why.
 
-**Local resources:** King's Nursery, Laguna Foundation native plant sales, Sonoma County Water Agency WaterSmart rebates, Japanese Maples by Momiji, Ancient Olive Trees.
+**Local resources:** King's Nursery, Laguna Foundation native plant sales, Sonoma Water and local water-utility rebates, Japanese Maples by Momiji, Ancient Olive Trees.
 
 **Fire safety:** Post-2017 Tubbs Fire defensible space requirements, Zone 0 and Zone 1 design, ember-resistant plant selection.
 
@@ -75,7 +75,7 @@ The same pattern works for other domain-expert personas: a security incident res
 
 ## Note on Visualization
 
-Image generation in the visual yard plan step works when running in Claude.ai with artifacts enabled. In API calls or CLI contexts, the output is a detailed text layout description instead. The rest of the consultation - the summary, the implementation guide, the plant list - works in any interface.
+The visual yard plan renders as an SVG artifact when running in Claude.ai with artifacts enabled. Claude writes the SVG code; it does not generate an image. In API calls or CLI contexts, the output is a detailed text layout description instead. The rest of the consultation - the summary, the implementation guide, the plant list - works in any interface.
 
 ---
 

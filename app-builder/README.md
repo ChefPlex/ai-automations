@@ -14,7 +14,7 @@ The two prompts are designed to hand off to each other - but each also works ind
 
 For the person with the idea who is not a developer. Paste it into Claude, answer the questions, receive a structured brief with an Idea Summary (written for them) and Developer Notes (written for the developer).
 
-The conversation covers: the problem, the user, the core experience, existing alternatives, the business model, the definition of success, and any open concerns. One question at a time, takes about 10 minutes.
+The conversation covers: the problem, the user, the core experience, existing alternatives, the business model, the definition of success, what would make it not worth building, and any open concerns. One question at a time, takes about 10 minutes.
 
 ### Prompt 2: Web App Builder
 

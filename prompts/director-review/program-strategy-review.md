@@ -51,6 +51,12 @@ Program plan:
 - Risks to challenge
 - Recommended next steps
 
+## Where this fails
+
+This review can test whether the plan is internally consistent. It cannot test whether the plan is true. If the plan says a dependency team has committed, or a date came from engineering, the model will take that at face value.
+
+The timeline is where this matters most. Before approving, confirm the dates and dependency commitments with the teams that own them. A plan that passes this review has only shown that it is well written.
+
 ## Human review checklist
 
 - Goals and metrics are tested

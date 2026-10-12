@@ -64,6 +64,12 @@ Context:
 [paste sanitized combined context]
 ```
 
+## Where this fails
+
+This workflow combines the readiness tracker, Jira, and Slack, and it inherits their optimism. A tracker cell marked done, a closed ticket, and a quiet launch channel all look like readiness. None of them prove the rollback was tested or that support has the runbook.
+
+Before the decision meeting, have each area owner point to the artifact behind their status. If an area is green only because nobody raised a problem, mark it unknown and put it in front of the decision owner.
+
 ## Human review checklist
 
 - Readiness status is evidence-based

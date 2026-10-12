@@ -49,6 +49,12 @@ Context:
 - Escalation candidates
 - Questions to confirm
 
+## Where this fails
+
+This prompt will suggest owners for unowned dependencies, and a suggested owner in a table looks like a real one. It also cannot tell a soft commitment from a hard one. If the notes say a team is planning to deliver, the map may show the date as if it were agreed.
+
+Confirm every Provider, Owner, and Needed By date with the teams named before the map is shared. Mark suggested owners as proposals until someone accepts the work.
+
 ## Human review checklist
 
 - Provider and consumer are both named

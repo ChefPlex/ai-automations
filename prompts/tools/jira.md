@@ -92,6 +92,12 @@ Jira data:
 [paste sanitized sprint data]
 ```
 
+## Where this fails
+
+Jira shows the work people logged, which is not always the work happening. These prompts cannot see the blocker discussed in Slack, the scope cut agreed in a meeting, or the ticket that sat in progress for a month because nobody moved it. The roadmap and executive translations carry the most risk, because they turn ticket data into outcome language that sounds more settled than the board is.
+
+Check the Now, Next, and Later grouping with the engineering leads before it goes to leadership. When a ticket status looks wrong, ask the owner before you trust the summary.
+
 ## Review before updating Jira
 
 - Confirm ticket status with owners when needed

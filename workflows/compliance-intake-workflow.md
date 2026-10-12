@@ -66,6 +66,12 @@ Context:
 [paste sanitized context]
 ```
 
+## Where this fails
+
+The hard part of compliance intake is interpretation, and this workflow cannot do it. The model will read a control and decide what it requires, which systems are in scope, and what evidence will satisfy an auditor. Each of those is a call for compliance or legal, and a confident engineering plan built on the wrong reading can waste a quarter.
+
+Get the requirement summary and the scope signed off by the compliance owner before any Jira work is created. Confirm the evidence list with whoever will review it.
+
 ## Human review checklist
 
 - Requirement is translated accurately

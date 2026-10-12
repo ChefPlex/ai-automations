@@ -55,6 +55,12 @@ Context:
 - Next quarter priorities
 - Leadership asks
 
+## Where this fails
+
+A QBR summary is where impact gets rounded up. The model will connect delivered work to business and customer outcomes when the inputs only show that the work shipped. It also cannot see work that slipped out of the quarter unless you list it, so the commitment vs delivery view can look better than the quarter was.
+
+Trace each impact claim and metric back to a source someone can produce. Make sure missed and moved work is on the page before you share it.
+
 ## Human review checklist
 
 - Metrics are accurate

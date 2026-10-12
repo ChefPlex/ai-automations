@@ -55,6 +55,12 @@ Context:
 - Action items
 - Prevention plan
 
+## Where this fails
+
+This prompt only knows the timeline it is given. It will turn a thin event summary into confident root causes, and those causes will read as findings even when they are guesses about why someone made a call.
+
+Check each root cause against the timeline and the people who were in the room. If the evidence does not support a cause, list it as a question for the retro, not a conclusion. Blameless language should never soften a fact so far that the action items stop pointing anywhere.
+
 ## Human review checklist
 
 - Language is blameless

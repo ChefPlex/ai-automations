@@ -105,7 +105,7 @@ Four things keep a tier-4 gate real, and they are cheap:
    items that need a person through the gate, so each one gets real attention.
 4. **Name the reviewer, not the team.** "Engineering reviews it" means nobody reviews it.
 
-### ⚖️ In EU scope, a rotted tier-4 gate now has a legal consequence
+### In EU scope, a rotted tier-4 gate now has a legal consequence
 
 **This stopped being purely an operational concern on 2 August 2026**, when the EU AI Act's
 Article 50 transparency obligations took effect.

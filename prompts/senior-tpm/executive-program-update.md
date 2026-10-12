@@ -26,7 +26,7 @@ Help me prepare an executive program update using the sanitized context below.
 
 Create:
 
-1. Overall status as Green, Yellow, or Red
+1. Proposed overall status (Green, Yellow, or Red) with the evidence for it, marked as a proposal. The TPM makes the call.
 2. One paragraph executive summary
 3. What changed since the last update
 4. Progress against milestones

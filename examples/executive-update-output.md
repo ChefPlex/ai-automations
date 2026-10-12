@@ -2,7 +2,7 @@
 
 Fictional, sanitized example.
 
-## Overall status
+## Overall status (proposed, TPM to confirm)
 
 Yellow
 
@@ -49,7 +49,7 @@ No executive decision required this week. The program team should prepare a cont
 
 ## Recommended next action
 
-Keep the program Yellow. Confirm Team B timing and validation environment access this week, then reassess whether Q3 validation remains realistic.
+Proposed: keep the program Yellow. Confirm Team B timing and validation environment access this week, then reassess whether Q3 validation remains realistic.
 
 ## Missing information to confirm before sending
 

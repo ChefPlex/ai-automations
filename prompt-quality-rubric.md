@@ -30,9 +30,9 @@ Score each category from 1 to 5.
 | 35 to 44 | Strong reusable prompt | Good candidate for the repo. Add or tighten failure modes before calling it done. |
 | 45 to 50 | Ready for broad use | Ready to share, assuming the examples and safety notes are current. |
 
-## Required sections for reusable prompts
+## Recommended sections for reusable prompts
 
-A prompt file should include these sections before it's treated as reusable:
+Every prompt in this repo carries these sections, because that is the bar I hold my own prompts to. For yours, treat them as recommended rather than required. The one I would not skip is `Where this fails`: a prompt that does not say where it breaks will be trusted where it shouldn't be.
 
 ```text
 What this does

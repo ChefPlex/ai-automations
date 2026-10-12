@@ -124,7 +124,7 @@ most. It is not the result of a measurement, and no role has been removed and re
 | 02 Product Manager | PRD mistakes cascade into every downstream artifact |
 | 05 UX/UI Designer | Design quality is subjective; bad design means engineering rework |
 | 06 Software Architect | Architectural decisions foreclose future options and are hard to reverse |
-| 07 Security Architect | Missed threats surface at breach time - a 10x cost asymmetry |
+| 07 Security Architect | Missed threats surface at breach time, when they cost far more to fix than at design time |
 | 17 Engineering Manager | Team health and escalation need full context |
 | 10 Mobile Engineer | Not yet classified. With no junior variant it runs senior; it likely belongs with the context-dependent engineering roles below once a junior variant exists |
 

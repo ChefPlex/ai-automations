@@ -14,8 +14,8 @@ Use these fields when exporting Jira data for TPM prompt workflows. Export the s
 | Reporter | Source context |
 | Due date | Timing risk |
 | Sprint or fix version | Milestone mapping |
-| Epic link | Program grouping |
-| Parent | Work hierarchy |
+| Parent | Work hierarchy and program grouping. On Jira Cloud this replaces Epic Link. |
+| Epic link | Data Center only. Skip it on Cloud. |
 | Labels | Program tags |
 | Components | Service or team mapping |
 | Priority | Relative urgency |

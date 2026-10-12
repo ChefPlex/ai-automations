@@ -59,6 +59,12 @@ Context:
 - Recommendations
 - Evidence for and against leadership readiness, and what is missing
 
+## Where this fails
+
+This review is only as good as the material pasted in. It cannot see the hallway conversations, the politics around the program, or the history behind a decision, so it will flag things the team already settled and miss the risk nobody wrote down.
+
+Treat its concerns as questions for the program owner. A concern is not a finding until someone with context confirms it, and a quiet section in the review does not mean that area is healthy.
+
 ## Human review checklist
 
 - Feedback is specific

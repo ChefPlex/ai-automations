@@ -39,6 +39,14 @@ This manifest is the quick map for the repo. It's here so a TPM can scan the pac
 | `frameworks/multi-agent-delivery-framework.md` | You are building a multi-agent delivery process and need roles, phases, and gates |
 | `frameworks/ai-tool-decision-matrix.md` | Someone is asking what to buy, or why the license they bought did not help |
 
+## Flagship workflows
+
+| Directory | Purpose |
+|---|---|
+| `status-report-generator/` | Turns a folder of raw inputs into a nine-section draft status report, with a sample draft in .md and .txt |
+| `landscape-planner/` | Landscape design consultation for Sonoma County conditions: a persona, a planning prompt, and a usage guide |
+| `app-builder/` | Two prompts that take a rough app idea through an intake interview and then a phased build |
+
 ## Prompt categories
 
 | Directory | Purpose |
@@ -76,6 +84,15 @@ The examples are sanitized and fictional. They show the shape of a good artifact
 | `sanitized-escalation-example.md` | Shows how to frame an escalation without turning it into theater |
 | `sanitized-decision-memo-example.md` | Shows how to separate options, tradeoffs, recommendation, and decision owner |
 | `sanitized-launch-readiness-example.md` | Shows how to make launch readiness visible without hiding gaps |
+
+Four input/output pairs show a prompt run end to end on the same fictional program:
+
+| Input | Output |
+|---|---|
+| `weekly-status-source-input.md` | `processed-weekly-status-output.md` |
+| `messy-meeting-notes-input.md` | `processed-meeting-notes-output.md` |
+| `executive-update-input-context.md` | `executive-update-output.md` |
+| `artifact-critique-input.md` | `artifact-critique-output.md` |
 
 ## Suggested first pass
 

@@ -48,7 +48,7 @@ Help me prepare a weekly executive status update using the sanitized combined co
 
 Create:
 
-1. Program health as Green, Yellow, or Red
+1. Proposed program health (Green, Yellow, or Red) with the evidence for it, marked as a proposal. The TPM makes the call.
 2. One paragraph summary
 3. What changed this week
 4. Progress against milestones
@@ -75,7 +75,7 @@ These examples show the expected conversion from scattered Jira, Slack, RAID, an
 
 ## Human review checklist
 
-- Health color matches the evidence
+- Health color matches the evidence, and the TPM has confirmed or changed the proposed color
 - Risks are clear and owned
 - Blockers are specific
 - Dates are accurate

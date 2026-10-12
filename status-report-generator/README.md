@@ -110,7 +110,7 @@ The draft produces nine sections:
 
 **Markdown (.md):** Renders in GitHub, Notion, most tools. Copy to `outputs/` folder.
 
-**Plain text (.txt):** Save the markdown as .txt. Tables render as ASCII - works anywhere.
+**Plain text (.txt):** Save the markdown as .txt and the pipe tables stay readable in any text editor. For aligned columns like the sample `2026-06-09-status-report-draft.txt`, ask the model for a plain-text version.
 
 **Word:** Paste markdown into Word. Tables paste cleanly.
 

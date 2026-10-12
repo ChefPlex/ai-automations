@@ -69,6 +69,12 @@ Context:
 [paste sanitized context]
 ```
 
+## Where this fails
+
+By the last step the narrative has been drafted, critiqued, and shaped into slides, and every pass makes it smoother without making it more true. If the metrics in Google Sheets are stale or the decision history in Slack is incomplete, the deck will still look ready.
+
+Before it goes to leadership, trace each metric and each claimed decision back to its source. Ask the program owners whether they would make the same recommendation, and change it if they would not.
+
 ## Human review checklist
 
 - Summary leads with the main point
