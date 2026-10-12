@@ -17,6 +17,7 @@ Next week we will continue driving Team B, finish remaining reviews, and work th
 
 ## Known issues that the draft underplays
 
+- Migration testing is complete for 14 of 18 services, not "most migration work".
 - Team B has not committed to a migration date.
 - Validation environment access is not confirmed.
 - Observability dependency was discovered this week and is not in Jira yet.

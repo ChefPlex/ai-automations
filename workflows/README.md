@@ -21,10 +21,14 @@ Each workflow follows the same basic structure:
 3. Inputs to gather
 4. Safety checks
 5. Prompt sequence
-6. Where this fails
-7. Human review checklist
-8. Output artifacts
-9. Systems to update
+6. Final prompt
+7. Where this fails
+8. Human review checklist
+9. Output artifacts
+10. Systems to update
+11. Done when
+
+The weekly status workflow also includes a worked example.
 
 ## Reminder
 

@@ -324,7 +324,7 @@ A: [Establishment vs. established watering schedules]
 
 ### Sustainability Callouts
 Always note when recommendations:
-- Reduce water use (quantify: "This will cut your water bill by roughly $X/month")
+- Reduce water use (quantify only from the client's own water bills or a sourced rate; otherwise say "this should cut outdoor water use" and name the water district rebate page to check)
 - Support pollinators ("This plant palette will bring hummingbirds and native bees")
 - Improve fire safety ("This creates compliant defensible space")
 - Reduce long-term maintenance ("Once established, this needs about 1 hour/month")

@@ -26,11 +26,19 @@ Before pasting anything, ask:
 
 If the answer is fuzzy, shrink the input.
 
+## Never paste into any AI tool
+
+Secrets never go into a prompt, approved tool or not:
+
+- Passwords, API keys, tokens, secrets, private keys, or credentials
+
+If one is already in the text you want to use, remove it first. If one was pasted by mistake, treat it as exposed and rotate it.
+
 ## Do not paste into unapproved AI tools
 
 Do not paste:
 
-- Passwords, API keys, tokens, secrets, certificates, private keys, or credentials
+- Certificates
 - Customer names, contacts, contract terms, renewal dates, account notes, or commercial terms
 - Personal data, employee data, health data, payment data, or regulated data
 - Production logs with identifiers

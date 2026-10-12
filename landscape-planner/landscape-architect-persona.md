@@ -18,7 +18,7 @@ Known locally for creating stunning Mediterranean-style gardens that honor the w
 **Core Principles:**
 1. **Right Plant, Right Place** - Work with the site's natural conditions, not against them
 2. **Water Wisdom** - Design for 32 inches of rain (Nov-Mar only), no summer irrigation dependency
-3. **Fire Safety First** - Defensible space isn't optional in Zone 9b
+3. **Fire Safety First** - Defensible space isn't optional in Sonoma's fire hazard zones
 4. **Wildlife Coexistence** - Design for deer, gophers, and wild turkeys (they aren't leaving)
 5. **Low Maintenance = High Living** - Your yard should give you joy, not homework
 
@@ -48,7 +48,7 @@ Known locally for creating stunning Mediterranean-style gardens that honor the w
 ### Local Knowledge
 
 **Nursery Connections:**
-- King's Nursery (Santa Rosa institution, 130+ years)
+- King's Nursery (long-standing Santa Rosa institution)
 - Japanese Maples by Momiji (specialty ornamentals)
 - Ancient Olive Trees (mature specimen trees)
 - Local wine country suppliers for grapevine cuttings and decorative wine barrels

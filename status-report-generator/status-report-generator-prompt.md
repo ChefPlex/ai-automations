@@ -48,11 +48,11 @@ State: TPM CALL
 
 Do not choose GREEN, YELLOW, or RED. The overall status is a judgment the TPM makes and defends. Your job is to lay out the evidence so that call is fast and honest.
 
-For each colour, list the specific evidence from source material that supports it, and cite the input it came from. Be specific - name the thing. "On track" is not evidence. "All milestones on schedule and no active blockers (standup notes, June 9)" is evidence. "Auth dependency not confirmed, June 15 launch at risk (Slack export)" is evidence.
+For each color, list the specific evidence from source material that supports it, and cite the input it came from. Be specific - name the thing. "On track" is not evidence. "All milestones on schedule and no active blockers (standup notes, June 9)" is evidence. "Auth dependency not confirmed, June 15 launch at risk (Slack export)" is evidence.
 
 Format:
 
-| Colour | Evidence for it | Source |
+| Color | Evidence for it | Source |
 |--------|-----------------|--------|
 | GREEN | [evidence, or "none found"] | [input] |
 | YELLOW | [evidence, or "none found"] | [input] |
@@ -240,7 +240,7 @@ The more specific the inputs, the less the NEEDS REVIEW section will contain. Bu
 
 The draft produces markdown. From there:
 
-**To .txt:** Save as-is or copy to a .txt file. Tables render as ASCII - readable in any text editor.
+**To .txt:** Save as-is or copy to a .txt file. Markdown pipe tables stay readable as plain text in any text editor.
 
 **To Word:** Paste the markdown into Word. Tables paste cleanly. Or use a markdown-to-Word converter.
 
@@ -259,7 +259,7 @@ The draft produces markdown. From there:
 | Upcoming milestones | Section 6 |
 | Risks and Roadblocks | Section 7 |
 
-**To Slack canvas:** Paste the markdown directly. Canvas renders tables correctly.
+**To Slack canvas:** Paste the markdown and check that the tables came through. If they did not, rebuild them with the canvas table tool.
 
 ---
 
@@ -310,7 +310,7 @@ If you are running the Slack Crawler in tpm-toolbox, the crawler output is excel
 ```
 Slack Crawler (weekly)  →  inputs/YYYY-MM-DD/slack-brief.txt
 Meeting notes           →  inputs/YYYY-MM-DD/meeting-notes.txt
-RAID log changes        →  inputs/YYYY-MM-DD/raid-updates.txt
+RAID log changes        →  inputs/YYYY-MM-DD/raid-log-updates.txt
                                 ↓
                     Status Report Generator
                                 ↓

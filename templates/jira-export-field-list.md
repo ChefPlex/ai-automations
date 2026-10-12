@@ -7,7 +7,7 @@ Use these fields when exporting Jira data for TPM prompt workflows. Export the s
 | Field | Why it matters |
 |---|---|
 | Issue key | Reference for validation |
-| Issue type | Epic, story, task, bug, risk |
+| Issue type | Epic, story, task, bug, and risk if your site defines it |
 | Summary | Work item description |
 | Status | Current execution state |
 | Assignee | Ownership |
@@ -19,11 +19,11 @@ Use these fields when exporting Jira data for TPM prompt workflows. Export the s
 | Labels | Program tags |
 | Components | Service or team mapping |
 | Priority | Relative urgency |
-| Blocked flag | Blocker visibility |
+| Flagged | Blocker visibility. Jira's flag field; its one value is "Impediment". |
 | Linked issues | Dependencies |
 | Created date | Staleness check |
 | Updated date | Staleness check |
-| Acceptance criteria | Testability |
+| Acceptance criteria | Testability. A custom field, so the name varies by site. |
 | Description | Context |
 
 ## Fields to review before prompting

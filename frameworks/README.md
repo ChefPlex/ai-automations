@@ -55,7 +55,9 @@ answers a different question, and knowing the shape is more useful than knowing 
 
 - **EU AI Act** - the first comprehensive risk-based AI regulation. GPAI obligations took effect
   2 August 2025; **Commission enforcement and the Article 50 transparency obligations began
-  2 August 2026.** Mandatory within EU scope, with amendments under negotiation.
+  2 August 2026.** Mandatory within EU scope, and since amended by the Digital Omnibus on AI
+  ([Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng)); see
+  [AI Execution Tiers](ai-execution-tiers.md) for what that changes at tier 4.
 - **A US state patchwork, changing fast.** Several states now have AI statutes with different
   scopes and different effective dates, and at least one has already been narrowed after passage.
   ⚠️ **This is the layer most likely to be out of date in any document you read, including this
@@ -66,9 +68,10 @@ answers a different question, and knowing the shape is more useful than knowing 
 Non-binding, but they shape the ones above and get cited in procurement:
 
 - **OECD AI Principles** - first intergovernmental AI standard, adopted 2019 and updated 2024, with
-  49 adherents as of April 2026. Five values-based principles.
-- **UNESCO Recommendation on the Ethics of AI** - adopted 2021, applicable across all 194 member
-  states, framed around the full system lifecycle.
+  47 adherents per [OECD.AI](https://oecd.ai/en/ai-principles) as of October 2026. Five
+  values-based principles.
+- **UNESCO Recommendation on the Ethics of AI** - adopted by all 193 UNESCO member states in
+  November 2021, framed around the full system lifecycle.
 - **Council of Europe Framework Convention on AI and human rights, democracy and the rule of law** -
   applies existing human-rights obligations to AI activity.
 
@@ -98,7 +101,8 @@ standard as the layer that says what you must be able to demonstrate.**
 
 ⛔ **This document claims no expertise in any of them.** It records that they exist, that they're
 maturing, and that anyone building an AI operating model in 2026 should know they're there.
-**Dates and obligations move** - the EU AI Act has amendments under negotiation and the US state
+**Dates and obligations move** - the EU AI Act has already been amended once, by Regulation (EU)
+2026/1744, and the US state
 picture has already shifted once - so verify current status against the source rather than against
 this page.
 

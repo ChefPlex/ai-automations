@@ -12,7 +12,7 @@ Use the sanitized context below to draft a program charter.
 Include:
 1. Program name
 2. Executive sponsor
-3. DRI
+3. DRI (directly responsible individual)
 4. Problem statement
 5. Goals
 6. Non-goals

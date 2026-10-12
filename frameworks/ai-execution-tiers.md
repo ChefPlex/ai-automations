@@ -133,7 +133,7 @@ not the team" turns out to match the law's own requirement for a natural or lega
 editorial responsibility.**
 
 ⚠️ **This is a framework note, not legal advice, and it's a moving target** - the Act has since
-been amended by the Digital Omnibus on AI (Regulation (EU) 2026/1744 of 8 July 2026), which among
+been amended by the Digital Omnibus on AI ([Regulation (EU) 2026/1744 of 8 July 2026](https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng)), which among
 other changes gives providers whose systems were already on the market a transitional period for
 the marking obligations. **Verify scope and current obligations with counsel** rather than
 against this paragraph. The point worth carrying is structural: **the honesty of your human-review

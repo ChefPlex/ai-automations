@@ -23,7 +23,7 @@ The consultation covers budget, maintenance tolerance, water philosophy, wildlif
 | File | Purpose |
 |------|---------|
 | `landscape-architect-persona.md` | Jordan Miller's background, plant knowledge, local expertise, and design philosophy. Load this as reference context. |
-| `yard-planning-prompt.md` | The consultation workflow: discovery questions, output format, seasonal guidance, and budget-based tuning. Load this as the system prompt or primary instruction. |
+| `yard-planning-prompt.md` | The consultation workflow: discovery questions, output format, seasonal guidance, and budget-based tuning. Load this as the primary instruction (the user message in the API example below). |
 
 ---
 
@@ -57,7 +57,7 @@ user_prompt = open("yard-planning-prompt.md").read()
 
 **Local resources:** King's Nursery, Laguna Foundation native plant sales, Sonoma Water and local water-utility rebates, Japanese Maples by Momiji, Ancient Olive Trees.
 
-**Fire safety:** Post-2017 Tubbs Fire defensible space requirements, Zone 0 and Zone 1 design, ember-resistant plant selection.
+**Fire safety:** California defensible space requirements, Zone 0 and Zone 1 design, ember-resistant plant selection.
 
 **Wildlife reality:** Deer-resistant strategies, gopher exclusion methods, honest assessments of what "deer-resistant" actually means in practice.
 

@@ -4,7 +4,18 @@ AI-assisted prompts, workflows, and examples for TPM productivity and program ma
 
 The tools here are not about replacing judgment. They're about removing mechanical work so there's more time for the work that actually requires it.
 
-Each workflow follows the same pattern: a **context or persona file** that carries stable domain knowledge, and a **prompt file** that drives the session interaction. Keeping them separate means you can reuse the domain knowledge across different prompt formats, and swap the prompt without rewriting the expertise.
+Where a workflow needs stable domain knowledge, it keeps it in a **context or persona file** and lets a **prompt file** drive the session interaction. The landscape planner is the full example. Keeping them separate means you can reuse the domain knowledge across different prompt formats, and swap the prompt without rewriting the expertise.
+
+---
+
+## Start Here
+
+- [Prompts](prompts/)
+- [Workflows](workflows/)
+- [Templates](templates/)
+- [Examples](examples/)
+- [Safety and data handling](safety-and-data-handling.md)
+- [Repo manifest](REPO_MANIFEST.md)
 
 ---
 
@@ -15,8 +26,8 @@ Each workflow follows the same pattern: a **context or persona file** that carri
 | Workflow | What It Does |
 |----------|-------------|
 | [Status Report Generator](status-report-generator/) | Reads a folder of raw inputs - meeting notes, Slack exports, RAID log updates, ticket summaries - and produces a structured draft status report. Nine sections including overall status, decisions needed, risks and issues, and a NEEDS REVIEW section that flags what requires TPM judgment before sending. Integrates with the Slack Crawler in tpm-toolbox. |
-| [Landscape Planner](landscape-planner/) | AI landscape design consultation for Sonoma County conditions. Give it your budget, yard situation, and goals. Receive a visual layout, phased implementation guide, plant shopping list, and budget breakdown. Covers fire safety, drought tolerance, deer and gopher pressure, and local nursery recommendations. |
 | [App Builder](app-builder/) | Two-prompt system for going from a rough app idea to a working web application. The intake prompt interviews a non-technical person and produces a structured developer brief. The builder prompt takes that brief through seven phases - idea refinement, tech stack, architecture, MVP scope, UI/UX direction, feature-by-feature build with executed tests, and a human gate before going live. |
+| [Landscape Planner](landscape-planner/) | AI landscape design consultation for Sonoma County conditions. Give it your budget, yard situation, and goals. Receive a visual layout, phased implementation guide, plant shopping list, and budget breakdown. Covers fire safety, drought tolerance, deer and gopher pressure, and local nursery recommendations. |
 
 ---
 
@@ -64,7 +75,7 @@ often enough to be worth writing down, not on a roadmap.
 
 **Documented well enough to adapt.** Every workflow includes the prompt, expected input format, expected output format, and notes on where it tends to go wrong. If you need to adapt it to your context, you should be able to do that without reverse-engineering it.
 
-**Lightweight.** No frameworks, no dependencies where avoidable. Prompts you can run in Claude.ai or via API. If something requires infrastructure, it is documented clearly and kept minimal.
+**Lightweight.** No libraries or dependencies where avoidable. Prompts you can run in Claude.ai or via API. If something requires infrastructure, it is documented clearly and kept minimal.
 
 ---
 

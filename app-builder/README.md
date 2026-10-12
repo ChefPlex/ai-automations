@@ -35,8 +35,8 @@ Runs App Idea Intake Prompt (~10 min conversation)
          ↓
 Sends Developer Notes to developer
          ↓
-Developer pastes Developer Notes into [DESCRIBE YOUR IDEA]
-in the Web App Builder Prompt
+Developer pastes Developer Notes in place of
+[DESCRIBE YOUR IDEA IN 2-5 SENTENCES] in the Web App Builder Prompt
          ↓
 Builder starts Phase 1 already half done
 ```
@@ -60,11 +60,11 @@ Both prompts work the same way:
 
 1. Open a new Claude chat at claude.ai
 2. Copy the prompt text from between the triple backtick fences in the markdown file
-3. Fill in any placeholders (the builder prompt has one: `[DESCRIBE YOUR IDEA]`)
+3. Fill in any placeholders (the builder prompt has one: `[DESCRIBE YOUR IDEA IN 2-5 SENTENCES]`)
 4. Paste and send
 5. Follow the conversation
 
-Neither prompt requires a Claude account with special features. The builder prompt's Phase 5 UI output works best in Claude.ai with artifacts enabled, but all other phases work in any interface.
+Neither prompt requires a Claude account with special features. The builder prompt's Phase 5 UI output works best in Claude.ai, where it renders as an artifact, but all other phases work in any interface.
 
 ---
 
@@ -78,7 +78,8 @@ By the end of a full builder session:
 - A prioritized MVP feature checklist
 - A visual design direction with colors, fonts, and layout
 - Working code for the first screen
-- Feature-by-feature working code for the full v1 build
+- Feature-by-feature working code for the full v1 build, with tests you have run
+- A go-live list (tests passed, checklist, what is untested) for your decision to deploy
 
 The session is stateful - each phase builds on the previous one. Keep the conversation going rather than starting a new chat between phases.
 
@@ -88,7 +89,7 @@ The session is stateful - each phase builds on the previous one. Keep the conver
 
 **Why one question at a time in the intake prompt:** Most people with app ideas have never had to articulate them in a structured way. A list of questions produces vague answers. A conversation surfaces things the person didn't know they knew - constraints, edge cases, competitive context. The one-at-a-time approach takes longer but produces a substantially better Developer Notes output.
 
-**Why phases in the builder prompt:** The most common failure mode for beginner developers is starting to code before the idea is clear, the stack is chosen, and the scope is bounded. The phase structure prevents scope expansion and context switching. Skipping phases is how projects stall at 70%.
+**Why phases in the builder prompt:** The most common failure mode for beginner developers is starting to code before the idea is clear, the stack is chosen, and the scope is bounded. The phase structure prevents scope expansion and context switching. Skipping phases is how projects stall.
 
 **Why complete code only:** Prompts that produce placeholder comments are useless for someone learning by doing. The builder prompt explicitly prohibits them and asks for complete, copy-paste-ready code at every step.
 

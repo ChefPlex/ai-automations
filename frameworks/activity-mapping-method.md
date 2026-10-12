@@ -52,7 +52,7 @@ not job titles. **Activities.**
 
 Then assign each one a tier. One tier, no ranges.
 
-**What good looks like at L1:** one page, colour-coded, and someone who doesn't work at the
+**What good looks like at L1:** one page, color-coded, and someone who doesn't work at the
 company can read it and tell you where the humans are.
 
 ### Do the tier 1 column first

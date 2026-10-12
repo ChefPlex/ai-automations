@@ -10,7 +10,7 @@ The examples are intentionally generic. They should not be treated as real compa
 
 - [Weekly status source input](weekly-status-source-input.md)
 - [Processed weekly status output](processed-weekly-status-output.md)
-- `sanitized-weekly-status-example.md`
+- [Sanitized weekly status example](sanitized-weekly-status-example.md)
 
 ### Meeting notes
 
@@ -27,11 +27,11 @@ The examples are intentionally generic. They should not be treated as real compa
 - [Artifact critique input](artifact-critique-input.md)
 - [Artifact critique output](artifact-critique-output.md)
 
-### Existing examples
+### Escalations, decisions, and launch readiness
 
-- `sanitized-escalation-example.md`
-- `sanitized-decision-memo-example.md`
-- `sanitized-launch-readiness-example.md`
+- [Sanitized escalation example](sanitized-escalation-example.md)
+- [Sanitized decision memo example](sanitized-decision-memo-example.md)
+- [Sanitized launch readiness example](sanitized-launch-readiness-example.md)
 
 ## Review note
 

@@ -4,6 +4,8 @@
 
 A TPM artifact is close, but it needs a director-level review before it goes to leadership or a broad audience.
 
+Run it in a fresh context with the source material, not in the chat that wrote the draft. A critic in the same context tends to approve.
+
 ## Why it matters
 
 A good review does not just clean up writing. It tests whether the artifact has the right context, risk, ownership, decision quality, and audience fit.

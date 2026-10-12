@@ -5,7 +5,7 @@ REAL LOOK AND FEEL, BUT THE FOLLOWING IS BASED ON FAKE DATA
 ==========================================
 Reporting Period : Week of June 9, 2026
 Report Date      : June 9, 2026
-TPM              : <TPM NAME>
+TPM              : Casey Nguyen
 Audience         : Engineering Leads + VP Sponsor
 Previous Status  : GREEN
 
@@ -20,11 +20,12 @@ YELLOW : Payments team (billing pipeline) not committed to June 15 and
          estimates a 3-week slip to July 1; escalation decision pending by
          Wednesday EOD; two cipher suite issues in QA, root cause known.
          (Meeting notes, Slack export)
-RED    : If billing slips to July 1, it lands on the EU Digital Services
-         Act (DSA) audit window opening July 1, and June 30 is a hard date
+RED    : If billing slips to July 1, it lands on the annual compliance
+         audit window opening July 1, and June 30 is a hard date
          for evidence packages.
          (Slack export, Marcus, Tue 9:03 AM)
 
+Previous status: GREEN
 What would change the call: Raj's June 12 plan. A firm June 15 commitment
 supports YELLOW or better; a confirmed July 1 slip with no exception path
 supports RED.
@@ -34,14 +35,10 @@ supports RED.
 ----------
 The TLS modernization program is 23 of 37 services complete and on track for
 all workstreams except the billing pipeline. The payments team lead has not
-confirmed the June 15 deadline and is estimating a 3-week delay. If billing
-slips to July 1, it creates a compliance gap with the DSA audit window, which
-also opens July 1.
-
-Direct outreach to Raj is in progress this week. If a firm commitment is not
-received by Wednesday EOD, the program will escalate to VP. Two minor cipher
-suite issues were identified in QA validation this week; these are in progress
-and not blocking.
+confirmed the June 15 deadline and estimates a 3-week delay, which would land
+on the audit window opening July 1. If a firm commitment is not received
+by Wednesday EOD, the program will escalate to VP. Two minor cipher suite
+issues found in QA validation this week are in progress and not blocking.
 
 
 3. PROJECT COMPONENTS
@@ -55,7 +52,7 @@ Quality      Issues Identified   Cipher suite issues on reporting-service and
                                  data-export; root cause confirmed; fix in progress
 Scope        Stable              Final inventory confirmed at 37 services; R-09 closed
 Risks        Active Risk         R-14 new this period (HIGH/HIGH); billing delay
-                                 could create DSA compliance gap
+                                 could create a compliance gap
 Roadblocks   Minor Issues        Payments team commitment not yet received;
                                  cipher suite fix in progress
 
@@ -63,15 +60,15 @@ Roadblocks   Minor Issues        Payments team commitment not yet received;
 4. DECISIONS NEEDED
 -------------------
 Decision:   Escalate billing pipeline dependency to VP?
-Owner:      <TPM>
+Owner:      Casey
 Needed by:  Wednesday June 10 EOD
 Impact:     If Raj does not commit and we do not escalate, we lose another
-            week before VP is aware; DSA audit gap risk grows.
+            week before VP is aware; audit gap risk grows.
 
 Decision:   Formal exception required if billing misses June 30 audit deadline?
 Owner:      Marcus (Security)
 Needed by:  June 15
-Impact:     DSA audit team needs documentation; no exception = compliance finding.
+Impact:     The audit team needs documentation; no exception = compliance finding.
 
 
 5. KEY ACCOMPLISHMENTS THIS PERIOD
@@ -86,7 +83,7 @@ Impact:     DSA audit team needs documentation; no exception = compliance findin
   data-export identified; root cause confirmed (same config template issue
   as api-gateway); active fix in progress
 
-- DSA audit evidence deadline confirmed - Marcus confirmed with audit team
+- Audit evidence deadline confirmed - Marcus confirmed with the audit team
   that June 30 is a hard date for evidence packages across all services
 
 
@@ -94,11 +91,11 @@ Impact:     DSA audit team needs documentation; no exception = compliance findin
 ----------------------
 Milestone                                   Owner    Target      Status
 ------------------------------------------  -------  ----------  ----------
-All non-payments services complete (12)     Sarah    June 19     On Track
+All non-payments services complete (13)     Sarah    June 19     On Track
 QA validation complete (all done services)  Priya    June 12     On Track
 Cipher suite fix - reporting + data-export  Dev      June 19     On Track
 Billing pipeline TLS upgrade                Raj      June 15     AT RISK
-DSA audit evidence packages (all services)  <TPM> +   June 30     AT RISK
+Audit evidence packages (all services)      Casey +  June 30     AT RISK
                                             Marcus               (billing dep)
 
 
@@ -106,11 +103,12 @@ DSA audit evidence packages (all services)  <TPM> +   June 30     AT RISK
 -------------------
 R-14  RISK  [NEW]
   Billing pipeline TLS upgrade - payments team (Raj) estimates 3-week slip
-  from June 15 to ~July 1. If confirmed, creates compliance gap with DSA
+  from June 15 to ~July 1. If confirmed, creates compliance gap with the
   audit window opening July 1.
-  Owner: <TPM>
-  Mitigation: Raj committed to provide plan by Friday June 12. If no firm
-  commitment, escalate to VP Monday June 15.
+  Owner: Casey
+  Mitigation: Direct outreach to Raj underway. If no firm commitment by
+  Wednesday June 10 EOD, escalate to VP. Raj committed to provide his full
+  plan by Friday June 12.
 
 I-07  ISSUE  [ONGOING]
   Cipher suite issues on reporting-service and data-export. Non-compliant
@@ -129,9 +127,9 @@ R-09  RISK  [CLOSED June 8]
 ---------------
 Gap 1: Raj's June 12 plan - is it a firm commitment or another estimate?
         What resolves it: Direct conversation + written confirmation from Raj
-        Who has it: <TPM> (action item from meeting)
+        Who has it: Casey (action item from meeting)
 
-Gap 2: DSA exception process - does it require VP sign-off or can Marcus initiate?
+Gap 2: Audit exception process - does it require VP sign-off or can Marcus initiate?
         What resolves it: Check with Marcus and Legal
         Who has it: Marcus
 
@@ -142,21 +140,24 @@ Gap 3: Cipher suite fix timeline - is June 19 achievable or needs adjustment?
 
 9. SOURCE COVERAGE (working file only; leave out of the sent version)
 ---------------------------------------------------------------------
-Input                               Sections that cite it
-----------------------------------  ----------------------
-Weekly sync meeting notes (June 9)  1, 2, 3, 4, 5, 6, 7, 8
-RAID log updates                    1, 3, 7
-Slack export #tls-modernization     1, 2, 5, 7
+Input                               Sections that cite it   Notes
+----------------------------------  ----------------------  -------------------------------
+Weekly sync meeting notes (June 9)  1, 2, 3, 4, 5, 6, 7, 8  Primary source for the billing
+                                                            dependency and escalation timeline
+RAID log updates                    1, 3, 7                 R-09 closure and R-14 rating
+Slack export #tls-modernization     1, 2, 5, 7              Only source for the June 30 hard
+                                                            date; confirms Raj's non-commitment
 
 Key signal: Billing pipeline is the dominant story. Raj's non-commitment
-documented in meeting notes and Slack (Wed 8:15 AM: "not a commitment yet").
-Escalation timeline clear: firm commitment by Wed EOD, VP escalation by
-Monday June 15 if not received.
+documented in meeting notes and Slack (Casey, Mon 8:15 AM: "not a commitment
+yet"). Escalation timeline clear: firm commitment by Wed EOD, VP escalation
+if not received.
 
 Cipher suite issue lower urgency than it reads - same root cause as
-previously resolved api-gateway issue, Dev confirmed quickly, fix in progress.
+previously resolved api-gateway issue, Priya and Dev both confirmed it, fix
+in progress.
 
-DSA June 30 hard date is new info this period (Marcus, Tue 9:03 AM Slack).
+The audit's June 30 hard date is new info this period (Marcus, Tue 9:03 AM Slack).
 Tightens billing dependency significantly.
 
 One gap: no budget detail beyond "still on track." If VP audience will ask for

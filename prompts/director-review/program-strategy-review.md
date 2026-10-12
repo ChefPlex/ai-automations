@@ -4,6 +4,8 @@
 
 A program plan needs a director-level challenge before it becomes the plan everyone starts executing.
 
+For a health check on a program already running, use `director-level-program-review.md`. For a gap hunt on a plan you already believe in, use `what-am-i-missing.md`.
+
 ## Why it matters
 
 Plans usually look best before they meet dependencies. This review looks for weak goals, soft metrics, unclear owners, hidden risks, and timelines that rely on luck.

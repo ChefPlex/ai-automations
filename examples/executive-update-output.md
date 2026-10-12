@@ -6,6 +6,8 @@ Fictional, sanitized example.
 
 Yellow
 
+Evidence: 14 of 18 services tested; Team B date and validation environment access still open.
+
 ## Executive summary
 
 Project Atlas is still viable for Q3 validation, but the path depends on closing two near-term gaps: Team B needs to commit to a migration date, and validation environment access needs to be confirmed. Migration testing is complete for 14 of 18 services. The remaining work is manageable, but the current risk is schedule compression, not technical impossibility.
@@ -34,8 +36,8 @@ No approved customer impact to report. No customer names or commercial details s
 
 | Risk | Owner | Mitigation | Escalation point |
 |---|---|---|---|
-| Team B date uncertainty | TPM / Team B lead | Confirm migration date by Friday. | Escalate if no date is committed by Friday. |
-| Validation environment access pending | Platform owner | Confirm access by Tuesday. | Escalate if access is not approved by Tuesday. |
+| Team B date uncertainty | TPM / Team B lead | Confirm migration date by Friday (proposed deadline, TPM to confirm). | Escalate if no date is committed by Friday. |
+| Validation environment access pending | Platform owner | Confirm access by Tuesday (proposed deadline, TPM to confirm). | Escalate if access is not approved by Tuesday. |
 | Observability dependency newly identified | TPM | Add dependency to Jira and RAID log. | Review in next program sync. |
 | Rollback review incomplete | Security partner / support owner | Assign owner and complete review. | Escalate if owner is not assigned. |
 

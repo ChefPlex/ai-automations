@@ -59,9 +59,9 @@ architecture is still soft.
 | 5 - Engineering | Backend, Frontend, Mobile, DevOps | Phase exit criteria |
 | 6 - QA | QA Lead, QA Automation, Manual Tester | QA sign-off |
 | 7 - Release | Release Manager, DevOps, Sysadmin | Go / no-go |
-| 8 - Operations | Sysadmin, Engineering Manager | Ongoing |
+| 8 - Operations | Sysadmin, Engineering Manager | No exit gate; runs continuously |
 
-**Every phase ends in a named gate, and every gate is a human decision.** That's the through-line
+**Phases 1 to 7 each end in a named gate, and every gate is a human decision.** That's the through-line
 with the execution tiers: agents do the work, a person decides whether it advances.
 
 Phases 2 and 3 run in parallel deliberately. Requirements and architecture inform each other, and

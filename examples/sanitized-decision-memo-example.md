@@ -6,7 +6,7 @@ Choose the rollout approach for the encryption migration across the remaining se
 
 ## Background
 
-The program is migrating a set of services to a new encryption control model. Initial migration testing is complete for three services, while two services remain uncommitted. The current milestone is still achievable, but the remaining window is tight enough that the rollout approach needs a decision this week.
+Project Beacon, a smaller program separate from the Project Atlas examples, is migrating five services to a new encryption control model. Initial migration testing is complete for three services, while two services remain uncommitted. The current milestone is still achievable, but the remaining window is tight enough that the rollout approach needs a decision this week.
 
 ## Options considered
 

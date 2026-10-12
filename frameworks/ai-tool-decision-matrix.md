@@ -23,14 +23,15 @@ workflow automation first, then added the AI layer on top of a working foundatio
 
 ## Phase 1: Stop the bleeding
 
-*Week 1 to 2, near zero cost on public repos. Secret scanning on private GitHub repos is a paid add-on.*
+*Week 1 to 2, near zero cost on public repos. Secret scanning on private GitHub repos is a paid add-on,
+and the GitGuardian free tier stops at 25 developers.*
 
 Find the problems you did not know you had. These tools generate the evidence that justifies
 everything after them.
 
 - **GitGuardian and GitHub Secret Scanning.** Credentials sitting in your repos right now. Deploys
   in a day, zero workflow change for developers.
-- **SonarQube Community.** Technical debt you can't see is debt you can't pay. Free, CI
+- **SonarQube Community Build.** Technical debt you can't see is debt you can't pay. Free, CI
   integration in hours.
 - **ESLint.** Already in most JavaScript and TypeScript stacks. Turn it on as a blocking CI gate.
 
@@ -66,7 +67,8 @@ AI augments a working system instead of amplifying a broken one.**
 - **Claude (app and API).** Drafting, synthesis, spec writing, code generation. Start here.
 - **Slack-native canvas automation.** Persistent briefings and multi-source aggregation, for teams
   already living in Slack.
-- **Cursor.** Whole-repo context. Meaningfully better than file-level completion for refactoring.
+- **Cursor, to evaluate.** Whole-repo context. Meaningfully better than file-level completion for
+  refactoring. Rated `Evaluate`, not `Use Now`, in the matrix below.
 - **Agentic coding tools, supervised.** An agent makes the multi-file change and runs the tests; a
   person reviews every merge. The review gate is what makes it safe to use now.
 
@@ -101,9 +103,9 @@ those wins are what buys the credibility to spend real money in phase 4.
 
 | Tool | Category | Problem it solves | Tier | Phase | Entry cost | Time to value |
 |---|---|---|:---:|:---:|---|---|
-| GitGuardian | Secrets detection | Credentials in repos, CI configs, Dockerfiles | Use Now | 1 | Free tier sufficient | 1 day |
+| GitGuardian | Secrets detection | Credentials in repos, CI configs, Dockerfiles | Use Now | 1 | Free up to 25 developers; paid above | 1 day |
 | GitHub Secret Scanning | Secrets detection | Secrets committed to GitHub repos | Use Now | 1 | Free on public repos; paid add-on (GitHub Secret Protection) for private repos | Immediate |
-| SonarQube Community | Code quality / SAST | Technical debt with no visibility | Use Now | 1 | Free | 1 to 2 days |
+| SonarQube Community Build | Code quality / SAST | Technical debt with no visibility | Use Now | 1 | Free | 1 to 2 days |
 | ESLint | Code quality | Runtime JS/TS errors caught too late | Use Now | 1 | Free | Hours |
 | Snyk | Dependency / SCA | Known CVEs sitting in dependencies for months | Use Now | 2 | Free tier generous | 30 min |
 | Playwright | E2E test automation | No automated coverage, releases feel risky | Use Now | 2 | Free | 1 to 2 weeks |
@@ -114,7 +116,7 @@ those wins are what buys the credibility to spend real money in phase 4.
 | Claude (app / API) | AI, general purpose | Manual drafting, synthesis, spec writing at scale | Use Now | 4 | ~$20/mo, API usage | Immediate |
 | Slack canvas automation | AI, Slack-native | Status updates manual, signal aggregation ad hoc | Use Now | 4 | Vendor dependent | 1 to 2 weeks |
 | Agentic coding tools (supervised) | AI, agentic coding | Multi-file changes, tests and refactors done by an agent, with a person reviewing every merge | Use Now | 4 | Subscription or API usage | Days |
-| Cursor | AI code editor | File-level completion, needs whole-repo context | Evaluate | 4 | ~$20/mo | Days |
+| Cursor | AI code editor | Refactors and large codebases need whole-repo context | Evaluate | 4 | ~$20/mo | Days |
 | Vanta | Compliance automation | SOC 2 / HIPAA evidence collection is manual | Evaluate | 5 | Enterprise | 2 to 4 weeks |
 | Perplexity | AI research | LLM research lacks citations | Evaluate | 5 | ~$20/mo | Immediate |
 | Trivy (IaC scanning) / Checkov | IaC security | Infra misconfigs not caught until deployed | Evaluate | 5 | Free | 1 day |
@@ -122,7 +124,7 @@ those wins are what buys the credibility to spend real money in phase 4.
 | Falco | Runtime security | No visibility into container behavior at runtime | Evaluate | 5 | Free (CNCF) | 1 to 2 weeks |
 | Enterprise LLM tiers | AI, org-wide | Shadow AI, data governance, org adoption | Watch | 5 | Enterprise | Months |
 | File-level code completion | AI, code | Individual-file developer productivity | Watch | 5 | ~$19/mo/dev | Days |
-| Office-suite AI | AI, productivity | AI inside documents and spreadsheets | Not Yet | 5 | ~$30/mo/user | Variable |
+| Office-suite AI | AI, productivity | AI inside documents and spreadsheets | Not Yet | 5 | Add-on; ~$30/mo/user at Microsoft 365 Copilot enterprise list, varies by suite | Variable |
 | Autonomous SWE agents | AI, autonomous coding | Agent merges to production with no human review | Not Yet | - | TBD | 12 to 18 months |
 
 ### Notes on the contested rows
@@ -144,6 +146,12 @@ gate, not the tool. An agent that reads the repo, makes a multi-file change and 
 a person reviewing every merge, is ordinary practice now. An agent that merges to production on its
 own is `Not Yet` on evidence, not on principle: benchmark numbers aren't production reliability.
 Don't build a plan that depends on removing the reviewer.
+
+**Pin your security scanners too.** In March 2026 a malicious Trivy release and force-pushed
+`trivy-action` tags were published with stolen credentials
+([GHSA-69fq-xp46-6x23](https://github.com/aquasecurity/trivy/security/advisories/GHSA-69fq-xp46-6x23),
+CVE-2026-33634). Pin the scanner to a known-good version and pin GitHub Actions to a full commit
+SHA, not a tag.
 
 **Compliance automation moves earlier in regulated environments.** In a HIPAA or SOC 2 context,
 evidence automation is closer to phase 1 than phase 5, because audit readiness gates enterprise

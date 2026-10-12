@@ -6,6 +6,8 @@ Fictional, sanitized example.
 
 Yellow
 
+Evidence: 14 of 18 services tested; Team B date and validation environment access still open.
+
 ## Executive summary
 
 Project Atlas remains on track for Q3 validation only if two items close this week: Team B commits to a migration date, and validation environment access is confirmed. Migration testing is complete for 14 of 18 services, but the remaining date uncertainty and a newly identified observability dependency create schedule risk. This is a normal Yellow, not a fire drill, but it needs active follow-up.

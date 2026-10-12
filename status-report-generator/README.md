@@ -19,6 +19,8 @@ This prompt does the first pass. It reads everything you give it, extracts what 
 | File | What It Is |
 |------|-----------|
 | `status-report-generator-prompt.md` | The full prompt with instructions, section definitions, and usage guide |
+| `2026-06-09-status-report-draft.md` | Sample draft output, markdown, on fake data |
+| `2026-06-09-status-report-draft.txt` | The same sample as aligned plain text |
 
 ---
 
@@ -94,7 +96,7 @@ The draft produces nine sections:
 
 | Section | What It Contains |
 |---------|----------------|
-| 1. Overall Status | Marked TPM CALL, with the evidence for each of GREEN, YELLOW and RED and its source. The model does not pick the colour. |
+| 1. Overall Status | Marked TPM CALL, with the evidence for each of GREEN, YELLOW and RED and its source. The model does not pick the color. |
 | 2. Summary | 2-4 sentence executive summary |
 | 3. Project Components | Budget, Schedule, Quality, Scope, Risks, Roadblocks - each with status and note |
 | 4. Decisions Needed | Decision, owner, deadline, impact if delayed |
@@ -116,7 +118,7 @@ The draft produces nine sections:
 
 **Excel template:** Section 3 (Project Components) maps directly to standard status report templates. Section 4 maps to Decisions. Sections 5-7 map to the work accomplished and risks tables.
 
-**Slack canvas:** Paste markdown directly. Canvas renders tables.
+**Slack canvas:** Paste the markdown and check that the tables came through. If they did not, rebuild them with the canvas table tool.
 
 ---
 
@@ -127,7 +129,7 @@ The Slack Crawler in tpm-toolbox produces structured intelligence briefs. That o
 ```
 Slack Crawler (weekly)  →  inputs/YYYY-MM-DD/slack-brief.txt
 Meeting notes           →  inputs/YYYY-MM-DD/meeting-notes.txt
-RAID log changes        →  inputs/YYYY-MM-DD/raid-updates.txt
+RAID log changes        →  inputs/YYYY-MM-DD/raid-log-updates.txt
                                 ↓
                     Status Report Generator
                                 ↓
@@ -150,7 +152,7 @@ The Slack brief captures channel activity that meeting notes often miss, so it c
 
 The prompt is explicit about this, but worth repeating:
 
-- It doesn't decide whether the status is Green, Yellow, or Red. That judgment is yours.
+- It doesn't decide whether the status is Green, Yellow, or Red. That judgment is yours. The [canvas status synthesis](https://github.com/ChefPlex/tpm-toolbox/tree/main/slack-canvas-status-synthesis) tool in tpm-toolbox proposes a color for the TPM to set; this one is stricter and proposes none.
 - It doesn't know your org dynamics, what is politically sensitive, or what the sponsor needs to hear this week.
 - It does not replace the review step. Read everything before sending.
 
