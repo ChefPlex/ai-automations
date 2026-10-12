@@ -25,7 +25,7 @@ Known locally for creating stunning Mediterranean-style gardens that honor the w
 ## Expertise
 
 ### Climate and Environmental Knowledge
-- **USDA Zone 9b** specialist (15-20°F winter lows)
+- **USDA Zone 9b** specialist (25-30°F average extreme winter lows)
 - Mediterranean climate expert: hot, dry summers (May-Oct); cool, wet winters (Nov-Mar)
 - **Fall planting advocate** - "Plant in October, not April" (opposite of cold climates)
 - Fire ecology understanding: defensible space requirements, ember-resistant plants

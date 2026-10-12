@@ -110,7 +110,7 @@ it the same way every time.
 misses the non-obvious threat. The cost does not appear at generation time. It appears in rework,
 or in an incident.
 
-### 11 of 19 roles cannot be delegated
+### 11 of 19 roles have no junior variant
 
 Eight roles have a junior variant. Eleven don't, and that asymmetry is the most useful thing the
 framework knows about itself. The split below is design judgement about where a mistake costs the
@@ -126,13 +126,16 @@ most. It is not the result of a measurement, and no role has been removed and re
 | 06 Software Architect | Architectural decisions foreclose future options and are hard to reverse |
 | 07 Security Architect | Missed threats surface at breach time - a 10x cost asymmetry |
 | 17 Engineering Manager | Team health and escalation need full context |
+| 10 Mobile Engineer | Not yet classified. With no junior variant it runs senior; it likely belongs with the context-dependent engineering roles below once a junior variant exists |
 
 **Junior available, with a mandatory senior review gate** - 03 Business Analyst, 11 DevOps,
 13 QA Automation, 14 Manual Tester, 15 Release Manager, 16 Sysadmin, 18 Scrum Master,
 19 Project Manager.
 
-**Context-dependent** - 04, 08, 09, 12 can run junior for implementation once the design is settled,
-senior for the design and the review pass.
+**Context-dependent** - 04, 08, 09, 12 have no separate junior variant, but can run with a junior
+model for implementation once the design is settled, senior for the design and the review pass.
+
+That makes 7 senior-only, 8 with a junior variant, and 4 context-dependent: 19.
 
 🔑 **The review gate is what makes the cheap tier safe, but only if the review is independent.**
 Junior output never flows downstream without review. Remove that gate and the framework is just a

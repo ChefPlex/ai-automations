@@ -100,7 +100,7 @@ those wins are what buys the credibility to spend real money in phase 4.
 | Tool | Category | Problem it solves | Tier | Phase | Entry cost | Time to value |
 |---|---|---|:---:|:---:|---|---|
 | GitGuardian | Secrets detection | Credentials in repos, CI configs, Dockerfiles | Use Now | 1 | Free tier sufficient | 1 day |
-| GitHub Secret Scanning | Secrets detection | Secrets committed to GitHub repos | Use Now | 1 | Included in GH Enterprise | Immediate |
+| GitHub Secret Scanning | Secrets detection | Secrets committed to GitHub repos | Use Now | 1 | Free on public repos; paid add-on (GitHub Secret Protection) for private repos | Immediate |
 | SonarQube Community | Code quality / SAST | Technical debt with no visibility | Use Now | 1 | Free | 1 to 2 days |
 | ESLint | Code quality | Runtime JS/TS errors caught too late | Use Now | 1 | Free | Hours |
 | Snyk | Dependency / SCA | Known CVEs sitting in dependencies for months | Use Now | 2 | Free tier generous | 30 min |
@@ -114,7 +114,7 @@ those wins are what buys the credibility to spend real money in phase 4.
 | Cursor | AI code editor | File-level completion, needs whole-repo context | Evaluate | 4 | ~$20/mo | Days |
 | Vanta | Compliance automation | SOC 2 / HIPAA evidence collection is manual | Evaluate | 5 | Enterprise | 2 to 4 weeks |
 | Perplexity | AI research | LLM research lacks citations | Evaluate | 5 | ~$20/mo | Immediate |
-| tfsec / Checkov | IaC security | Infra misconfigs not caught until deployed | Evaluate | 5 | Free | 1 day |
+| Trivy (IaC scanning) / Checkov | IaC security | Infra misconfigs not caught until deployed | Evaluate | 5 | Free | 1 day |
 | Trivy | Container security | Images with known CVEs reaching production | Evaluate | 5 | Free | Hours |
 | Falco | Runtime security | No visibility into container behavior at runtime | Evaluate | 5 | Free (CNCF) | 1 to 2 weeks |
 | Enterprise LLM tiers | AI, org-wide | Shadow AI, data governance, org adoption | Watch | 5 | Enterprise | Months |

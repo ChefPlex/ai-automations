@@ -54,11 +54,11 @@ Create:
 2. Open blockers
 3. Top risks
 4. Decision criteria
-5. Go, no go, or conditional go recommendation
+5. Evidence for go, evidence against go, and what is still missing
 6. Required actions before launch
 7. Missing information
 
-Do not recommend go unless the evidence supports it. If a readiness area is unknown, mark it unknown.
+Do not make the go or no go call. That decision belongs to the named decision owner. If a readiness area is unknown, mark it unknown.
 
 Context:
 [paste sanitized combined context]
@@ -75,7 +75,7 @@ Context:
 ## Output artifacts
 
 - Launch readiness doc
-- Go or no go recommendation
+- Readiness evidence for the decision owner
 - Blocker follow-up messages
 - Jira updates
 - Risk log updates
