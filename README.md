@@ -10,12 +10,30 @@ Where a workflow needs stable domain knowledge, it keeps it in a **context or pe
 
 ## Start Here
 
-- [Prompts](prompts/)
-- [Workflows](workflows/)
-- [Templates](templates/)
-- [Examples](examples/)
-- [Safety and data handling](safety-and-data-handling.md)
-- [Repo manifest](REPO_MANIFEST.md)
+### If you're new to using AI in program work
+
+Three documents, in this order, before any prompt:
+
+1. **[Safety and Data Handling](safety-and-data-handling.md)** - what may go into a model and what may not. Read this first, because it decides which prompts you can use on real work.
+2. **[Operating Principles](operating-principles.md)** - how the prompts here are meant to be used: AI drafts, a person decides.
+3. **[Prompt Quality Rubric](prompt-quality-rubric.md)** - how to tell a prompt that will hold up from one that only demos well.
+
+Then look at one input next to its output in [examples](examples/), for instance [messy meeting notes](examples/messy-meeting-notes-input.md) and what [came out of them](examples/processed-meeting-notes-output.md). Seeing the pair is faster than any amount of instruction.
+
+### Or start from the problem in front of you
+
+| Situation | Start Here |
+|:---|:---|
+| A weekly status report is due and the inputs are a mess | [Weekly Status Workflow](workflows/weekly-status-workflow.md), or the [Status Report Generator](status-report-generator/) for a folder of raw notes |
+| Meeting notes need to become owned action items | [Meeting Notes to Action Items](prompts/junior-tpm/meeting-notes-to-actions.md) |
+| An executive needs an update or a decision from you | [Executive Program Update](prompts/senior-tpm/executive-program-update.md) and [Decision Memo](prompts/senior-tpm/decision-memo.md) |
+| Something needs to be escalated without burning a relationship | [Escalation Draft](prompts/senior-tpm/escalation-draft.md) |
+| A launch is close and nobody is sure it is ready | [Launch Readiness Workflow](workflows/launch-readiness-workflow.md) |
+| You want a hard second opinion on your own program | [What Am I Missing](prompts/director-review/what-am-i-missing.md) and [Director-Level Program Review](prompts/director-review/director-level-program-review.md) |
+| You are deciding where AI belongs in a team or company at all | [The Five Execution Tiers](frameworks/ai-execution-tiers.md), then the [Activity Mapping Method](frameworks/activity-mapping-method.md) |
+| You are choosing an AI tool for regulated data | [AI Tool Decision Matrix](frameworks/ai-tool-decision-matrix.md) |
+
+Everything else is browsable by kind: [prompts](prompts/) (by level: junior, senior, director), [workflows](workflows/), [templates](templates/), [examples](examples/), and the full [repo manifest](REPO_MANIFEST.md).
 
 ---
 
@@ -99,3 +117,7 @@ If you have a prompt, workflow, or pattern that saves real time on meaningful wo
 
 Copyright (c) 2026 Eric White. Licensed under [CC BY 4.0](LICENSE): use it, adapt it, put it to
 work in your own program. Credit is the only condition.
+
+---
+
+**Part of the ChefPlex TPM portfolio** · Status: Active · [I need to… find the right document across all the repositories](https://github.com/ChefPlex/tpm-templates/blob/main/PORTFOLIO-GUIDE.md) · [All repositories](https://github.com/ChefPlex)
