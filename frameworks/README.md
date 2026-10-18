@@ -15,6 +15,7 @@ as the rest of the repo: written down because it was used often enough to be wor
 | [Activity Mapping Method](activity-mapping-method.md) | How to map an entire company's work against those tiers in about a week, at three levels of resolution |
 | [Multi-Agent Delivery Framework](multi-agent-delivery-framework.md) | 19 roles across 8 phases, ideation through operations, with senior/junior tier selection and an audit trail |
 | [AI Tool Decision Matrix](ai-tool-decision-matrix.md) | What to buy and in what order, and why the AI layer is phase 4 of 5 |
+| [AI Governance Program Template](ai-governance-program-template.md) | How to stand up the program that governs all of it: charter, decision rights, intake, risk tiers crossed with execution tiers, controls, inventory, metrics and cadence |
 
 Regulated environments (HIPAA, SOC 2, PHI) change the adoption order. That overlay lives in
 [security-program-playbooks](https://github.com/ChefPlex/security-program-playbooks).
@@ -57,7 +58,9 @@ answers a different question, and knowing the shape is more useful than knowing 
   2 August 2025; **Commission enforcement and the Article 50 transparency obligations began
   2 August 2026.** Mandatory within EU scope, and since amended by the Digital Omnibus on AI
   ([Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng)); see
-  [AI Execution Tiers](ai-execution-tiers.md) for what that changes at tier 4.
+  [AI Execution Tiers](ai-execution-tiers.md) for what that changes at tier 4. High-risk
+  obligations now apply from 2 December 2027 (Annex III) and 2 August 2028 (Annex I); the full date
+  table is in the [AI Governance Program Template](ai-governance-program-template.md#9-how-the-template-maps-to-the-sources).
 - **A US state patchwork, changing fast.** Several states now have AI statutes with different
   scopes and different effective dates, and at least one has already been narrowed after passage.
   ⚠️ **This is the layer most likely to be out of date in any document you read, including this
