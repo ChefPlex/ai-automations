@@ -138,6 +138,8 @@ RAID log changes        →  inputs/YYYY-MM-DD/raid-log-updates.txt
 
 The Slack brief captures channel activity that meeting notes often miss, so it can close some Needs Review gaps. The Section 9 coverage table shows whether it actually did.
 
+⚠️ The brief is a summary a model wrote, not the original messages. A blocker the crawler missed is missing here too, and nothing in this prompt can see it. Treat a fact that appears only in the brief as secondary, and check anything that would change the status against the source.
+
 ---
 
 ## Maturity
@@ -152,7 +154,7 @@ The Slack brief captures channel activity that meeting notes often miss, so it c
 
 The prompt is explicit about this, but worth repeating:
 
-- It doesn't decide whether the status is Green, Yellow, or Red. That judgment is yours. The [canvas status synthesis](https://github.com/ChefPlex/tpm-toolbox/tree/main/slack-canvas-status-synthesis) tool in tpm-toolbox proposes a color for the TPM to set; this one is stricter and proposes none.
+- It doesn't decide whether the status is Green, Yellow, or Red. That judgment is yours. The [canvas status synthesis](https://github.com/ChefPlex/tpm-toolbox/tree/main/slack-canvas-status-synthesis) tool in tpm-toolbox proposes a color for the TPM to set; this one is stricter and proposes none. Both follow the same [Status Contract](https://github.com/ChefPlex/tpm-toolbox/blob/main/STATUS-CONTRACT.md): what the model may infer, what stays unresolved, and what only a person decides. They differ in presentation, not in what a draft is allowed to decide.
 - It doesn't know your org dynamics, what is politically sensitive, or what the sponsor needs to hear this week.
 - It does not replace the review step. Read everything before sending.
 
