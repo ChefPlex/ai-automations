@@ -24,6 +24,8 @@ Then look at one input next to its output in [examples](examples/), for instance
 
 | Situation | Start Here |
 |:---|:---|
+| Someone handed you "we want AI over our own documents" | [Enterprise RAG Program](ai-programs/enterprise-rag-program/) |
+| AI agents are getting tool access and nobody can list what they can touch | [Agentic AI Program](ai-programs/agentic-ai-program/) |
 | A weekly status report is due and the inputs are a mess | [Weekly Status Workflow](workflows/weekly-status-workflow.md), or the [Status Report Generator](status-report-generator/) for a folder of raw notes |
 | Meeting notes need to become owned action items | [Meeting Notes to Action Items](prompts/junior-tpm/meeting-notes-to-actions.md) |
 | An executive needs an update or a decision from you | [Executive Program Update](prompts/senior-tpm/executive-program-update.md) and [Decision Memo](prompts/senior-tpm/decision-memo.md) |
@@ -35,7 +37,7 @@ Then look at one input next to its output in [examples](examples/), for instance
 | People outside engineering want to build with AI and you cannot just say no | [AI Prototyping Sandbox Workflow](workflows/ai-prototyping-sandbox-workflow.md) |
 | You need to know what is wrong with a codebase, ranked, before an audit does | [Four-Lens Codebase Audit Workflow](workflows/four-lens-codebase-audit-workflow.md) |
 
-Everything else is browsable by kind: [prompts](prompts/) (by level: junior, senior, director), [workflows](workflows/), [templates](templates/), [examples](examples/), and the full [repo manifest](REPO_MANIFEST.md).
+Everything else is browsable by kind: [prompts](prompts/) (by level: junior, senior, director), [workflows](workflows/), [frameworks](frameworks/), [AI programs](ai-programs/), [templates](templates/) and [examples](examples/). For reading paths across all the ChefPlex repos, see [I need to…](https://github.com/ChefPlex/tpm-templates/blob/main/PORTFOLIO-GUIDE.md).
 
 ---
 
@@ -71,6 +73,17 @@ Regulated environments change the adoption order. That overlay lives in
 
 ---
 
+## AI Programs
+
+Program kits for running an AI system as a program, with the general program documents they build on in [tpm-templates](https://github.com/ChefPlex/tpm-templates).
+
+| Program | What It Is |
+|:---|:---|
+| [Enterprise RAG Program](ai-programs/enterprise-rag-program/) | Running Retrieval-Augmented Generation as a program rather than an AI experiment. An architecture primer for the people making decisions about it, and a playbook with phases, seven workstreams, governance and risk tiers, plus templates for the charter, use case catalog, data source inventory, evaluation plan, RAID starter, milestone exit criteria, and definition of done. With a [worked example](ai-programs/examples/sample-rag-inventory-row-and-failure-trace.md). The security workstream lives in [security-program-playbooks](https://github.com/ChefPlex/security-program-playbooks/tree/main/enterprise-rag-security). |
+| [Agentic AI Program](ai-programs/agentic-ai-program/) | One-page control register for AI agents with tool access: an agent inventory with a named human owner per agent, a tool-permission map, who holds go / no-go on irreversible and outbound actions, and a guardrail coverage table that records what each guardrail cannot see. |
+
+---
+
 ## The TPM Workflows, and Where They Live
 
 These four were listed here as "coming" for a while. Three of them had already shipped into this
@@ -79,7 +92,7 @@ advertising what might.
 
 | Workflow | What It Does | Where |
 |----------|--------------|-------|
-| Meeting Notes Processor | Takes raw meeting notes and extracts decisions, action items, and open questions in structured format. Output slots into the meeting notes tracker in [tpm-toolbox](https://github.com/ChefPlex/tpm-toolbox). | [meeting-notes-to-actions.md](prompts/junior-tpm/meeting-notes-to-actions.md), with a worked example: [input](examples/messy-meeting-notes-input.md) / [output](examples/processed-meeting-notes-output.md) |
+| Meeting Notes Processor | Takes raw meeting notes and extracts decisions, action items, and open questions in structured format. Output slots into the [meeting notes tracker](https://github.com/ChefPlex/tpm-templates/blob/main/meeting-notes-action-tracker.md) in tpm-templates. | [meeting-notes-to-actions.md](prompts/junior-tpm/meeting-notes-to-actions.md), with a worked example: [input](examples/messy-meeting-notes-input.md) / [output](examples/processed-meeting-notes-output.md) |
 | Pre-Meeting Brief Generator | Given an agenda and participant list, produces a one-page brief: the one outcome worth protecting, what each participant will push on, which decisions can actually close, and the objection you would least like to be asked. | [pre-meeting-brief.md](prompts/senior-tpm/pre-meeting-brief.md) |
 | Escalation Draft | Takes a problem description and produces a structured escalation: what is blocked, the impact, what has been tried, the decision needed, and the deadline. Hard to write under pressure, easier from a starting point. | [escalation-draft.md](prompts/senior-tpm/escalation-draft.md), with a worked example: [sanitized escalation](examples/sanitized-escalation-example.md) |
 | Compliance Intake Triage | Turns a regulatory requirement, audit finding, or control request into engineering work with owners, evidence needs, milestones, and risk visibility. First cut only, not a substitute for GRC review. | [compliance-intake-workflow.md](workflows/compliance-intake-workflow.md) |
