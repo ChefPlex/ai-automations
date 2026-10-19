@@ -6,7 +6,7 @@ The role definitions are kept private. The orchestrator and the workflow are pub
 
 The prompts call the framework by its working name, `prog-team`.
 
-The framework was deployed at a healthcare startup in 2026, where its QA roles are in repeated use auditing requirements-to-code traceability.
+Its QA roles are in repeated use at a healthcare startup, auditing requirements-to-code traceability.
 
 ---
 
