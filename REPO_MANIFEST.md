@@ -66,6 +66,8 @@ This manifest is the quick map for the repo. It's here so a TPM can scan the pac
 | `launch-readiness-workflow.md` | A program is close to launch and needs a go or no-go view |
 | `compliance-intake-workflow.md` | Audit, policy, or control requests need to become engineering work |
 | `executive-review-workflow.md` | Leadership needs a clean view of outcomes, risks, decisions, and asks |
+| `ai-prototyping-sandbox-workflow.md` | People who do not write code want to prototype with AI against the real application, and nothing may reach production unreviewed |
+| `four-lens-codebase-audit-workflow.md` | You need a ranked list of a codebase's defects, from separate architecture, security, backend and QA reviews |
 
 ## Templates
 

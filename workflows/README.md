@@ -11,6 +11,8 @@ A prompt is useful. A workflow is better because it tells the TPM where the inpu
 - Launch readiness workflow
 - Compliance intake workflow
 - Executive review workflow
+- AI prototyping sandbox workflow: non-engineers prototype with AI on isolated branches, draft pull requests only
+- Four-lens codebase audit workflow: architecture, security, backend and QA reviews run separately, then reconciled and ranked
 
 ## Workflow pattern
 

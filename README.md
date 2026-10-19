@@ -32,6 +32,8 @@ Then look at one input next to its output in [examples](examples/), for instance
 | You want a hard second opinion on your own program | [What Am I Missing](prompts/director-review/what-am-i-missing.md) and [Director-Level Program Review](prompts/director-review/director-level-program-review.md) |
 | You are deciding where AI belongs in a team or company at all | [The Five Execution Tiers](frameworks/ai-execution-tiers.md), then the [Activity Mapping Method](frameworks/activity-mapping-method.md) |
 | You are choosing an AI tool for regulated data | [AI Tool Decision Matrix](frameworks/ai-tool-decision-matrix.md) |
+| People outside engineering want to build with AI and you cannot just say no | [AI Prototyping Sandbox Workflow](workflows/ai-prototyping-sandbox-workflow.md) |
+| You need to know what is wrong with a codebase, ranked, before an audit does | [Four-Lens Codebase Audit Workflow](workflows/four-lens-codebase-audit-workflow.md) |
 
 Everything else is browsable by kind: [prompts](prompts/) (by level: junior, senior, director), [workflows](workflows/), [templates](templates/), [examples](examples/), and the full [repo manifest](REPO_MANIFEST.md).
 

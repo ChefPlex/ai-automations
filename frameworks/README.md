@@ -17,6 +17,10 @@ as the rest of the repo: written down because it was used often enough to be wor
 | [AI Tool Decision Matrix](ai-tool-decision-matrix.md) | What to buy and in what order, and why the AI layer is phase 4 of 5 |
 | [AI Governance Program Template](ai-governance-program-template.md) | How to stand up the program that governs all of it: charter, decision rights, intake, risk tiers crossed with execution tiers, controls, inventory, metrics and cadence |
 
+Two workflows put the frameworks to work as controls: the
+[AI Prototyping Sandbox](../workflows/ai-prototyping-sandbox-workflow.md), a tier-3 build with a
+tier-4 review gate, and the [Four-Lens Codebase Audit](../workflows/four-lens-codebase-audit-workflow.md).
+
 Regulated environments (HIPAA, SOC 2, PHI) change the adoption order. That overlay lives in
 [security-program-playbooks](https://github.com/ChefPlex/security-program-playbooks).
 
