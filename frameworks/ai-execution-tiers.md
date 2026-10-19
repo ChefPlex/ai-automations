@@ -168,7 +168,8 @@ a decision.** They are collection, execution, and measurement.
 - **A reason it's not tier 4.** "We got tired of approving it" is a real reason, honestly stated,
   and it's far better than a tier-4 gate everyone has stopped reading. Write it down.
 
-⚠️ **Tier 5 isn't the goal.** The model isn't a maturity ladder to climb. A healthy map has
+⚠️ **This is a maturity model, from all-human to all-AI work, and maturity means each activity sits
+at the tier that fits it.** Moving everything to tier 5 is not the measure. A healthy map has
 activities at every tier, and the tier-1 column stays populated permanently. A company whose map
 has drifted entirely to tiers 4 and 5 hasn't matured; it has stopped deciding.
 
@@ -187,8 +188,9 @@ should be built, whether this ships, who gets hired, how much risk is acceptable
 architecture forecloses. Those sit at tier 1 and 2 permanently, and they're the reason the other
 tiers are safe to use.
 
-**So the ladder isn't a slide from "human" toward "no human."** It's a description of how much
-mechanical work a human can put down while keeping every judgment they were actually hired for.
+**So the maturity model runs from all-human to all-AI work, and what moves along it is the
+labour.** It describes how much mechanical work a human can put down while keeping every judgment
+they were actually hired for.
 Delegating the labour is what creates the room to do the judgment well.
 
 A multi-agent delivery framework can build the thing. A QA framework can test it. **A human still

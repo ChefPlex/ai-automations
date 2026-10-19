@@ -8,7 +8,7 @@ The draft handles structure and assembly. You handle judgment.
 
 ## The Problem It Solves
 
-The hard part of status reporting is not the writing. It's pulling a useful signal from a week of scattered notes, deciding what actually moved, figuring out what decisions are buried in meeting threads, and assembling it into a format that the right people will read.
+The hard part of status reporting is pulling a useful signal from a week of scattered notes, deciding what actually moved, figuring out what decisions are buried in meeting threads, and assembling it into a format that the right people will read.
 
 This prompt does the first pass. It reads everything you give it, extracts what matters, structures it into a complete report, and flags the gaps you need to fill in before sending. You go from "staring at a blank page" to "editing a draft" - which is a fundamentally different and faster problem.
 

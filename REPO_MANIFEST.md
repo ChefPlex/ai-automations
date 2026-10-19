@@ -30,7 +30,7 @@ This manifest is the quick map for the repo. It's here so a TPM can scan the pac
 
 | Directory | Purpose |
 |---|---|
-| `frameworks/` | Decision frameworks for AI adoption: execution tiers, the activity mapping method, the multi-agent delivery framework, and the tool decision matrix |
+| `frameworks/` | Decision frameworks for AI adoption: execution tiers, the activity mapping method, the multi-agent delivery framework, the tool decision matrix, and the AI governance program template |
 
 | File | Start here when |
 |---|---|
@@ -38,6 +38,7 @@ This manifest is the quick map for the repo. It's here so a TPM can scan the pac
 | `frameworks/activity-mapping-method.md` | You want to map a whole company's work against those tiers |
 | `frameworks/multi-agent-delivery-framework.md` | You are building a multi-agent delivery process and need roles, phases, and gates |
 | `frameworks/ai-tool-decision-matrix.md` | Someone is asking what to buy, or why the license they bought did not help |
+| `frameworks/ai-governance-program-template.md` | You need to stand up the program that governs AI use: charter, decision rights, intake, controls and metrics |
 
 ## Flagship workflows
 

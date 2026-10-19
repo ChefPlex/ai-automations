@@ -1,8 +1,8 @@
 # ai-automations
 
-AI-assisted prompts, workflows, and examples for TPM productivity and program management. Built from real use - things that save time on actual work, not proof-of-concept demos.
+AI-assisted prompts, workflows, and examples for TPM productivity and program management. Built from real use: things that save time on actual work.
 
-The tools here are not about replacing judgment. They're about removing mechanical work so there's more time for the work that actually requires it.
+The tools here remove mechanical work so there is more time for the work that requires judgment.
 
 Where a workflow needs stable domain knowledge, it keeps it in a **context or persona file** and lets a **prompt file** drive the session interaction. The landscape planner is the full example. Keeping them separate means you can reuse the domain knowledge across different prompt formats, and swap the prompt without rewriting the expertise.
 
@@ -57,10 +57,11 @@ where does the human stay.
 
 | Framework | Answers |
 |----------|--------------|
-| [AI Execution Tiers](frameworks/ai-execution-tiers.md) | How much AI belongs in a given activity, on a five-tier scale from human-only to AI-only, and how to classify without kidding yourself. |
+| [AI Execution Tiers](frameworks/ai-execution-tiers.md) | How much AI belongs in a given activity: a five-tier maturity model from human-only to AI-only, and how to classify without kidding yourself. |
 | [Activity Mapping Method](frameworks/activity-mapping-method.md) | How to map an entire company's work against those tiers in about a week, at three levels of resolution. |
 | [Multi-Agent Delivery Framework](frameworks/multi-agent-delivery-framework.md) | 19 roles across 8 phases, ideation through operations, with senior/junior tier selection logic and an audit trail. Describes the framework; the individual role specifications are not published. |
 | [AI Tool Decision Matrix](frameworks/ai-tool-decision-matrix.md) | What to buy and in what order, and why the AI layer is phase 4 of 5 rather than the first purchase. |
+| [AI Governance Program Template](frameworks/ai-governance-program-template.md) | How to stand up the program that governs all of it: charter, decision rights, intake, risk tiers crossed with execution tiers, controls, inventory, metrics and cadence. |
 
 Regulated environments change the adoption order. That overlay lives in
 [security-program-playbooks](https://github.com/ChefPlex/security-program-playbooks/blob/main/ai-tooling-regulated-data.md).
