@@ -1,6 +1,7 @@
 # The Multi-Agent Delivery Framework
 
 **19 roles, 8 phases, ideation through operations - with tier-selection logic and an audit trail.**
+
 The execution tiers say *how much* AI belongs in an activity. This says *who does the work* when
 that activity is building software, and it's the part most multi-agent write-ups skip: a list of
 agents is not a delivery framework. A delivery framework has phases, gates, handoffs, and a record
