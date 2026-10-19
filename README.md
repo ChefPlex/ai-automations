@@ -4,7 +4,7 @@ AI-assisted prompts, workflows, and examples for TPM productivity and program ma
 
 The tools here remove mechanical work so there is more time for the work that requires judgment.
 
-Where a workflow needs stable domain knowledge, it keeps it in a **context or persona file** and lets a **prompt file** drive the session interaction. The landscape planner is the full example. Keeping them separate means you can reuse the domain knowledge across different prompt formats, and swap the prompt without rewriting the expertise.
+Where a workflow needs stable domain knowledge, it keeps it in a **context or persona file** and lets a **prompt file** drive the session interaction. Keeping them separate means you can reuse the domain knowledge across different prompt formats, and swap the prompt without rewriting the expertise.
 
 ---
 
@@ -49,7 +49,6 @@ Everything else is browsable by kind: [prompts](prompts/) (by level: junior, sen
 |----------|-------------|
 | [Status Report Generator](status-report-generator/) | Reads a folder of raw inputs - meeting notes, Slack exports, RAID log updates, ticket summaries - and produces a structured draft status report. Nine sections including overall status, decisions needed, risks and issues, and a NEEDS REVIEW section that flags what requires TPM judgment before sending. Integrates with the Slack Crawler in tpm-toolbox. |
 | [App Builder](app-builder/) | Two-prompt system for going from a rough app idea to a working web application. The intake prompt interviews a non-technical person and produces a structured developer brief. The builder prompt takes that brief through seven phases - idea refinement, tech stack, architecture, MVP scope, UI/UX direction, feature-by-feature build with executed tests, and a human gate before going live. |
-| [Landscape Planner](landscape-planner/) | AI landscape design consultation for Sonoma County conditions. Give it your budget, yard situation, and goals. Receive a visual layout, phased implementation guide, plant shopping list, and budget breakdown. Covers fire safety, drought tolerance, deer and gopher pressure, and local nursery recommendations. |
 
 ---
 
