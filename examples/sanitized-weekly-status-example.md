@@ -10,7 +10,7 @@ Yellow
 
 ## Executive summary
 
-The program remains on track for the Q3 control validation milestone, but health is Yellow because Service Team B has not committed a migration date and the validation environment is not fully available. This week, three additional services completed migration testing, the support runbook moved to final review, and the team identified one new dependency on the platform observability team.
+Yellow: the Q3 control validation milestone is at risk because Service Team B has not committed a migration date and the validation environment is not fully available. One Yellow item makes the program Yellow until it is dealt with. Path to green: both owners named and dates agreed by Friday. This week, three additional services completed migration testing, the support runbook moved to final review, and the team identified one new dependency on the platform observability team.
 
 ## What changed this week
 
