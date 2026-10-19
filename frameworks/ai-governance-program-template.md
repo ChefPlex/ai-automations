@@ -100,7 +100,7 @@ as of October 2026). The risk tiers in section 4 are that process.
 | **Executive sponsor** | Owns AI risk at the top. Signs the charter. Accepts High risk or names who may. | NIST GOVERN 2.3: *"Executive leadership of the organization takes responsibility for decisions about risks associated with AI system development and deployment."* |
 | **Program owner** | Runs the program day to day. Owns the inventory, the intake queue, the rubric and the metrics. | Can be an existing leader with a second hat (a risk, security or data lead). US federal agencies may do the same with their Chief AI Officer (CAIO). Must be senior enough to be heard. |
 | **Governance board** | Cross-functional. Decides High items, exceptions and rubric changes. | Security, privacy, legal, data, procurement, HR and the business. One chair, one vice-chair (often the program owner). Can be an existing risk committee with a new agenda item. |
-| **Use-case owner** | Accountable for one AI use. Fills in intake, runs the controls, answers for it. | A named role, never a team. Same rule as the tiers document. |
+| **Use-case owner** | Accountable for one AI use. Fills in intake, runs the controls, answers for it. | A named role and the person currently in it, never a team. Update the name when the person changes. The owner is a human; an agent the use runs is not the owner and does not get the owner's access. |
 | **Independent reviewer** | Checks a High use case before risk is accepted. | Was not involved in building or buying it. Internal audit, a second-line risk function, or a peer team. |
 | **Risk acceptor** | Signs to accept the residual risk. | A named person with the authority to carry that risk. A signature from someone who cannot stop the work is not acceptance. |
 | **Operators and reviewers** | The people at the tier 4 gate, or using the output. | Trained before they start, and named, not "the team". |
@@ -149,7 +149,7 @@ inventory will be fiction. The execution tier fields are the four from
 AI USE CASE INTAKE                                       Intake ID: ______  Date: ______
 
 1.  Use case name:
-2.  Use-case owner (a role, not a team):
+2.  Use-case owner (a role and the person in it, not a team):
 3.  Problem it solves, and how we will know it worked:
 4.  Tool, model and version, and how we reach it (vendor app, API, embedded feature,
     self-hosted):
@@ -169,6 +169,10 @@ AI USE CASE INTAKE                                       Intake ID: ______  Date
 14. Does it generate content published to the public, or talk to people who may not
     know it is AI?   Y / N
 15. Where do its logs, memory and outputs get stored, and for how long?
+16. If it acts as an agent (reads systems, calls tools, writes anywhere): what identity
+    does it run under, and what can that identity reach? It gets its own identity, never
+    the owner's or the requester's login, and short-lived tokens scoped to this task.
+    What enforces the scope in code, outside the model?
 
 PROGRAM USE ONLY
 Risk tier: ________   Determined by: ________   Date: ________
@@ -184,13 +188,21 @@ Questions 8 and 9 do most of the risk work. Question 8 is the federal "principal
 
 | Field | Weak | Better |
 |:---|:---|:---|
-| Owner | "Customer Service" | "Contact Center Operations Manager" |
+| Owner | "Customer Service" | "Contact Center Operations Manager (currently: [name])" |
+| Agent access | "Uses the requester's login" | "Runs as its own service identity with read-only access to the claims system, on a token that expires in 15 minutes and covers only the claim being handled; a policy check in the API layer rejects anything outside that scope" |
 | Gate | "Agents review the drafts" | "The handling agent approves each draft before send; send is blocked until they click approve; approvals are logged with their ID" |
 | Data | "Customer data" | "Policy number, claim notes, caller name; no payment card data; vendor agreement covers personal data, signed 2026-08-14" |
 | Benefit | "Faster replies" | "Cut median written-reply time from 11 minutes to under 5, measured from the ticketing system" |
 
 The weak answers are not wrong. They are unreviewable. Nobody can check a team, a vague gate or a
 benefit with no measure.
+
+The agent access answer is the one that most often reaches production unexamined. An agent running
+on a person's login can do everything that person can, and a prompt injection then has the same
+reach. Give each agent its own identity, short-lived tokens scoped to the task in hand, and a
+deterministic check outside the model that enforces the scope. The design detail, including how
+authority passes between chained agents, is in
+[Authority Between Agents](https://github.com/ChefPlex/security-program-playbooks/blob/main/enterprise-rag-security/prompt-injection-threat-model.md#authority-between-agents).
 
 ---
 

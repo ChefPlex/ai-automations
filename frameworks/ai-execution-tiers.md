@@ -227,6 +227,6 @@ For every activity, four fields. Fewer and the map is decorative; more and nobod
 | Field | Why |
 |---|---|
 | **Tier** | The decision |
-| **Owner** | A named role. Not a team - a role |
+| **Owner** | A named role and the person currently in it. Never a team, and never the agent itself |
 | **Tool** | What actually does the work, named specifically |
 | **Gate** | For tiers 4 and 5: who can stop it, or an explicit "nobody, and here is why" |
