@@ -11,7 +11,8 @@ of what was decided and by whom.
 
 > **A note on what is published here.** This document describes the framework - the roles, the
 > phases, the gates, and the selection logic. The individual role specifications are not published.
-> The intent is that you can build your own version of this, or evaluate whether the approach is
+> The orchestrator prompt and the phase-by-phase workflow are, in
+> [multi-agent-delivery/](multi-agent-delivery/). The intent is that you can build your own version of this, or evaluate whether the approach is
 > sound, without needing mine.
 
 ---

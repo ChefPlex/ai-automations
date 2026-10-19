@@ -14,6 +14,7 @@ as the rest of the repo: written down because it was used often enough to be wor
 | [AI Execution Tiers](ai-execution-tiers.md) | How much AI belongs in a given activity: a five-tier maturity model from human-only to AI-only, and how to classify without kidding yourself |
 | [Activity Mapping Method](activity-mapping-method.md) | How to map an entire company's work against those tiers in about a week, at three levels of resolution |
 | [Multi-Agent Delivery Framework](multi-agent-delivery-framework.md) | 19 roles across 8 phases, ideation through operations, with senior/junior tier selection and an audit trail |
+| [Multi-Agent Delivery: Orchestrator and Workflow](multi-agent-delivery/) | The orchestrator prompt and the 8-phase workflow with every handoff and exit criterion, published so you can see how the framework runs. The role definitions stay private |
 | [AI Tool Decision Matrix](ai-tool-decision-matrix.md) | What to buy and in what order, and why the AI layer is phase 4 of 5 |
 | [AI Governance Program Template](ai-governance-program-template.md) | How to stand up the program that governs all of it: charter, decision rights, intake, risk tiers crossed with execution tiers, controls, inventory, metrics and cadence |
 

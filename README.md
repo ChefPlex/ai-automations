@@ -62,6 +62,7 @@ where does the human stay.
 | [AI Execution Tiers](frameworks/ai-execution-tiers.md) | How much AI belongs in a given activity: a five-tier maturity model from human-only to AI-only, and how to classify without kidding yourself. |
 | [Activity Mapping Method](frameworks/activity-mapping-method.md) | How to map an entire company's work against those tiers in about a week, at three levels of resolution. |
 | [Multi-Agent Delivery Framework](frameworks/multi-agent-delivery-framework.md) | 19 roles across 8 phases, ideation through operations, with senior/junior tier selection logic and an audit trail. Describes the framework; the individual role specifications are not published. |
+| [Multi-Agent Delivery: Orchestrator and Workflow](frameworks/multi-agent-delivery/) | The orchestrator prompt and the 8-phase workflow behind that framework, with every handoff, gate and exit criterion, so you can see how a run actually proceeds. |
 | [AI Tool Decision Matrix](frameworks/ai-tool-decision-matrix.md) | What to buy and in what order, and why the AI layer is phase 4 of 5 rather than the first purchase. |
 | [AI Governance Program Template](frameworks/ai-governance-program-template.md) | How to stand up the program that governs all of it: charter, decision rights, intake, risk tiers crossed with execution tiers, controls, inventory, metrics and cadence. |
 
