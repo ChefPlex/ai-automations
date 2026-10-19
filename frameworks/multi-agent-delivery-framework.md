@@ -54,8 +54,8 @@ architecture is still soft.
 | Phase | Key roles | Gate |
 |---|---|---|
 | 1 - Ideation & Strategy | Stakeholder, PM | PRD approval |
-| 2 - Requirements *(parallel with 3)* | PM, BA, UX Researcher | Story approval |
-| 3 - Architecture *(parallel with 2)* | Security Architect, Software Architect | Architecture approval |
+| 2 - Requirements *(overlaps 3)* | PM, BA, UX Researcher | Story approval |
+| 3 - Architecture *(overlaps 2)* | Security Architect, Software Architect | Architecture approval |
 | 4 - Design | UX/UI Designer | Wireframe approval |
 | 5 - Engineering | Backend, Frontend, Mobile, DevOps | Phase exit criteria |
 | 6 - QA | QA Lead, QA Automation, Manual Tester | QA sign-off |
@@ -65,9 +65,12 @@ architecture is still soft.
 **Phases 1 to 7 each end in a named gate, and every gate is a human decision.** That's the through-line
 with the execution tiers: agents do the work, a person decides whether it advances.
 
-Phases 2 and 3 run in parallel deliberately. Requirements and architecture inform each other, and
-serializing them produces either an architecture built for requirements that changed or
-requirements written without knowing what is expensive.
+Phases 2 and 3 overlap deliberately. Requirements and architecture inform each other, and running
+them strictly one after the other produces either an architecture built for requirements that
+changed or requirements written without knowing what is expensive. One handoff inside the overlap
+is fixed: the Software Architect starts only once the threat model and the Business Analyst's
+specification exist. An earlier version ran all four roles at once, and the architect designed
+without either.
 
 ### Every handoff loses information
 
