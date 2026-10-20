@@ -30,10 +30,10 @@ The launch introduces a new platform control for a defined set of internal servi
 | Monitoring gap at launch | Slower detection of post-launch issues | Complete dashboard validation before go decision |
 | Support runbook not approved | Support team may not have clean handoff | Final support review scheduled for Tuesday |
 
-## Recommendation
+## For the decision owner
 
-Conditional go. Proceed only if monitoring validation completes by Monday and support runbook sign off completes by Tuesday. If either item slips, move the launch rather than launch with known operational gaps.
+The evidence supports go only if two items close: monitoring validation by Monday and support runbook sign off by Tuesday. If either slips, the evidence points to moving the launch rather than launching with known operational gaps. The go or no go call is the decision owner's.
 
 ## TPM note
 
-This is not a no. It is a conditional yes with two gates that actually matter.
+The decision owner is not looking at a vague "mostly ready". They are looking at two named gates with dates.

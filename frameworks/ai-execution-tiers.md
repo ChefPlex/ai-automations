@@ -81,12 +81,14 @@ The AI is deciding *that* the work should happen, not only *how*. The human gate
 stop the output - but it's reviewing a finished thing rather than commissioning one.
 
 Examples: automated PR review that drafts comments for a person to post; a vulnerability scanner
-opening tickets for critical CVEs; lead scoring routing prospects to a pipeline; anomaly detection
-paging an on-call engineer.
+that drafts tickets for critical CVEs, which a triager files; lead scoring that proposes a pipeline
+route a sales lead confirms; anomaly detection that flags an alert for a human to page on.
 
-Note the first example. An automated review that *posts* its comments has no gate before the
-effect - posting is the effect - so it is tier 5, whatever the process document says. It becomes
-tier 4 only when the comments are drafts and a named person decides what gets posted.
+Note the pattern. An automated review that *posts* its comments has no gate before the effect -
+posting is the effect - so it is tier 5, whatever the process document says. The same holds for a
+scanner that opens the tickets itself, routing that assigns the prospect, and detection that pages
+the on-call engineer directly: each is tier 5. Each becomes tier 4 only when the output is a draft
+and a named person decides what takes effect.
 
 🔴 **This is where the discipline is.** Tier 4 fails in a specific and predictable way: **the review
 degrades into a rubber stamp.** It happens gradually, it happens to good teams, and it happens

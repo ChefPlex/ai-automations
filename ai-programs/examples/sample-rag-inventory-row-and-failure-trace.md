@@ -4,7 +4,7 @@ Two artifacts from an enterprise RAG program, each written twice. The first is o
 
 They connect: the gap in the weak inventory row is the cause of the failure in the trace. That is the usual shape. Most wrong answers a RAG pilot produces were decided months earlier, in a data inventory nobody read closely.
 
-**Scenario (sanitized).** The same company as the other examples in this folder, while the encryption program is still running. Its first RAG use case is a security-policy assistant: *"Engineers can ask questions about security standards and get accurate answers with citations."* The encryption program's TLS standard is one of the documents in the corpus. Names, dates, and numbers are illustrative.
+**Scenario (sanitized).** The same company as the [Project Atlas examples](../../examples/sanitized-weekly-status-example.md), while its encryption program is still running. Its first RAG use case is a security-policy assistant: *"Engineers can ask questions about security standards and get accurate answers with citations."* The encryption program's TLS standard is one of the documents in the corpus. Names, dates, and numbers are illustrative.
 
 ---
 

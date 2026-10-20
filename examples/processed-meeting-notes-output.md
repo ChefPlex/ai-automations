@@ -13,7 +13,7 @@ No final decision was made on whether to keep or move the current validation win
 | Confirm Team B migration date | TPM | Not stated | Team B has not committed to a migration window. |
 | Confirm validation environment access | Platform owner | Tuesday (tentative, from notes) | Access is still in queue. |
 | Add observability dependency to Jira and RAID log | TPM | This week | Dependency was identified during the meeting. |
-| Complete security review of support rollback language | Security partner / support owner | Date needed | Runbook is mostly drafted but not fully reviewed. |
+| Complete security review of support rollback language | Owner needed (security partner or support owner; the notes do not say) | Date needed | Runbook is mostly drafted but not fully reviewed. |
 
 ## Open questions
 
