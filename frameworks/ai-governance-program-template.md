@@ -500,8 +500,8 @@ them only in expense reports and one only in a vendor's release notes.
 |:---|:---|:---|:---|
 | Meeting-notes summarizer for internal staff | 3 | Low | Approved in two days. |
 | Call-center reply drafter | 4 | Medium | Gate failed its first seeded test. See below. |
-| Claims-triage scoring model | 5 | High | Approved with conditions after full assessment. |
-| Vendor-embedded claims summarizer | 5 as shipped | High | Restricted to non-personal fields until the vendor agreement is fixed. |
+| Claims-triage scoring model | 3 | High | Approved with conditions after full assessment. |
+| Vendor-embedded claims summarizer | 5 as shipped | High | Runs under a written board exception, restricted to non-personal fields until the vendor agreement is fixed. |
 
 **The reply drafter.** The program owner seeds 20 known-bad drafts into a week of normal traffic:
 wrong policy numbers, a promise the company cannot keep, a reply to the wrong customer. Agents catch
@@ -526,6 +526,18 @@ The High controls, as run:
 - **Fail-safe:** adjusters can switch to the unscored queue in date order at any time.
 - **Appeal:** a claimant who disputes a delay can ask for manual review; the letter says how.
 
+**The embedded summarizer's exception.** High risk at tier 5 is not permitted without a written
+board exception, and the vendor cannot add a review step before the agreement is renegotiated. The
+board grants one exception, recorded in the register:
+
+```text
+Use case:     Vendor-embedded claims summarizer.
+Waived:       The tier 4 blocking gate (one control).
+Reason:       The vendor's product has no review step until the amended agreement ships.
+Compensating: Restricted to non-personal fields; weekly sample of 25 summaries checked by a claims lead.
+Approver:     Governance board.  Expires: 90 days, or when the amended agreement is signed.
+```
+
 **A board minute that says no.**
 
 ```text
@@ -542,11 +554,11 @@ Owner:    VP Claims.  Revisit: next month's board.
 | Metric | Result |
 |:---|:---|
 | Use cases inventoried, with a named owner | 31 of 31 |
-| High use cases with all four High controls | 1 of 1 |
+| High use cases with all four High controls | 1 of 2 (the other runs under a board exception) |
 | Reply drafter seeded catch rate | 4 of 20, then 18 of 20 after redesign |
 | Median days, intake to decision | Low 2, Medium 9, High 24 |
 | Incidents | 1: the embedded summarizer sent claim text to a sub-processor not named in the agreement. Found at intake, contained by restricting fields. Vendor agreement amended. |
-| Open exceptions | 0 |
+| Open exceptions | 1, the embedded summarizer, expiring in 90 days |
 
 **What went wrong.** The first rubric had six risk tiers. In the first month, two reviewers gave the
 same use case three different tiers between them. The program owner cut it to four, and tier
