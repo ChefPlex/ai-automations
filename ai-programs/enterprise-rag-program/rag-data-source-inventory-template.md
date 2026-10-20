@@ -2,7 +2,7 @@
 
 The inventory the data workstream runs on. Owned by Data Engineering and Data Governance jointly, because half these columns are technical and half are policy.
 
-A filled-in row, weak against better: [Sample RAG Inventory Row and Failure Trace](../examples/sample-rag-inventory-row-and-failure-trace.md).
+A filled-in row, unknown against actionable: [Sample RAG Inventory Row and Failure Trace](../examples/sample-rag-inventory-row-and-failure-trace.md).
 
 Fill this before architecture is finalized. The access-control column in particular drives the retrieval design, and discovering in week 12 that a priority source has no machine-readable permission model is the most expensive way to learn it.
 

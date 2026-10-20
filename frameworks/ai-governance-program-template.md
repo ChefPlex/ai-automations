@@ -184,9 +184,9 @@ Next review date: ________
 Questions 8 and 9 do most of the risk work. Question 8 is the federal "principal basis" test (section
 4). Question 9 is there because the EU AI Act treats profiling in Annex III areas as always high-risk.
 
-### Weak versus better intake answers
+### Unknown vs Actionable intake answers
 
-| Field | Weak | Better |
+| Field | Unknown | Actionable |
 |:---|:---|:---|
 | Owner | "Customer Service" | "Contact Center Operations Manager (currently: [name])" |
 | Agent access | "Uses the requester's login" | "Runs as its own service identity with read-only access to the claims system, on a token that expires in 15 minutes and covers only the claim being handled; a policy check in the API layer rejects anything outside that scope" |
@@ -194,7 +194,7 @@ Questions 8 and 9 do most of the risk work. Question 8 is the federal "principal
 | Data | "Customer data" | "Policy number, claim notes, caller name; no payment card data; vendor agreement covers personal data, signed 2026-08-14" |
 | Benefit | "Faster replies" | "Cut median written-reply time from 11 minutes to under 5, measured from the ticketing system" |
 
-The weak answers are not wrong. They are unreviewable. Nobody can check a team, a vague gate or a
+The unknown answers are not wrong. They are unreviewable. Nobody can check a team, a vague gate or a
 benefit with no measure.
 
 The agent access answer is the one that most often reaches production unexamined. An agent running

@@ -31,7 +31,7 @@ Last reviewed: 2026-10-12.
 
 ## Worked Example
 
-[Sample RAG Inventory Row and Failure Trace](../examples/sample-rag-inventory-row-and-failure-trace.md): one inventory row and one wrong pilot answer, each weak against better. Read it next to the inventory and the evaluation plan.
+[Sample RAG Inventory Row and Failure Trace](../examples/sample-rag-inventory-row-and-failure-trace.md): one inventory row and one wrong pilot answer, each unknown against actionable. Read it next to the inventory and the evaluation plan.
 
 ## Security
 

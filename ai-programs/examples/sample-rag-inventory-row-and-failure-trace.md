@@ -2,7 +2,7 @@
 
 Two artifacts from an enterprise RAG program, each written twice. The first is one row of the [Data Source Inventory](../enterprise-rag-program/rag-data-source-inventory-template.md). The second is one wrong answer from the pilot, traced through the [Evaluation Plan's Which Layer Failed](../enterprise-rag-program/rag-evaluation-plan-template.md#which-layer-failed) table.
 
-They connect: the gap in the weak inventory row is the cause of the failure in the trace. That is the usual shape. Most wrong answers a RAG pilot produces were decided months earlier, in a data inventory nobody read closely.
+They connect: the gap in the unknown inventory row is the cause of the failure in the trace. That is the usual shape. Most wrong answers a RAG pilot produces were decided months earlier, in a data inventory nobody read closely.
 
 **Scenario (sanitized).** The same company as the [Project Atlas examples](../../examples/sanitized-weekly-status-example.md), while its encryption program is still running. Its first RAG use case is a security-policy assistant: *"Engineers can ask questions about security standards and get accurate answers with citations."* The encryption program's TLS standard is one of the documents in the corpus. Names, dates, and numbers are illustrative.
 
@@ -10,7 +10,7 @@ They connect: the gap in the weak inventory row is the cause of the failure in t
 
 ## Part 1: One Inventory Row
 
-### Weak
+### Unknown
 
 | Field | Entry |
 |---|---|
@@ -29,7 +29,7 @@ Every cell is filled and almost none of them can be acted on. "Security team" is
 
 The blanks that matter are the ones the row doesn't have. Nothing says whether pages carry an effective date, so nobody knows that superseded standards sit next to current ones with nothing to tell them apart. Nothing records the wiki's internal vocabulary, so nobody notices that half the TLS pages call it "Keystone," the encryption program's codename. Nothing says what happens when a page is deleted or a space is locked down. This row will pass a readiness review and produce the wrong answer in Part 2.
 
-### Better
+### Actionable
 
 | Field | Entry |
 |---|---|
@@ -67,7 +67,7 @@ Every cell answers a question someone will ask later, and two of them predict a 
 
 **The right answer:** No. *TLS Standard v2*, in force since 2026-01-15, requires TLS 1.2 or later for all traffic, internal included.
 
-### Weak Trace
+### Unknown Trace
 
 > **Issue:** Model hallucinated the TLS answer.
 > **Fix:** Added "always use the most recent policy" to the system prompt.
@@ -77,7 +77,7 @@ Every cell answers a question someone will ask later, and two of them predict a 
 
 It blames the layer people reach for first, and it's wrong on the facts. The model didn't hallucinate: it answered faithfully from the document it was given. The prompt fix asks the model to judge which document is newer, using information the documents don't reliably carry, so it fixes nothing and hides the real problem. The owner is the team that can't fix the cause. The same failure will come back with the next superseded standard.
 
-### Better Trace
+### Actionable Trace
 
 Worked through the [Which Layer Failed](../enterprise-rag-program/rag-evaluation-plan-template.md#which-layer-failed) table, using the per-question retrieval log:
 
@@ -108,7 +108,7 @@ Worked through the [Which Layer Failed](../enterprise-rag-program/rag-evaluation
 
 It finds the layer that failed and gives the fix to the people who can make it. Step 6 is checked last and cleared on evidence, not assumed. The trace was only possible because the system logged which chunks were retrieved, how they ranked, and what went into the context. Without that log, "the model hallucinated" is the only story anyone can tell.
 
-It also closes the loop to Part 1. The better inventory row had already flagged the missing effective dates as a risk. The trace shows what that risk looked like when it landed, which is the case for doing the inventory properly in Phase 0.
+It also closes the loop to Part 1. The actionable inventory row had already flagged the missing effective dates as a risk. The trace shows what that risk looked like when it landed, which is the case for doing the inventory properly in Phase 0.
 
 ---
 
