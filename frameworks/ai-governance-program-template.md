@@ -500,8 +500,8 @@ them only in expense reports and one only in a vendor's release notes.
 |:---|:---|:---|:---|
 | Meeting-notes summarizer for internal staff | 3 | Low | Approved in two days. |
 | Call-center reply drafter | 4 | Medium | Gate failed its first seeded test. See below. |
-| Claims-triage scoring model | 3 | High | Approved with conditions after full assessment. |
-| Vendor-embedded claims summarizer | 5 as shipped | Medium | Restricted to non-personal fields until the vendor agreement is fixed. |
+| Claims-triage scoring model | 5 | High | Approved with conditions after full assessment. |
+| Vendor-embedded claims summarizer | 5 as shipped | High | Restricted to non-personal fields until the vendor agreement is fixed. |
 
 **The reply drafter.** The program owner seeds 20 known-bad drafts into a week of normal traffic:
 wrong policy numbers, a promise the company cannot keep, a reply to the wrong customer. Agents catch

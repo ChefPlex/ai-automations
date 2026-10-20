@@ -14,7 +14,7 @@ When this was run on a production codebase, the top-ranked findings were later c
 
 | Lens | The question it asks | Typical findings |
 |:---|:---|:---|
-| **Architecture** | Does the structure hold up as the system grows? Boundaries, coupling, data flow, single points of failure. | The same business rule in three layers. A component that knows too much about its neighbours. |
+| **Architecture** | Does the structure hold up as the system grows? Boundaries, coupling, data flow, single points of failure. | The same business rule in three layers. A component that knows too much about its neighbors. |
 | **Security** | What can an attacker, or a careless user, do? Authentication, authorization, input handling, secrets, data exposure, dependencies. | A permission check in the interface but not on the server. A credential in a config file. |
 | **Backend** | Does the server-side code do what it claims under load and under failure? Error handling, transactions, concurrency, data integrity. | Exceptions caught and dropped. A write that can half-complete. |
 | **QA** (quality assurance) | What is tested, what is not, and does the suite prove the requirements? | Requirements with no test. Tests that run but assert nothing. |

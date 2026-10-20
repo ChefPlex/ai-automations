@@ -150,3 +150,7 @@ Do not publish or reuse a prompt when it:
 - Has no failure mode
 
 A prompt that only makes something sound nicer is not ready. Useful is the bar.
+
+---
+
+*Part of the [ChefPlex TPM portfolio](https://github.com/ChefPlex/tpm-templates/blob/main/PORTFOLIO-GUIDE.md). Maintained by [Eric White](https://www.linkedin.com/in/edwhite). Licensed under [CC BY 4.0](LICENSE).*

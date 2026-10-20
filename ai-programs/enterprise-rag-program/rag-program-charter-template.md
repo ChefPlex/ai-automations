@@ -99,7 +99,7 @@ Out-of-scope data sources are the most common source of scope creep here, becaus
 
 A Phase 0/1 workstream, not a security appendix. Permission-aware retrieval is necessary and not sufficient: it enforces the permissions the source systems already have, including every folder shared with the whole company and every site nobody locked down. Retrieval makes that overshare findable in one question.
 
-Microsoft's deployment guidance for Copilot, which grounds responses "in the data users already have permission to access," is organised as three pillars in this order: Remediate oversharing, Set up guardrails, Meet regulations ([Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance)). The same order applies to any enterprise RAG program.
+Microsoft's deployment guidance for Copilot, which grounds responses "in the data users already have permission to access," is organized as three pillars in this order: Remediate oversharing, Set up guardrails, Meet regulations ([Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance)). The same order applies to any enterprise RAG program.
 
 | Field | Value |
 |---|---|

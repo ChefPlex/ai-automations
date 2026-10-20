@@ -145,3 +145,7 @@ Don't hide behind a generated summary when the hard work is a conversation.
 Some problems need a prompt. Some need a meeting. Some need an escalation. Some need a direct conversation with the person who owns the risk.
 
 A useful AI workflow should make that reality clearer, not easier to avoid.
+
+---
+
+*Part of the [ChefPlex TPM portfolio](https://github.com/ChefPlex/tpm-templates/blob/main/PORTFOLIO-GUIDE.md). Maintained by [Eric White](https://www.linkedin.com/in/edwhite). Licensed under [CC BY 4.0](LICENSE).*

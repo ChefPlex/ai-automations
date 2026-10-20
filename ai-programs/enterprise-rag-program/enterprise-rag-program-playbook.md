@@ -77,7 +77,7 @@ Start the source permission review in Phase 0, alongside the charter, and finish
 
 The reason is mechanical. Permission-aware retrieval enforces the permissions the source systems already have. It is necessary and it is not sufficient: a folder shared with the whole company, or a site nobody locked down, becomes findable in one question the day it is indexed. Filtering works as designed and the data still reaches people it was never meant for.
 
-Microsoft's deployment guidance for Copilot is a useful public reference for the order. It is organised as three pillars: Remediate oversharing, Set up guardrails, Meet regulations. Its recommended actions start with identifying high-risk sites and files, applying interim access restrictions where needed, then fixing access ([Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance)). The same order holds for a RAG program built on any stack.
+Microsoft's deployment guidance for Copilot is a useful public reference for the order. It is organized as three pillars: Remediate oversharing, Set up guardrails, Meet regulations. Its recommended actions start with identifying high-risk sites and files, applying interim access restrictions where needed, then fixing access ([Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/secure-govern-copilot-foundational-deployment-guidance)). The same order holds for a RAG program built on any stack.
 
 | Field | Value |
 |---|---|

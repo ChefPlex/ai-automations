@@ -102,7 +102,7 @@ agent at all. Choosing badly is the single most common failure, and it fails in 
 | **Junior** | Adequate | Fast | Cheap | Execution against a complete spec - **with a mandatory senior review gate** |
 | **Script** | Deterministic | Fastest | Negligible | Enumerating, scanning, validating more than ~10 items |
 
-*The quality ratings in this table are design judgement from building with the framework, not a
+*The quality ratings in this table are design judgment from building with the framework, not a
 measured comparison. Speed and cost can be measured from the cost log; quality has not been.*
 
 **Failure mode 1 - a senior agent doing execution.** Enumerating 200 files or generating report
@@ -117,7 +117,7 @@ or in an incident.
 ### 11 of 19 roles have no junior variant
 
 Eight roles have a junior variant. Eleven don't, and that asymmetry is the most useful thing the
-framework knows about itself. The split below is design judgement about where a mistake costs the
+framework knows about itself. The split below is design judgment about where a mistake costs the
 most. It is not the result of a measurement, and no role has been removed and re-run to test it.
 
 **Senior-only** - a mistake here propagates through every phase that follows:
@@ -205,9 +205,9 @@ An agent loop without limits does not fail, it keeps going. Set these before a r
   fan out without limit.
 - **"Blocked, needs a human" is a terminal state.** It is a legitimate way for a run to end, logged
   with what was tried and what is missing. It is not a failure to be retried until it goes away.
-- **Downstream roles re-authorise inherited actions.** An approval given to one role does not pass
+- **Downstream roles re-authorize inherited actions.** An approval given to one role does not pass
   down the chain. A role that inherits a pending action, such as a deploy, a send, or a data
-  change, checks that it is still authorised before it acts.
+  change, checks that it is still authorized before it acts.
 
 ---
 

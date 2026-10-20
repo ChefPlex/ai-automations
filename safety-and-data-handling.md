@@ -215,3 +215,7 @@ Watch for these patterns:
 Those are usually signs that the input is too large or the task needs a human owner.
 
 When the data is sensitive and the task is mostly judgment, talk to the right person instead of trying to prompt around the discomfort. Faster is not always safer.
+
+---
+
+*Part of the [ChefPlex TPM portfolio](https://github.com/ChefPlex/tpm-templates/blob/main/PORTFOLIO-GUIDE.md). Maintained by [Eric White](https://www.linkedin.com/in/edwhite). Licensed under [CC BY 4.0](LICENSE).*
