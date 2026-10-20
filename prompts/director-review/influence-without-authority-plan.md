@@ -4,6 +4,12 @@
 
 A TPM needs commitment from teams or leaders who do not report to them.
 
+## Where this fails
+
+This prompt has to guess what each stakeholder cares about, and the guess usually comes from their title. It will hand you tidy motivations and likely objections that sound right and may be wrong for the actual person.
+
+Check the motivations against what people have said in meetings and in writing. If you do not know what someone cares about, the next step is a conversation with them, not a better-worded engagement plan.
+
 ## Why it matters
 
 Influence works better when the TPM understands what each person cares about, what decision they affect, and what information would help them say yes.
@@ -47,12 +53,6 @@ Context:
 - Decision influence map
 - Escalation path
 - Communication plan
-
-## Where this fails
-
-This prompt has to guess what each stakeholder cares about, and the guess usually comes from their title. It will hand you tidy motivations and likely objections that sound right and may be wrong for the actual person.
-
-Check the motivations against what people have said in meetings and in writing. If you do not know what someone cares about, the next step is a conversation with them, not a better-worded engagement plan.
 
 ## Human review checklist
 

@@ -4,6 +4,12 @@
 
 A launch, incident, milestone, or program phase needs a retrospective that is honest without becoming personal.
 
+## Where this fails
+
+This prompt only knows the timeline it is given. It will turn a thin event summary into confident root causes, and those causes will read as findings even when they are guesses about why someone made a call.
+
+Check each root cause against the timeline and the people who were in the room. If the evidence does not support a cause, list it as a question for the retro, not a conclusion. Blameless language should never soften a fact so far that the action items stop pointing anywhere.
+
 ## Why it matters
 
 A useful retrospective does not ask who failed. It asks what signals were missed, what decisions mattered, what process broke, and how to prevent the same problem next time.
@@ -54,12 +60,6 @@ Context:
 - Missed signals
 - Action items
 - Prevention plan
-
-## Where this fails
-
-This prompt only knows the timeline it is given. It will turn a thin event summary into confident root causes, and those causes will read as findings even when they are guesses about why someone made a call.
-
-Check each root cause against the timeline and the people who were in the room. If the evidence does not support a cause, list it as a question for the retro, not a conclusion. Blameless language should never soften a fact so far that the action items stop pointing anywhere.
 
 ## Human review checklist
 

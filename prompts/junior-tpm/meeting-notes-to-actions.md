@@ -4,6 +4,12 @@
 
 A meeting produced useful discussion, but the notes are messy and the team needs decisions, owners, and next steps pulled out cleanly.
 
+## Where this fails
+
+This prompt cannot recover decisions that were never made. It can organize messy notes, but it should not invent agreement, owners, or dates.
+
+If the meeting notes are ambiguous, the correct output is not a cleaner lie. The correct output is a list of items that need confirmation.
+
 ## Why it matters
 
 Meetings usually fail in the handoff. The value is not the notes. The value is knowing what was decided, what is still open, and who is doing what by when.
@@ -72,12 +78,6 @@ These examples show the intended behavior: clean up the notes, but do not preten
 Remove names, customer references, internal links, and restricted technical details unless they are approved for the AI tool.
 
 Use roles instead of names when the name does not matter. Use fictional or generic program names in examples.
-
-## Where this fails
-
-This prompt cannot recover decisions that were never made. It can organize messy notes, but it should not invent agreement, owners, or dates.
-
-If the meeting notes are ambiguous, the correct output is not a cleaner lie. The correct output is a list of items that need confirmation.
 
 ## Done when
 

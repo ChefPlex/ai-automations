@@ -2,6 +2,12 @@
 
 Slack is good for speed and terrible for memory. Use these prompts to turn threads into cleaner summaries, asks, and follow-ups without treating every comment as a decision.
 
+## Where this fails
+
+These prompts write a clean message from whatever version of events you paste in. If your context is one side of a disagreement, the alignment and deescalation messages will state that side as the current understanding, and the group will notice. The executive update will report a health status the model inferred, not one you decided.
+
+Before posting, check that the current understanding is something the other people in the thread would agree with. Set the health status yourself, and confirm deadlines with the people expected to meet them.
+
 ## Slack Message to Get the Group Aligned
 
 ```text
@@ -78,12 +84,6 @@ Tone should be calm and human. The goal is to move the work forward, not win the
 Slack thread:
 [paste sanitized thread]
 ```
-
-## Where this fails
-
-These prompts write a clean message from whatever version of events you paste in. If your context is one side of a disagreement, the alignment and deescalation messages will state that side as the current understanding, and the group will notice. The executive update will report a health status the model inferred, not one you decided.
-
-Before posting, check that the current understanding is something the other people in the thread would agree with. Set the health status yourself, and confirm deadlines with the people expected to meet them.
 
 ## Review before posting
 

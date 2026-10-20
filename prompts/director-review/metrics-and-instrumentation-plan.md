@@ -4,6 +4,12 @@
 
 A program needs better metrics than percent complete and a few optimistic milestone dates.
 
+## Where this fails
+
+This prompt can name sensible metrics, but it cannot tell whether the data exists. It will list a source system for every metric, and some of those systems will not capture that field, or will capture it too inconsistently to trust.
+
+Confirm each data source with the team that owns it before the plan goes out. A metric with no real source belongs on the instrumentation gap list. Watch the owner column too: a team name is not an owner.
+
 ## Why it matters
 
 Metrics should tell the team whether risk is going down, quality is improving, adoption is happening, and the program is producing the outcome it promised.
@@ -49,12 +55,6 @@ Context:
 - Owners
 - Misleading metrics to avoid
 - Open instrumentation gaps
-
-## Where this fails
-
-This prompt can name sensible metrics, but it cannot tell whether the data exists. It will list a source system for every metric, and some of those systems will not capture that field, or will capture it too inconsistently to trust.
-
-Confirm each data source with the team that owns it before the plan goes out. A metric with no real source belongs on the instrumentation gap list. Watch the owner column too: a team name is not an owner.
 
 ## Human review checklist
 

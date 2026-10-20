@@ -4,6 +4,12 @@
 
 Program context is scattered and the TPM needs to separate risks, assumptions, issues, and dependencies.
 
+## Where this fails
+
+This prompt sorts what it is given. It cannot find a risk nobody wrote down, and it will be tempted to fill the Owner and Due Date columns from whoever was mentioned nearby. It also tends to file a problem that is already happening as a risk, which makes the log look calmer than the program is.
+
+Check every owner and date against the source notes and confirm them before the log is shared. Move anything already hurting the program into Issues.
+
 ## Why it matters
 
 RAID logs are useful only when they make the next action visible. A long list of vague concerns is just a parking lot with columns.
@@ -42,12 +48,6 @@ Context:
 - Top three items needing attention
 - Missing owners or dates
 - Escalation candidates
-
-## Where this fails
-
-This prompt sorts what it is given. It cannot find a risk nobody wrote down, and it will be tempted to fill the Owner and Due Date columns from whoever was mentioned nearby. It also tends to file a problem that is already happening as a risk, which makes the log look calmer than the program is.
-
-Check every owner and date against the source notes and confirm them before the log is shared. Move anything already hurting the program into Issues.
 
 ## Human review checklist
 

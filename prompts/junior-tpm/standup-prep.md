@@ -4,6 +4,12 @@
 
 A program standup is coming up and the TPM needs to focus the conversation instead of walking ticket by ticket.
 
+## Where this fails
+
+This prompt builds the agenda from the Jira updates and Slack threads you paste in. If those are a day old, the blockers it asks you to validate may already be cleared, and the one that showed up this morning will not be on the list. It will also produce five topics because it was asked for five, even on a quiet day.
+
+Skim Jira and the team channels right before the standup. Drop topics that are already resolved, and keep the meeting short if there is less to cover.
+
 ## Why it matters
 
 A good standup is not a status recitation. It is a short operating checkpoint for blockers, dependencies, decisions, and next actions.
@@ -45,12 +51,6 @@ Context:
 - Dependency checks
 - Decision list
 - Opening statement
-
-## Where this fails
-
-This prompt builds the agenda from the Jira updates and Slack threads you paste in. If those are a day old, the blockers it asks you to validate may already be cleared, and the one that showed up this morning will not be on the list. It will also produce five topics because it was asked for five, even on a quiet day.
-
-Skim Jira and the team channels right before the standup. Drop topics that are already resolved, and keep the meeting short if there is less to cover.
 
 ## Human review checklist
 

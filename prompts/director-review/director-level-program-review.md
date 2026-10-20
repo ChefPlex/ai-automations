@@ -4,6 +4,12 @@
 
 A senior TPM program needs a broad health check across strategy, execution, risk, metrics, and communication.
 
+## Where this fails
+
+This review is only as good as the material pasted in. It cannot see the hallway conversations, the politics around the program, or the history behind a decision, so it will flag things the team already settled and miss the risk nobody wrote down.
+
+Treat its concerns as questions for the program owner. A concern is not a finding until someone with context confirms it, and a quiet section in the review does not mean that area is healthy.
+
 ## Why it matters
 
 Director review should help the TPM see around corners. The goal is not to nitpick. The goal is to find the few things that will matter most to delivery, trust, and leadership confidence.
@@ -58,12 +64,6 @@ Context:
 - Questions
 - Recommendations
 - Evidence for and against leadership readiness, and what is missing
-
-## Where this fails
-
-This review is only as good as the material pasted in. It cannot see the hallway conversations, the politics around the program, or the history behind a decision, so it will flag things the team already settled and miss the risk nobody wrote down.
-
-Treat its concerns as questions for the program owner. A concern is not a finding until someone with context confirms it, and a quiet section in the review does not mean that area is healthy.
 
 ## Human review checklist
 

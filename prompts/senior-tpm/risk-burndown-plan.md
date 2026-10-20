@@ -4,6 +4,12 @@
 
 A program has real risk and needs a plan to reduce it, not just a list of concerns.
 
+## Where this fails
+
+Probability and impact are where this prompt invents precision. Unless your context gives a real basis for them, the ratings are the model's guess, and they decide which risks make the top three. Detection signals can be just as soft, describing something nobody actually monitors.
+
+Have the risk owners set probability and impact themselves. For each detection signal, confirm where it would show up and who is watching for it.
+
 ## Why it matters
 
 Risk management is only useful when it changes behavior. Each risk needs a signal, owner, mitigation, contingency, and point where it must be escalated.
@@ -47,12 +53,6 @@ Context:
 - Top three risks this week
 - Missing owners or dates
 - Escalation recommendations
-
-## Where this fails
-
-Probability and impact are where this prompt invents precision. Unless your context gives a real basis for them, the ratings are the model's guess, and they decide which risks make the top three. Detection signals can be just as soft, describing something nobody actually monitors.
-
-Have the risk owners set probability and impact themselves. For each detection signal, confirm where it would show up and who is watching for it.
 
 ## Human review checklist
 

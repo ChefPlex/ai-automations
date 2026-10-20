@@ -4,6 +4,12 @@
 
 A complex program needs clearer governance, meetings, decision rights, escalation paths, and reporting rhythm.
 
+## Where this fails
+
+This prompt asks for eleven parts, so it will produce all eleven every time. It does not know which meetings already exist, who really holds decision rights, or how much process the teams will tolerate, so the default output is heavier than most programs need.
+
+Map the draft against the meetings and channels already running and cut anything that duplicates them. Confirm decision rights with the people named before you publish them.
+
 ## Why it matters
 
 Without an operating model, teams improvise. Sometimes that works. Usually it creates duplicate meetings, unclear decisions, and escalation by surprise.
@@ -51,12 +57,6 @@ Context:
 - Escalation path
 - System of record plan
 - Metrics and risk review model
-
-## Where this fails
-
-This prompt asks for eleven parts, so it will produce all eleven every time. It does not know which meetings already exist, who really holds decision rights, or how much process the teams will tolerate, so the default output is heavier than most programs need.
-
-Map the draft against the meetings and channels already running and cut anything that duplicates them. Confirm decision rights with the people named before you publish them.
 
 ## Human review checklist
 

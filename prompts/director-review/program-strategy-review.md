@@ -6,6 +6,12 @@ A program plan needs a director-level challenge before it becomes the plan every
 
 For a health check on a program already running, use `director-level-program-review.md`. For a gap hunt on a plan you already believe in, use `what-am-i-missing.md`.
 
+## Where this fails
+
+This review can test whether the plan is internally consistent. It cannot test whether the plan is true. If the plan says a dependency team has committed, or a date came from engineering, the model will take that at face value.
+
+The timeline is where this matters most. Before approving, confirm the dates and dependency commitments with the teams that own them. A plan that passes this review has only shown that it is well written.
+
 ## Why it matters
 
 Plans usually look best before they meet dependencies. This review looks for weak goals, soft metrics, unclear owners, hidden risks, and timelines that rely on luck.
@@ -52,12 +58,6 @@ Program plan:
 - Questions to ask
 - Risks to challenge
 - Recommended next steps
-
-## Where this fails
-
-This review can test whether the plan is internally consistent. It cannot test whether the plan is true. If the plan says a dependency team has committed, or a date came from engineering, the model will take that at face value.
-
-The timeline is where this matters most. Before approving, confirm the dates and dependency commitments with the teams that own them. A plan that passes this review has only shown that it is well written.
 
 ## Human review checklist
 

@@ -4,6 +4,12 @@
 
 A steering committee, executive review, or cross-org decision meeting is coming and you need to walk in knowing who wants what, which decisions actually have to land, and where the meeting is likely to go sideways.
 
+## Where this fails
+
+The per-participant read is the riskiest part. The model is predicting how real people will behave from a few lines of context, and a confident guess about what a VP will push on is easy to walk in believing. The rules tell it to say insufficient context, but it will still lean on titles.
+
+Check each read against what that person has actually said or written recently. Verify the factual answers to the objections against current numbers, not last quarter's.
+
 ## Why it matters
 
 Most decision meetings fail before they start. The agenda says "discuss the roadmap" and nobody knows what is being decided, so the hour produces alignment theater and one more meeting. The work is not summarizing the agenda. It is predicting the room: what each person will push on, which decisions can realistically close, and what you need in hand when the hard question arrives.
@@ -68,12 +74,6 @@ Context:
 - Three probable objections with factual answers
 - A short list of evidence to have ready
 - Topics to defer, with their proper home
-
-## Where this fails
-
-The per-participant read is the riskiest part. The model is predicting how real people will behave from a few lines of context, and a confident guess about what a VP will push on is easy to walk in believing. The rules tell it to say insufficient context, but it will still lean on titles.
-
-Check each read against what that person has actually said or written recently. Verify the factual answers to the objections against current numbers, not last quarter's.
 
 ## Human review checklist
 

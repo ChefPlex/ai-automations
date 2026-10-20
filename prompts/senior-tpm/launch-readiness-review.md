@@ -4,6 +4,12 @@
 
 A launch is close enough that the team needs a go or no go view across engineering, security, support, communications, and operations.
 
+## Where this fails
+
+This review reads the readiness tracker, and trackers are where things get marked green before they are done. The model cannot tell a security review that is signed off from one that is scheduled, or a rollback plan that was tested from one that was written. It will report both the same way.
+
+For each item marked ready, ask for the artifact: the sign-off, the runbook, the test result. Anything without one goes in the evidence against go, and the decision owner should see that list first.
+
 ## Why it matters
 
 Launch readiness should not be a confidence exercise. It should make gaps visible early enough to fix them, accept them, or move the date.
@@ -53,12 +59,6 @@ Context:
 - Decision criteria
 - Evidence for and against go, and missing items (the decision owner makes the call)
 - Missing information
-
-## Where this fails
-
-This review reads the readiness tracker, and trackers are where things get marked green before they are done. The model cannot tell a security review that is signed off from one that is scheduled, or a rollback plan that was tested from one that was written. It will report both the same way.
-
-For each item marked ready, ask for the artifact: the sign-off, the runbook, the test result. Anything without one goes in the evidence against go, and the decision owner should see that list first.
 
 ## Human review checklist
 

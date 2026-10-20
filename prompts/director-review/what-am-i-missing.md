@@ -4,6 +4,12 @@
 
 A plan looks reasonable, but the TPM wants a second pass for hidden risks, missing owners, weak assumptions, and gaps in the operating model.
 
+## Where this fails
+
+Ask a model what you are missing and it will always find something. Some gaps will be real. Others will be generic risks that apply to any program, written as if they apply to this one.
+
+Keep the items you can tie to something specific in the plan, and drop the ones that could be pasted into any review. The model also cannot see what was left out of the context, so the gap you most need to find may not be on its list.
+
 ## Why it matters
 
 This is the prompt for the moment when something feels fine, which is exactly when it is worth checking. A fresh review can find the loose end before it becomes the escalation.
@@ -49,12 +55,6 @@ Context:
 - Ownership issues
 - Risks to add to RAID
 - Recommended next action
-
-## Where this fails
-
-Ask a model what you are missing and it will always find something. Some gaps will be real. Others will be generic risks that apply to any program, written as if they apply to this one.
-
-Keep the items you can tie to something specific in the plan, and drop the ones that could be pasted into any review. The model also cannot see what was left out of the context, so the gap you most need to find may not be on its list.
 
 ## Human review checklist
 

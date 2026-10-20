@@ -4,6 +4,12 @@
 
 The raw inputs are spread across Jira, Slack, meeting notes, and maybe a tracker, and the team needs one clean weekly view.
 
+## Where this fails
+
+The health color is the part most likely to be wrong. The model proposes it from whatever evidence was pasted in, and a week of busy Jira activity can read as Green while the one dependency that matters has gone quiet.
+
+Make the color call yourself. Read the missing information section before anything else. If it is long, the update is not ready, however clean the summary paragraph looks.
+
 ## Why it matters
 
 A weekly update should do more than list activity. It should show what changed, what is at risk, who owns the next step, and whether anyone needs to make a decision.
@@ -51,12 +57,6 @@ Context:
 - Decisions needed
 - Next steps
 - Missing information
-
-## Where this fails
-
-The health color is the part most likely to be wrong. The model proposes it from whatever evidence was pasted in, and a week of busy Jira activity can read as Green while the one dependency that matters has gone quiet.
-
-Make the color call yourself. Read the missing information section before anything else. If it is long, the update is not ready, however clean the summary paragraph looks.
 
 ## Human review checklist
 

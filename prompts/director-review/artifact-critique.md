@@ -6,6 +6,12 @@ A TPM artifact is close, but it needs a director-level review before it goes to 
 
 Run it in a fresh context with the source material, not in the chat that wrote the draft. A critic in the same context tends to approve.
 
+## Where this fails
+
+This prompt can make weak content sound finished. That is useful for style, but dangerous for judgment.
+
+The failure mode is a polished artifact that still has no owner, no date, no real decision ask, or no honest risk statement. Do not accept the rewrite just because it reads better. Check that it is truer and more useful.
+
 ## Why it matters
 
 A good review does not just clean up writing. It tests whether the artifact has the right context, risk, ownership, decision quality, and audience fit.
@@ -83,12 +89,6 @@ These examples show the intended behavior: make the artifact sharper, but do not
 Remove sensitive customer, security, legal, commercial, and internal details before prompting.
 
 If the artifact contains executive names, customer details, legal commitments, vulnerability details, or internal incident facts, sanitize or summarize those details before using an AI tool.
-
-## Where this fails
-
-This prompt can make weak content sound finished. That is useful for style, but dangerous for judgment.
-
-The failure mode is a polished artifact that still has no owner, no date, no real decision ask, or no honest risk statement. Do not accept the rewrite just because it reads better. Check that it is truer and more useful.
 
 ## Done when
 

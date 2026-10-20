@@ -4,6 +4,14 @@
 
 Program inputs are scattered across Jira, Slack, Salesforce, Google Docs, and meeting notes, and leadership needs the real picture without the noise.
 
+## Where this fails
+
+This prompt works best when the source material contains real signal: dates, owners, milestones, risks, blockers, and decisions needed.
+
+It works poorly when the input is mostly vague status language, stale Jira data, or Slack opinions that have not been confirmed. In those cases, the output may sound polished while still being wrong.
+
+Watch for the dangerous version of a bad output: a clean executive update that makes the program sound more certain than the evidence supports.
+
 ## Why it matters
 
 An executive update should make the decision path clear. It should not list every task. It should explain what changed, why it matters, what is at risk, and what help is needed.
@@ -79,14 +87,6 @@ These examples show the intended standard: concise enough for leadership, but st
 Be careful with customer signals, security risks, legal commitments, and revenue impact. Use only approved and sanitized context.
 
 Do not paste customer names, contract details, vulnerability details, unreleased roadmap commitments, or internal links unless the AI tool and audience are approved for that data.
-
-## Where this fails
-
-This prompt works best when the source material contains real signal: dates, owners, milestones, risks, blockers, and decisions needed.
-
-It works poorly when the input is mostly vague status language, stale Jira data, or Slack opinions that have not been confirmed. In those cases, the output may sound polished while still being wrong.
-
-Watch for the dangerous version of a bad output: a clean executive update that makes the program sound more certain than the evidence supports.
 
 ## Done when
 

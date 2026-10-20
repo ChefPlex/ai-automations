@@ -4,6 +4,12 @@
 
 A blocker has not been resolved through normal channels and leadership help is needed.
 
+## Where this fails
+
+An escalation is only as fair as the prior attempts you list. The model writes from your side of the story, and it cannot know what the other team tried or why they said no. That is how a calm, factual tone ends up carrying a one-sided account.
+
+Before sending, read the prior attempts and the impact the way the other team's lead would, or check them with that lead directly. Confirm the deadline is real and not just the date you would like.
+
 ## Why it matters
 
 Good escalations are factual and constructive. They do not blame people. They make the impact, prior attempts, needed support, and timing clear.
@@ -47,12 +53,6 @@ Context:
 - Deadline
 - Recommended path
 - Risks if not resolved
-
-## Where this fails
-
-An escalation is only as fair as the prior attempts you list. The model writes from your side of the story, and it cannot know what the other team tried or why they said no. That is how a calm, factual tone ends up carrying a one-sided account.
-
-Before sending, read the prior attempts and the impact the way the other team's lead would, or check them with that lead directly. Confirm the deadline is real and not just the date you would like.
 
 ## Human review checklist
 

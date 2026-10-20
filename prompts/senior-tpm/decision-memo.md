@@ -4,6 +4,12 @@
 
 A program is stuck between options and needs a clear recommendation, not another open-ended discussion.
 
+## Where this fails
+
+This prompt is asked for a recommendation, so it will produce one, even when the inputs do not support a clear winner. The option you described in the most detail tends to win, because the model has more to work with.
+
+Check that each option got a fair description, ideally from someone who favors it. Confirm the decision owner and the needed-by date with that person. The model cannot know who actually holds the call.
+
 ## Why it matters
 
 Decision memos are where a TPM earns trust. The memo should make the options, tradeoffs, risks, and recommendation clear enough that the decision owner can act.
@@ -54,12 +60,6 @@ Context:
 - Risks
 - Impact summary
 - Decision owner and date
-
-## Where this fails
-
-This prompt is asked for a recommendation, so it will produce one, even when the inputs do not support a clear winner. The option you described in the most detail tends to win, because the model has more to work with.
-
-Check that each option got a fair description, ideally from someone who favors it. Confirm the decision owner and the needed-by date with that person. The model cannot know who actually holds the call.
 
 ## Human review checklist
 
