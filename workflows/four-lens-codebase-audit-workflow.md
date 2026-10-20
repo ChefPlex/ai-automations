@@ -8,7 +8,7 @@ A single "review this codebase" prompt produces a summary that reads like a revi
 
 In terms of the [execution tiers](../frameworks/ai-execution-tiers.md), the AI produces the findings and a person owns the verdict (tier 3). No finding goes to an engineering backlog until a person has read the code it points at.
 
-When this was run on a production codebase, the top-ranked findings were later confirmed by the external audit that followed. That check is step 7 of the method.
+Step 7 of the method checks the findings against an independent review when one exists.
 
 ## The four lenses
 
