@@ -48,7 +48,6 @@ Everything else is browsable by kind: [prompts](prompts/) (by level: junior, sen
 | Workflow | What It Does |
 |----------|-------------|
 | [Status Report Generator](status-report-generator/) | Reads a folder of raw inputs - meeting notes, Slack exports, RAID log updates, ticket summaries - and produces a structured draft status report. Nine sections including overall status, decisions needed, risks and issues, and a NEEDS REVIEW section that flags what requires TPM judgment before sending. Integrates with the Slack Crawler in tpm-toolbox. |
-| [App Builder](app-builder/) | Two-prompt system for going from a rough app idea to a working web application. The intake prompt interviews a non-technical person and produces a structured developer brief. The builder prompt takes that brief through seven phases - idea refinement, tech stack, architecture, MVP scope, UI/UX direction, feature-by-feature build with executed tests, and a human gate before going live. |
 
 ---
 
