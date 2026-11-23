@@ -117,6 +117,7 @@ often enough to be worth writing down, not on a roadmap.
 - **tpm-templates** - The output formats the status report generator produces match the templates there
 - **program-reporting-frameworks** - The status and steering committee frameworks explain what goes in each section and why
 - **tpm-toolbox** - The Slack Crawler produces intelligence briefs that feed directly into the status report generator; the canvas synthesis tool handles the other direction
+- **agent-guardrails** - Three checks for AI agent workflows: a prompt-injection alarm, a check for what a coverage count never counted, and an eval wrapper that reports the spread
 
 ---
 
