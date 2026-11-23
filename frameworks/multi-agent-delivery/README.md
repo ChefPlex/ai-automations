@@ -97,7 +97,7 @@ Both tiers run the same model. The saving comes from scope: a junior role has a 
 
 - **Most of the controls are prose.** Roles are spawned as general-purpose agents that hold the spawn tool. The delegation limit, the rollback bound and the gates hold only if the orchestrator follows its instructions. Nothing here enforces them in code.
 - **The tier split is design judgment.** No role has been removed and the run repeated to measure the effect. The cost log measures cost and time, not quality.
-- **A senior review on the same model is not independent.** The same model with a similar prompt tends to make the same mistakes. A review that counts brings a different model, the source material or an executed test.
+- **A senior review on the same model is not independent.** The same model with a similar prompt tends to make the same mistakes. A review that counts brings a different model, the source material or an executed test. A different model family lowers the shared blind spots but does not remove them, so it reports findings and does not rewrite.
 - **It is heavy for small work.** Nineteen roles suit a new product. A one-page change belongs in a single agent session or a lighter change workflow.
 - **The sample projects are not included.** The framework was exercised on two small static-site builds. Their outputs named real businesses and carried local paths, so they are not published.
 - **These files do not run on their own.** They show the sequence, the gates and the prompts. Running them means writing your own 19 role definitions first.

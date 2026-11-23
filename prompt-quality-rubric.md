@@ -10,7 +10,7 @@ Score each category from 1 to 5.
 
 | Category | 1 - Weak | 3 - Good | 5 - Strong |
 |---|---|---|---|
-| Clarity | Vague ask | Clear task | Clear task, audience, and intended outcome |
+| Clarity | Vague ask | Clear task | Clear task, audience, and intended outcome, why the task matters, and 2 to 5 checkable criteria for a good result |
 | Context | Little context | Basic program context | Program, audience, source systems, risks, and decision context included |
 | Output usefulness | Generic text | Usable draft | Clear artifact with owners, dates, risks, decisions, and next steps |
 | Leadership fit | Too detailed, too casual, or too vague | Mostly clear | Clear enough for director or VP review |
@@ -37,6 +37,7 @@ These are the sections I aim for in my own prompts. Every prompt and workflow in
 ```text
 What this does
 When to use it
+What good looks like (why it matters, and 2 to 5 checkable criteria)
 Input format
 Prompt
 Example input

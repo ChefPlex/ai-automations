@@ -151,7 +151,7 @@ model, a prompt shape and a method are one sample drawn more than once. They ten
 mistakes, so their agreement is not verification. A review counts only when it brings
 **failure-mode diversity**, at least one of:
 
-- **A different model**, ideally a different model family
+- **A different model**, ideally a different model family. That lowers the correlation; it does not remove it, because models trained on similar data still tend to pick the same wrong answer. Let the cross-family reviewer report findings, never rewrite the work
 - **The source evidence** - the reviewer checks the output against the original material, not
   against the writer's summary of it
 - **Execution** - run the tests, serve the application, query the system

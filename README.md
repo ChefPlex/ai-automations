@@ -6,6 +6,8 @@ The tools here remove mechanical work so there is more time for the work that re
 
 Where a workflow needs stable domain knowledge, it keeps it in a **context or persona file** and lets a **prompt file** drive the session interaction. Keeping them separate means you can reuse the domain knowledge across different prompt formats, and swap the prompt without rewriting the expertise.
 
+**How I use these myself.** I think a problem through out loud with ChatGPT, usually by voice in the car, and have it write a long, specific prompt. I hand that prompt to Claude Code, which runs it against my own files on a Mac mini I set up as an agent workstation, with briefings, mail triage and a job pipeline all running on it. The prompts here also work on their own, pasted into Claude.ai or sent through the API.
+
 ---
 
 ## Start Here

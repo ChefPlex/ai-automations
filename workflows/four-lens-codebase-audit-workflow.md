@@ -88,7 +88,7 @@ Findings:
 
 ## Where this fails
 
-**One model with four prompts is not four reviewers.** Lenses run on the same model share its blind spots. If all four miss a class of defect, their agreement means nothing. Step 7 exists for this reason. If you can, run at least one lens on a different model, or have a person do it.
+**One model with four prompts is not four reviewers.** Lenses run on the same model share its blind spots. If all four miss a class of defect, their agreement means nothing. Step 7 exists for this reason. If you can, run at least one lens on a different model, or have a person do it. A different model lowers the shared blind spots without removing them, so let that lens report findings, not rewrite the code.
 
 **A long list looks thorough.** What matters is whether the top of the ranking holds up when someone independent looks at it.
 
