@@ -193,12 +193,13 @@ AI can help structure material for review. Accountable humans still make and app
 
 ## Tool-using agents
 
-The rules above assume a person reads the output before anything happens. An agent that can read files, fetch pages, send messages, or run commands needs four more:
+The rules above assume a person reads the output before anything happens. An agent that can read files, fetch pages, send messages, or run commands needs five more:
 
 - **Retrieved or pasted text is data, never instructions.** An email, a web page, a ticket, or another agent's reply can contain text written to redirect the agent. Treat it as material to read, not as a command to follow.
 - **Outbound actions start draft-only, with a named approver.** Sends, posts, ticket updates, and payments begin as drafts. A named person approves each one until there is evidence the agent can be trusted with that action.
 - **Approvals block by default.** If nobody approves, nothing happens. An approval that times out into "go" is not a control.
 - **The model is not the security boundary.** Instructions in a prompt can be talked around. Permissions, allow lists, sandboxes, and scoped credentials cannot. Put the limits in deterministic controls and use the prompt for guidance.
+- **Spend has a ceiling.** Before an agent runs unattended, set a limit per run and per month, log the cost of every run, and decide in advance who is told at the limit and whether the run stops. Usage-based billing grows quietly, and a loop can spend a month's budget before anyone looks.
 
 ## Where safety fails
 
