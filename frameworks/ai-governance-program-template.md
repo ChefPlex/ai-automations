@@ -26,7 +26,8 @@ less at stake. **The controls you require come from both axes together, never fr
 checked against sources as of October 2026. The map of standards and regulations is in the
 [frameworks README](README.md#where-this-sits-relative-to-the-ai-governance-standards); this page is
 for running the program. The stance is the tiers document's: **a human is always in the loop, and
-every use case has a named owner.**
+every use case has a named owner.** At tier 5 that owner sets the limits, reads the output and can
+stop it; only the per-item approval is removed.
 
 ---
 

@@ -15,6 +15,8 @@ decisions with consequences, the problems nobody has specified yet.
 **A human is always in the loop.** They edit, they approve, and they remain part of the solution.
 What changes across the five tiers isn't *whether* a human is involved but *where they're
 standing* - authoring the work, directing it, approving each item, or owning a system that runs.
+Even at tier 5, "AI-only" names the approval path, not the accountability: a named person sets the
+activity's limits, reads its output, and can stop it. Only the per-item approval is gone.
 
 The whole model then rests on one move: **every activity gets exactly one tier, in writing.**
 

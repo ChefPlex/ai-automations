@@ -137,4 +137,5 @@ Read in that order if you are starting from nothing. Start with the tool matrix 
 already bought the license and is asking why nothing improved.
 
 **A human is always in the loop.** They edit, they approve, and they stay part of the solution. What
-moves across the tiers is where they stand, never whether they're there.
+moves across the tiers is where they stand, never whether they're there. At tier 5, "AI-only"
+means no per-item approval; a named person still sets its limits, reads its output and can stop it.
