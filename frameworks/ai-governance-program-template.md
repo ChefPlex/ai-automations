@@ -253,6 +253,8 @@ recorded.
 
 Two rules from the tiers document carry straight across. **Anything irreversible or outbound cannot
 be tier 5, at any risk tier**, and its tier 4 gate blocks until approved and records who approved.
+A board exception waives this program's own policy and nothing else: it cannot waive a legal or
+contractual obligation, it names the risk owner who accepted it, and it carries an expiry date.
 And a tier 4 gate is only real if a reviewer catches seeded known-bad items; see
 [Tier 4](ai-execution-tiers.md#tier-4---ai-drives--humans-review). **At High risk, a rubber-stamp gate
 is the most likely way this program fails.**

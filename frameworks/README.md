@@ -11,7 +11,7 @@ as the rest of the repo: written down because it was used often enough to be wor
 
 | Framework | Answers |
 |---|---|
-| [AI Execution Tiers](ai-execution-tiers.md) | How much AI belongs in a given activity: a five-tier maturity model from human-only to AI-only, and how to classify without kidding yourself |
+| [AI Execution Tiers](ai-execution-tiers.md) | How much AI belongs in a given activity: a five-tier maturity model from human-only to AI-only, where maturity means each activity at the tier that fits it, not the highest one, and how to classify without kidding yourself |
 | [Activity Mapping Method](activity-mapping-method.md) | How to map an entire company's work against those tiers in about a week, at three levels of resolution |
 | [Multi-Agent Delivery Framework](multi-agent-delivery-framework.md) | 19 roles across 8 phases, ideation through operations, with senior/junior tier selection and an audit trail |
 | [Multi-Agent Delivery: Orchestrator and Workflow](multi-agent-delivery/) | The orchestrator prompt and the 8-phase workflow with every handoff and exit criterion, published so you can see how the framework runs. The role definitions stay private |
